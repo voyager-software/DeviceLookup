@@ -22,1028 +22,1028 @@
   "iPad2,1": {
     "name": "iPad 2",
     "chip": "A5",
-    "diagonal": 9.7,
+    "diag": 9.7,
     "soc": "s5l8940x"
   },
   "iPad2,2": {
     "name": "iPad 2",
     "chip": "A5",
-    "diagonal": 9.7,
-    "cellular": true,
+    "diag": 9.7,
+    "cell": true,
     "soc": "s5l8940x"
   },
   "iPad2,3": {
     "name": "iPad 2",
     "chip": "A5",
-    "diagonal": 9.7,
-    "cellular": true,
+    "diag": 9.7,
+    "cell": true,
     "soc": "s5l8940x"
   },
   "iPad2,4": {
     "name": "iPad 2",
     "chip": "A5",
-    "diagonal": 9.7,
+    "diag": 9.7,
     "soc": "s5l8942x"
   },
   "iPad2,5": {
     "name": "iPad mini",
     "chip": "A5",
-    "diagonal": 7.9,
+    "diag": 7.9,
     "soc": "s5l8942x"
   },
   "iPad2,6": {
     "name": "iPad mini",
     "chip": "A5",
-    "diagonal": 7.9,
-    "cellular": true,
+    "diag": 7.9,
+    "cell": true,
     "soc": "s5l8942x"
   },
   "iPad2,7": {
     "name": "iPad mini",
     "chip": "A5",
-    "diagonal": 7.9,
-    "cellular": true,
+    "diag": 7.9,
+    "cell": true,
     "soc": "s5l8942x"
   },
   "iPad3,1": {
     "name": "iPad (3rd generation)",
     "chip": "A5X",
-    "diagonal": 9.7,
+    "diag": 9.7,
     "soc": "s5l8945x"
   },
   "iPad3,2": {
     "name": "iPad (3rd generation)",
     "chip": "A5X",
-    "diagonal": 9.7,
-    "cellular": true,
+    "diag": 9.7,
+    "cell": true,
     "soc": "s5l8945x"
   },
   "iPad3,3": {
     "name": "iPad (3rd generation)",
     "chip": "A5X",
-    "diagonal": 9.7,
-    "cellular": true,
+    "diag": 9.7,
+    "cell": true,
     "soc": "s5l8945x"
   },
   "iPad3,4": {
     "name": "iPad (4th generation)",
     "chip": "A6X",
-    "diagonal": 9.7,
+    "diag": 9.7,
     "soc": "s5l8955x"
   },
   "iPad3,5": {
     "name": "iPad (4th generation)",
     "chip": "A6X",
-    "diagonal": 9.7,
-    "cellular": true,
+    "diag": 9.7,
+    "cell": true,
     "soc": "s5l8955x"
   },
   "iPad3,6": {
     "name": "iPad (4th generation)",
     "chip": "A6X",
-    "diagonal": 9.7,
-    "cellular": true,
+    "diag": 9.7,
+    "cell": true,
     "soc": "s5l8955x"
   },
   "iPad4,1": {
     "name": "iPad Air",
     "chip": "A7",
-    "diagonal": 9.7,
+    "diag": 9.7,
     "soc": "s5l8960x"
   },
   "iPad4,2": {
     "name": "iPad Air",
     "chip": "A7",
-    "diagonal": 9.7,
-    "cellular": true,
+    "diag": 9.7,
+    "cell": true,
     "soc": "s5l8960x"
   },
   "iPad4,3": {
     "name": "iPad Air",
     "chip": "A7",
-    "diagonal": 9.7,
-    "cellular": true,
+    "diag": 9.7,
+    "cell": true,
     "soc": "s5l8960x"
   },
   "iPad4,4": {
     "name": "iPad mini 2",
     "chip": "A7",
-    "diagonal": 7.9,
+    "diag": 7.9,
     "soc": "s5l8960x"
   },
   "iPad4,5": {
     "name": "iPad mini 2",
     "chip": "A7",
-    "diagonal": 7.9,
-    "cellular": true,
+    "diag": 7.9,
+    "cell": true,
     "soc": "s5l8960x"
   },
   "iPad4,6": {
     "name": "iPad mini 2",
     "chip": "A7",
-    "diagonal": 7.9,
-    "cellular": true,
+    "diag": 7.9,
+    "cell": true,
     "soc": "s5l8960x"
   },
   "iPad4,7": {
     "name": "iPad mini 3",
     "chip": "A7",
-    "diagonal": 7.9,
+    "diag": 7.9,
     "soc": "s5l8960x"
   },
   "iPad4,8": {
     "name": "iPad mini 3",
     "chip": "A7",
-    "diagonal": 7.9,
-    "cellular": true,
+    "diag": 7.9,
+    "cell": true,
     "soc": "s5l8960x"
   },
   "iPad4,9": {
     "name": "iPad mini 3",
     "chip": "A7",
-    "diagonal": 7.9,
-    "cellular": true,
+    "diag": 7.9,
+    "cell": true,
     "soc": "s5l8960x"
   },
   "iPad5,1": {
     "name": "iPad mini 4",
     "chip": "A8",
-    "diagonal": 7.9,
+    "diag": 7.9,
     "soc": "t7000"
   },
   "iPad5,2": {
     "name": "iPad mini 4",
     "chip": "A8",
-    "diagonal": 7.9,
-    "cellular": true,
+    "diag": 7.9,
+    "cell": true,
     "soc": "t7000"
   },
   "iPad5,3": {
     "name": "iPad Air 2",
     "chip": "A8X",
-    "diagonal": 9.7,
+    "diag": 9.7,
     "soc": "t7001"
   },
   "iPad5,4": {
     "name": "iPad Air 2",
     "chip": "A8X",
-    "diagonal": 9.7,
-    "cellular": true,
+    "diag": 9.7,
+    "cell": true,
     "soc": "t7001"
   },
   "iPad6,3": {
     "name": "iPad Pro (9.7-inch)",
     "chip": "A9X",
-    "diagonal": 9.7,
+    "diag": 9.7,
     "soc": "s8001"
   },
   "iPad6,4": {
     "name": "iPad Pro (9.7-inch)",
     "chip": "A9X",
-    "diagonal": 9.7,
-    "cellular": true,
+    "diag": 9.7,
+    "cell": true,
     "soc": "s8001"
   },
   "iPad6,7": {
     "name": "iPad Pro (12.9-inch)",
     "chip": "A9X",
-    "diagonal": 12.9,
+    "diag": 12.9,
     "soc": "s8001"
   },
   "iPad6,8": {
     "name": "iPad Pro (12.9-inch)",
     "chip": "A9X",
-    "diagonal": 12.9,
-    "cellular": true,
+    "diag": 12.9,
+    "cell": true,
     "soc": "s8001"
   },
   "iPad6,11": {
     "name": "iPad (5th generation)",
     "chip": "A9",
-    "diagonal": 9.7,
+    "diag": 9.7,
     "soc": "s8000"
   },
   "iPad6,12": {
     "name": "iPad (5th generation)",
     "chip": "A9",
-    "diagonal": 9.7,
-    "cellular": true,
+    "diag": 9.7,
+    "cell": true,
     "soc": "s8000"
   },
   "iPad7,1": {
     "name": "iPad Pro (12.9-inch) (2nd generation)",
     "chip": "A10X Fusion",
-    "diagonal": 12.9,
+    "diag": 12.9,
     "soc": "t8011"
   },
   "iPad7,2": {
     "name": "iPad Pro (12.9-inch) (2nd generation)",
     "chip": "A10X Fusion",
-    "diagonal": 12.9,
-    "cellular": true,
+    "diag": 12.9,
+    "cell": true,
     "soc": "t8011"
   },
   "iPad7,3": {
     "name": "iPad Pro (10.5-inch)",
     "chip": "A10X Fusion",
-    "diagonal": 10.5,
+    "diag": 10.5,
     "soc": "t8011"
   },
   "iPad7,4": {
     "name": "iPad Pro (10.5-inch)",
     "chip": "A10X Fusion",
-    "diagonal": 10.5,
-    "cellular": true,
+    "diag": 10.5,
+    "cell": true,
     "soc": "t8011"
   },
   "iPad7,5": {
     "name": "iPad (6th generation)",
     "chip": "A10 Fusion",
-    "diagonal": 9.7,
+    "diag": 9.7,
     "soc": "t8010"
   },
   "iPad7,6": {
     "name": "iPad (6th generation)",
     "chip": "A10 Fusion",
-    "diagonal": 9.7,
-    "cellular": true,
+    "diag": 9.7,
+    "cell": true,
     "soc": "t8010"
   },
   "iPad7,11": {
     "name": "iPad (7th generation)",
     "chip": "A10 Fusion",
-    "diagonal": 10.2,
+    "diag": 10.2,
     "soc": "t8010"
   },
   "iPad7,12": {
     "name": "iPad (7th generation)",
     "chip": "A10 Fusion",
-    "diagonal": 10.2,
-    "cellular": true,
+    "diag": 10.2,
+    "cell": true,
     "soc": "t8010"
   },
   "iPad8,1": {
     "name": "iPad Pro (11-inch)",
     "chip": "A12X Bionic",
-    "diagonal": 11.0,
+    "diag": 11.0,
     "soc": "t8027"
   },
   "iPad8,2": {
     "name": "iPad Pro (11-inch)",
     "chip": "A12X Bionic",
-    "diagonal": 11.0,
+    "diag": 11.0,
     "soc": "t8027"
   },
   "iPad8,3": {
     "name": "iPad Pro (11-inch)",
     "chip": "A12X Bionic",
-    "diagonal": 11.0,
-    "cellular": true,
+    "diag": 11.0,
+    "cell": true,
     "soc": "t8027"
   },
   "iPad8,4": {
     "name": "iPad Pro (11-inch)",
     "chip": "A12X Bionic",
-    "diagonal": 11.0,
-    "cellular": true,
+    "diag": 11.0,
+    "cell": true,
     "soc": "t8027"
   },
   "iPad8,5": {
     "name": "iPad Pro (12.9-inch) (3rd generation)",
     "chip": "A12X Bionic",
-    "diagonal": 12.9,
+    "diag": 12.9,
     "soc": "t8027"
   },
   "iPad8,6": {
     "name": "iPad Pro (12.9-inch) (3rd generation)",
     "chip": "A12X Bionic",
-    "diagonal": 12.9,
+    "diag": 12.9,
     "soc": "t8027"
   },
   "iPad8,7": {
     "name": "iPad Pro (12.9-inch) (3rd generation)",
     "chip": "A12X Bionic",
-    "diagonal": 12.9,
-    "cellular": true,
+    "diag": 12.9,
+    "cell": true,
     "soc": "t8027"
   },
   "iPad8,8": {
     "name": "iPad Pro (12.9-inch) (3rd generation)",
     "chip": "A12X Bionic",
-    "diagonal": 12.9,
-    "cellular": true,
+    "diag": 12.9,
+    "cell": true,
     "soc": "t8027"
   },
   "iPad8,9": {
     "name": "iPad Pro (11-inch) (2nd generation)",
     "chip": "A12Z Bionic",
-    "diagonal": 11.0,
+    "diag": 11.0,
     "soc": "t8027"
   },
   "iPad8,10": {
     "name": "iPad Pro (11-inch) (2nd generation)",
     "chip": "A12Z Bionic",
-    "diagonal": 11.0,
-    "cellular": true,
+    "diag": 11.0,
+    "cell": true,
     "soc": "t8027"
   },
   "iPad8,11": {
     "name": "iPad Pro (12.9-inch) (4th generation)",
     "chip": "A12Z Bionic",
-    "diagonal": 12.9,
+    "diag": 12.9,
     "soc": "t8027"
   },
   "iPad8,12": {
     "name": "iPad Pro (12.9-inch) (4th generation)",
     "chip": "A12Z Bionic",
-    "diagonal": 12.9,
-    "cellular": true,
+    "diag": 12.9,
+    "cell": true,
     "soc": "t8027"
   },
   "iPad11,1": {
     "name": "iPad mini (5th generation)",
     "chip": "A12 Bionic",
-    "diagonal": 7.9,
+    "diag": 7.9,
     "soc": "t8020"
   },
   "iPad11,2": {
     "name": "iPad mini (5th generation)",
     "chip": "A12 Bionic",
-    "diagonal": 7.9,
-    "cellular": true,
+    "diag": 7.9,
+    "cell": true,
     "soc": "t8020"
   },
   "iPad11,3": {
     "name": "iPad Air (3rd generation)",
     "chip": "A12 Bionic",
-    "diagonal": 10.5,
+    "diag": 10.5,
     "soc": "t8020"
   },
   "iPad11,4": {
     "name": "iPad Air (3rd generation)",
     "chip": "A12 Bionic",
-    "diagonal": 10.5,
-    "cellular": true,
+    "diag": 10.5,
+    "cell": true,
     "soc": "t8020"
   },
   "iPad11,6": {
     "name": "iPad (8th generation)",
     "chip": "A12 Bionic",
-    "diagonal": 10.2,
+    "diag": 10.2,
     "soc": "t8020"
   },
   "iPad11,7": {
     "name": "iPad (8th generation)",
     "chip": "A12 Bionic",
-    "diagonal": 10.2,
-    "cellular": true,
+    "diag": 10.2,
+    "cell": true,
     "soc": "t8020"
   },
   "iPad12,1": {
     "name": "iPad (9th generation)",
     "chip": "A13 Bionic",
-    "diagonal": 10.2,
+    "diag": 10.2,
     "soc": "t8030"
   },
   "iPad12,2": {
     "name": "iPad (9th generation)",
     "chip": "A13 Bionic",
-    "diagonal": 10.2,
-    "cellular": true,
+    "diag": 10.2,
+    "cell": true,
     "soc": "t8030"
   },
   "iPad13,1": {
     "name": "iPad Air (4th generation)",
     "chip": "A14 Bionic",
-    "diagonal": 10.9,
+    "diag": 10.9,
     "soc": "t8101"
   },
   "iPad13,2": {
     "name": "iPad Air (4th generation)",
     "chip": "A14 Bionic",
-    "diagonal": 10.9,
-    "cellular": true,
+    "diag": 10.9,
+    "cell": true,
     "soc": "t8101"
   },
   "iPad13,4": {
     "name": "iPad Pro (11-inch) (3rd generation)",
     "chip": "M1",
-    "diagonal": 11.0,
+    "diag": 11.0,
     "soc": "t8103"
   },
   "iPad13,5": {
     "name": "iPad Pro (11-inch) (3rd generation)",
     "chip": "M1",
-    "diagonal": 11.0,
-    "cellular": true,
+    "diag": 11.0,
+    "cell": true,
     "soc": "t8103"
   },
   "iPad13,6": {
     "name": "iPad Pro (11-inch) (3rd generation)",
     "chip": "M1",
-    "diagonal": 11.0,
-    "cellular": true,
+    "diag": 11.0,
+    "cell": true,
     "soc": "t8103"
   },
   "iPad13,7": {
     "name": "iPad Pro (11-inch) (3rd generation)",
     "chip": "M1",
-    "diagonal": 11.0,
-    "cellular": true,
+    "diag": 11.0,
+    "cell": true,
     "soc": "t8103"
   },
   "iPad13,8": {
     "name": "iPad Pro (12.9-inch) (5th generation)",
     "chip": "M1",
-    "diagonal": 12.9,
+    "diag": 12.9,
     "soc": "t8103"
   },
   "iPad13,9": {
     "name": "iPad Pro (12.9-inch) (5th generation)",
     "chip": "M1",
-    "diagonal": 12.9,
-    "cellular": true,
+    "diag": 12.9,
+    "cell": true,
     "soc": "t8103"
   },
   "iPad13,10": {
     "name": "iPad Pro (12.9-inch) (5th generation)",
     "chip": "M1",
-    "diagonal": 12.9,
-    "cellular": true,
+    "diag": 12.9,
+    "cell": true,
     "soc": "t8103"
   },
   "iPad13,11": {
     "name": "iPad Pro (12.9-inch) (5th generation)",
     "chip": "M1",
-    "diagonal": 12.9,
-    "cellular": true,
+    "diag": 12.9,
+    "cell": true,
     "soc": "t8103"
   },
   "iPad13,16": {
     "name": "iPad Air (5th generation)",
     "chip": "M1",
-    "diagonal": 10.9,
+    "diag": 10.9,
     "soc": "t8103"
   },
   "iPad13,17": {
     "name": "iPad Air (5th generation)",
     "chip": "M1",
-    "diagonal": 10.9,
-    "cellular": true,
+    "diag": 10.9,
+    "cell": true,
     "soc": "t8103"
   },
   "iPad13,18": {
     "name": "iPad (10th generation)",
     "chip": "A14 Bionic",
-    "diagonal": 10.9,
+    "diag": 10.9,
     "soc": "t8101"
   },
   "iPad13,19": {
     "name": "iPad (10th generation)",
     "chip": "A14 Bionic",
-    "diagonal": 10.9,
-    "cellular": true,
+    "diag": 10.9,
+    "cell": true,
     "soc": "t8101"
   },
   "iPad14,1": {
     "name": "iPad mini (6th generation)",
     "chip": "A15 Bionic",
-    "diagonal": 8.3,
+    "diag": 8.3,
     "soc": "t8110"
   },
   "iPad14,2": {
     "name": "iPad mini (6th generation)",
     "chip": "A15 Bionic",
-    "diagonal": 8.3,
-    "cellular": true,
+    "diag": 8.3,
+    "cell": true,
     "soc": "t8110"
   },
   "iPad14,3": {
     "name": "iPad Pro (11-inch) (4th generation)",
     "chip": "M2",
-    "diagonal": 11.0,
+    "diag": 11.0,
     "soc": "t8112"
   },
   "iPad14,4": {
     "name": "iPad Pro (11-inch) (4th generation)",
     "chip": "M2",
-    "diagonal": 11.0,
-    "cellular": true,
+    "diag": 11.0,
+    "cell": true,
     "soc": "t8112"
   },
   "iPad14,5": {
     "name": "iPad Pro (12.9-inch) (6th generation)",
     "chip": "M2",
-    "diagonal": 12.9,
+    "diag": 12.9,
     "soc": "t8112"
   },
   "iPad14,6": {
     "name": "iPad Pro (12.9-inch) (6th generation)",
     "chip": "M2",
-    "diagonal": 12.9,
-    "cellular": true,
+    "diag": 12.9,
+    "cell": true,
     "soc": "t8112"
   },
   "iPad14,8": {
     "name": "iPad Air 11-inch (M2)",
     "chip": "M2",
-    "diagonal": 10.9,
+    "diag": 10.9,
     "soc": "t8112"
   },
   "iPad14,9": {
     "name": "iPad Air 11-inch (M2)",
     "chip": "M2",
-    "diagonal": 10.9,
-    "cellular": true,
+    "diag": 10.9,
+    "cell": true,
     "soc": "t8112"
   },
   "iPad14,10": {
     "name": "iPad Air 13-inch (M2)",
     "chip": "M2",
-    "diagonal": 12.9,
+    "diag": 12.9,
     "soc": "t8112"
   },
   "iPad14,11": {
     "name": "iPad Air 13-inch (M2)",
     "chip": "M2",
-    "diagonal": 12.9,
-    "cellular": true,
+    "diag": 12.9,
+    "cell": true,
     "soc": "t8112"
   },
   "iPad15,3": {
     "name": "iPad Air 11-inch (M3)",
     "chip": "M3",
-    "diagonal": 10.9,
+    "diag": 10.9,
     "soc": "t8122"
   },
   "iPad15,4": {
     "name": "iPad Air 11-inch (M3)",
     "chip": "M3",
-    "diagonal": 10.9,
+    "diag": 10.9,
     "soc": "t8122"
   },
   "iPad15,5": {
     "name": "iPad Air 13-inch (M3)",
     "chip": "M3",
-    "diagonal": 12.9,
+    "diag": 12.9,
     "soc": "t8122"
   },
   "iPad15,6": {
     "name": "iPad Air 13-inch (M3)",
     "chip": "M3",
-    "diagonal": 12.9,
+    "diag": 12.9,
     "soc": "t8122"
   },
   "iPad15,7": {
     "name": "iPad (A16)",
     "chip": "A16 Bionic",
-    "diagonal": 10.9,
+    "diag": 10.9,
     "soc": "t8120"
   },
   "iPad15,8": {
     "name": "iPad (A16)",
     "chip": "A16 Bionic",
-    "diagonal": 10.9,
+    "diag": 10.9,
     "soc": "t8120"
   },
   "iPad16,1": {
     "name": "iPad mini (A17 Pro)",
     "chip": "A17 Pro",
-    "diagonal": 8.3,
+    "diag": 8.3,
     "soc": "t8130"
   },
   "iPad16,2": {
     "name": "iPad mini (A17 Pro)",
     "chip": "A17 Pro",
-    "diagonal": 8.3,
+    "diag": 8.3,
     "soc": "t8130"
   },
   "iPad16,3": {
     "name": "iPad Pro 11-inch (M4)",
     "chip": "M4",
-    "diagonal": 11.0,
+    "diag": 11.0,
     "soc": "t8132"
   },
   "iPad16,4": {
     "name": "iPad Pro 11-inch (M4)",
     "chip": "M4",
-    "diagonal": 11.0,
-    "cellular": true,
+    "diag": 11.0,
+    "cell": true,
     "soc": "t8132"
   },
   "iPad16,5": {
     "name": "iPad Pro 13-inch (M4)",
     "chip": "M4",
-    "diagonal": 13.0,
+    "diag": 13.0,
     "soc": "t8132"
   },
   "iPad16,6": {
     "name": "iPad Pro 13-inch (M4)",
     "chip": "M4",
-    "diagonal": 13.0,
-    "cellular": true,
+    "diag": 13.0,
+    "cell": true,
     "soc": "t8132"
   },
   "iPad16,8": {
     "name": "iPad Air 11-inch (M4)",
     "chip": "M4",
-    "diagonal": 10.9,
+    "diag": 10.9,
     "soc": "t8132"
   },
   "iPad16,9": {
     "name": "iPad Air 11-inch (M4)",
     "chip": "M4",
-    "diagonal": 10.9,
+    "diag": 10.9,
     "soc": "t8132"
   },
   "iPad16,10": {
     "name": "iPad Air 13-inch (M4)",
     "chip": "M4",
-    "diagonal": 12.9,
+    "diag": 12.9,
     "soc": "t8132"
   },
   "iPad16,11": {
     "name": "iPad Air 13-inch (M4)",
     "chip": "M4",
-    "diagonal": 12.9,
+    "diag": 12.9,
     "soc": "t8132"
   },
   "iPad17,1": {
     "name": "iPad Pro 11-inch (M5)",
     "chip": "M5",
-    "diagonal": 11.0,
+    "diag": 11.0,
     "soc": "t8142"
   },
   "iPad17,2": {
     "name": "iPad Pro 11-inch (M5)",
     "chip": "M5",
-    "diagonal": 11.0,
+    "diag": 11.0,
     "soc": "t8142"
   },
   "iPad17,3": {
     "name": "iPad Pro 13-inch (M5)",
     "chip": "M5",
-    "diagonal": 13.0,
+    "diag": 13.0,
     "soc": "t8142"
   },
   "iPad17,4": {
     "name": "iPad Pro 13-inch (M5)",
     "chip": "M5",
-    "diagonal": 13.0,
+    "diag": 13.0,
     "soc": "t8142"
   },
   "iPhone4,1": {
     "name": "iPhone 4S",
     "chip": "A5",
-    "diagonal": 3.5,
+    "diag": 3.5,
     "soc": "s5l8940x"
   },
   "iPhone5,1": {
     "name": "iPhone 5",
     "chip": "A6",
-    "diagonal": 4.0,
+    "diag": 4.0,
     "soc": "s5l8950x"
   },
   "iPhone5,2": {
     "name": "iPhone 5",
     "chip": "A6",
-    "diagonal": 4.0,
+    "diag": 4.0,
     "soc": "s5l8950x"
   },
   "iPhone5,3": {
     "name": "iPhone 5c",
     "chip": "A6",
-    "diagonal": 4.0,
+    "diag": 4.0,
     "soc": "s5l8950x"
   },
   "iPhone5,4": {
     "name": "iPhone 5c",
     "chip": "A6",
-    "diagonal": 4.0,
+    "diag": 4.0,
     "soc": "s5l8950x"
   },
   "iPhone6,1": {
     "name": "iPhone 5s",
     "chip": "A7",
-    "diagonal": 4.0,
+    "diag": 4.0,
     "soc": "s5l8960x"
   },
   "iPhone6,2": {
     "name": "iPhone 5s",
     "chip": "A7",
-    "diagonal": 4.0,
+    "diag": 4.0,
     "soc": "s5l8960x"
   },
   "iPhone7,1": {
     "name": "iPhone 6 Plus",
     "chip": "A8",
-    "diagonal": 5.5,
+    "diag": 5.5,
     "soc": "t7000"
   },
   "iPhone7,2": {
     "name": "iPhone 6",
     "chip": "A8",
-    "diagonal": 4.7,
+    "diag": 4.7,
     "soc": "t7000"
   },
   "iPhone8,1": {
     "name": "iPhone 6s",
     "chip": "A9",
-    "diagonal": 4.7,
+    "diag": 4.7,
     "soc": "s8003"
   },
   "iPhone8,2": {
     "name": "iPhone 6s Plus",
     "chip": "A9",
-    "diagonal": 5.5,
+    "diag": 5.5,
     "soc": "s8003"
   },
   "iPhone8,4": {
     "name": "iPhone SE (1st generation)",
     "chip": "A9",
-    "diagonal": 4.0,
+    "diag": 4.0,
     "soc": "s8000"
   },
   "iPhone9,1": {
     "name": "iPhone 7",
     "chip": "A10 Fusion",
-    "diagonal": 4.7,
+    "diag": 4.7,
     "soc": "t8010"
   },
   "iPhone9,2": {
     "name": "iPhone 7 Plus",
     "chip": "A10 Fusion",
-    "diagonal": 5.5,
+    "diag": 5.5,
     "soc": "t8010"
   },
   "iPhone9,3": {
     "name": "iPhone 7",
     "chip": "A10 Fusion",
-    "diagonal": 4.7,
+    "diag": 4.7,
     "soc": "t8010"
   },
   "iPhone9,4": {
     "name": "iPhone 7 Plus",
     "chip": "A10 Fusion",
-    "diagonal": 5.5,
+    "diag": 5.5,
     "soc": "t8010"
   },
   "iPhone10,1": {
     "name": "iPhone 8",
     "chip": "A11 Bionic",
-    "diagonal": 4.7,
+    "diag": 4.7,
     "soc": "t8015"
   },
   "iPhone10,2": {
     "name": "iPhone 8 Plus",
     "chip": "A11 Bionic",
-    "diagonal": 5.5,
+    "diag": 5.5,
     "soc": "t8015"
   },
   "iPhone10,3": {
     "name": "iPhone X",
     "chip": "A11 Bionic",
-    "diagonal": 5.8,
+    "diag": 5.8,
     "soc": "t8015"
   },
   "iPhone10,4": {
     "name": "iPhone 8",
     "chip": "A11 Bionic",
-    "diagonal": 4.7,
+    "diag": 4.7,
     "soc": "t8015"
   },
   "iPhone10,5": {
     "name": "iPhone 8 Plus",
     "chip": "A11 Bionic",
-    "diagonal": 5.5,
+    "diag": 5.5,
     "soc": "t8015"
   },
   "iPhone10,6": {
     "name": "iPhone X",
     "chip": "A11 Bionic",
-    "diagonal": 5.8,
+    "diag": 5.8,
     "soc": "t8015"
   },
   "iPhone11,2": {
     "name": "iPhone XS",
     "chip": "A12 Bionic",
-    "diagonal": 5.8,
+    "diag": 5.8,
     "soc": "t8020"
   },
   "iPhone11,4": {
     "name": "iPhone XS Max",
     "chip": "A12 Bionic",
-    "diagonal": 6.5,
+    "diag": 6.5,
     "soc": "t8020"
   },
   "iPhone11,6": {
     "name": "iPhone XS Max",
     "chip": "A12 Bionic",
-    "diagonal": 6.5,
+    "diag": 6.5,
     "soc": "t8020"
   },
   "iPhone11,8": {
     "name": "iPhone XR",
     "chip": "A12 Bionic",
-    "diagonal": 6.1,
+    "diag": 6.1,
     "soc": "t8020"
   },
   "iPhone12,1": {
     "name": "iPhone 11",
     "chip": "A13 Bionic",
-    "diagonal": 6.1,
+    "diag": 6.1,
     "soc": "t8030"
   },
   "iPhone12,3": {
     "name": "iPhone 11 Pro",
     "chip": "A13 Bionic",
-    "diagonal": 5.8,
+    "diag": 5.8,
     "soc": "t8030"
   },
   "iPhone12,5": {
     "name": "iPhone 11 Pro Max",
     "chip": "A13 Bionic",
-    "diagonal": 6.5,
+    "diag": 6.5,
     "soc": "t8030"
   },
   "iPhone12,8": {
     "name": "iPhone SE (2nd generation)",
     "chip": "A13 Bionic",
-    "diagonal": 4.7,
+    "diag": 4.7,
     "soc": "t8030"
   },
   "iPhone13,1": {
     "name": "iPhone 12 mini",
     "chip": "A14 Bionic",
-    "diagonal": 5.4,
+    "diag": 5.4,
     "soc": "t8101"
   },
   "iPhone13,2": {
     "name": "iPhone 12",
     "chip": "A14 Bionic",
-    "diagonal": 6.1,
+    "diag": 6.1,
     "soc": "t8101"
   },
   "iPhone13,3": {
     "name": "iPhone 12 Pro",
     "chip": "A14 Bionic",
-    "diagonal": 6.1,
+    "diag": 6.1,
     "soc": "t8101"
   },
   "iPhone13,4": {
     "name": "iPhone 12 Pro Max",
     "chip": "A14 Bionic",
-    "diagonal": 6.7,
+    "diag": 6.7,
     "soc": "t8101"
   },
   "iPhone14,2": {
     "name": "iPhone 13 Pro",
     "chip": "A15 Bionic",
-    "diagonal": 6.1,
+    "diag": 6.1,
     "soc": "t8110"
   },
   "iPhone14,3": {
     "name": "iPhone 13 Pro Max",
     "chip": "A15 Bionic",
-    "diagonal": 6.7,
+    "diag": 6.7,
     "soc": "t8110"
   },
   "iPhone14,4": {
     "name": "iPhone 13 mini",
     "chip": "A15 Bionic",
-    "diagonal": 5.4,
+    "diag": 5.4,
     "soc": "t8110"
   },
   "iPhone14,5": {
     "name": "iPhone 13",
     "chip": "A15 Bionic",
-    "diagonal": 6.1,
+    "diag": 6.1,
     "soc": "t8110"
   },
   "iPhone14,6": {
     "name": "iPhone SE (3rd generation)",
     "chip": "A15 Bionic",
-    "diagonal": 4.7,
+    "diag": 4.7,
     "soc": "t8110"
   },
   "iPhone14,7": {
     "name": "iPhone 14",
     "chip": "A15 Bionic",
-    "diagonal": 6.1,
+    "diag": 6.1,
     "soc": "t8110"
   },
   "iPhone14,8": {
     "name": "iPhone 14 Plus",
     "chip": "A15 Bionic",
-    "diagonal": 6.7,
+    "diag": 6.7,
     "soc": "t8110"
   },
   "iPhone15,2": {
     "name": "iPhone 14 Pro",
     "chip": "A16 Bionic",
-    "diagonal": 6.1,
+    "diag": 6.1,
     "soc": "t8120"
   },
   "iPhone15,3": {
     "name": "iPhone 14 Pro Max",
     "chip": "A16 Bionic",
-    "diagonal": 6.7,
+    "diag": 6.7,
     "soc": "t8120"
   },
   "iPhone15,4": {
     "name": "iPhone 15",
     "chip": "A16 Bionic",
-    "diagonal": 6.1,
+    "diag": 6.1,
     "soc": "t8120"
   },
   "iPhone15,5": {
     "name": "iPhone 15 Plus",
     "chip": "A16 Bionic",
-    "diagonal": 6.7,
+    "diag": 6.7,
     "soc": "t8120"
   },
   "iPhone16,1": {
     "name": "iPhone 15 Pro",
     "chip": "A17 Pro",
-    "diagonal": 6.1,
+    "diag": 6.1,
     "soc": "t8130"
   },
   "iPhone16,2": {
     "name": "iPhone 15 Pro Max",
     "chip": "A17 Pro",
-    "diagonal": 6.7,
+    "diag": 6.7,
     "soc": "t8130"
   },
   "iPhone17,1": {
     "name": "iPhone 16 Pro",
     "chip": "A18 Pro",
-    "diagonal": 6.3,
+    "diag": 6.3,
     "soc": "t8140"
   },
   "iPhone17,2": {
     "name": "iPhone 16 Pro Max",
     "chip": "A18 Pro",
-    "diagonal": 6.9,
+    "diag": 6.9,
     "soc": "t8140"
   },
   "iPhone17,3": {
     "name": "iPhone 16",
     "chip": "A18",
-    "diagonal": 6.1,
+    "diag": 6.1,
     "soc": "t8140"
   },
   "iPhone17,4": {
     "name": "iPhone 16 Plus",
     "chip": "A18",
-    "diagonal": 6.7,
+    "diag": 6.7,
     "soc": "t8140"
   },
   "iPhone17,5": {
     "name": "iPhone 16e",
     "chip": "A18",
-    "diagonal": 6.1,
+    "diag": 6.1,
     "soc": "t8140"
   },
   "iPhone18,1": {
     "name": "iPhone 17 Pro",
     "chip": "A19 Pro",
-    "diagonal": 6.3,
+    "diag": 6.3,
     "soc": "t8150"
   },
   "iPhone18,2": {
     "name": "iPhone 17 Pro Max",
     "chip": "A19 Pro",
-    "diagonal": 6.9,
+    "diag": 6.9,
     "soc": "t8150"
   },
   "iPhone18,3": {
     "name": "iPhone 17",
     "chip": "A19",
-    "diagonal": 6.3,
+    "diag": 6.3,
     "soc": "t8150"
   },
   "iPhone18,4": {
     "name": "iPhone Air",
     "chip": "A19 Pro",
-    "diagonal": 6.5,
+    "diag": 6.5,
     "soc": "t8150"
   },
   "iPhone18,5": {
     "name": "iPhone 17e",
     "chip": "A19",
-    "diagonal": 6.1,
+    "diag": 6.1,
     "soc": "t8150"
   },
   "iPhone19,2": {
     "name": "iPhone 18 Pro",
     "chip": "A20 Pro",
-    "diagonal": 6.3,
+    "diag": 6.3,
     "soc": "t8160"
   },
   "iPhone19,3": {
     "name": "iPhone 18 Pro Max",
     "chip": "A20 Pro",
-    "diagonal": 6.9,
+    "diag": 6.9,
     "soc": "t8160"
   },
   "iPhone19,4": {
@@ -1053,25 +1053,25 @@
   "iPhone19,7": {
     "name": "iPhone 18 Pro Max",
     "chip": "A20 Pro",
-    "diagonal": 6.9,
+    "diag": 6.9,
     "soc": "t8160"
   },
   "iPod5,1": {
     "name": "iPod touch",
     "chip": "A5",
-    "diagonal": 4.0,
+    "diag": 4.0,
     "soc": "s5l8942x"
   },
   "iPod7,1": {
     "name": "iPod touch (6th generation)",
     "chip": "A8",
-    "diagonal": 4.0,
+    "diag": 4.0,
     "soc": "t7000"
   },
   "iPod9,1": {
     "name": "iPod touch (7th generation)",
     "chip": "A10 Fusion",
-    "diagonal": 4.0,
+    "diag": 4.0,
     "soc": "t8010"
   }
 }

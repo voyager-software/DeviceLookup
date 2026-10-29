@@ -12,6 +12,13 @@ import Foundation
 /// Maintained with `Scripts/update-devices.py`.
 enum DeviceTable {
     struct Entry: Decodable, Sendable {
+        enum CodingKeys: String, CodingKey {
+            case name
+            case chip
+            case diagonal = "diag"
+            case cellular = "cell"
+        }
+
         let name: String
         let chip: String?
         let diagonal: Double?

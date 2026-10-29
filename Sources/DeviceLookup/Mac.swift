@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// A Mac model, with every identifier, color and part number it shipped with.
+/// A Mac model and every model identifier it shipped with.
 public struct Mac: Decodable, Sendable {
     // MARK: Public
 
@@ -41,13 +41,8 @@ public struct Mac: Decodable, Sendable {
     }()
 
     public let kind: Kind
-    public let variant: String
     public let name: String
-    public let colors: [String]
     public let models: [String]
-    public let parts: [String]
-    public let notes: [String]?
-    public let newestOS: String?
 
     /// Finds the Mac with the given model identifier, e.g. "Mac14,7".
     public static func find(model: String) -> Mac? {
@@ -55,6 +50,12 @@ public struct Mac: Decodable, Sendable {
     }
 
     // MARK: Private
+
+    private enum CodingKeys: String, CodingKey {
+        case kind
+        case name
+        case models = "ids"
+    }
 
     private static let byModel: [String: Mac] = all.reduce(into: [:]) { result, mac in
         for model in mac.models where result[model] == nil {

@@ -17,8 +17,8 @@ Fields:
     soc       Apple's SoC code (e.g. "t8150"), from Xcode
     chip      e.g. "A19 Pro"; by hand. The report suggests the chips of devices with the same SoC,
               but one SoC can ship under several names (A19 and A19 Pro are both t8150).
-    diagonal  screen size in inches; by hand (not needed for Apple TV)
-    cellular  true for cellular iPad models; by hand (iPhones are always cellular)
+    diag      screen diagonal in inches; by hand (not needed for Apple TV)
+    cell      true for cellular iPad models; by hand (iPhones are always cellular)
 """
 
 import argparse
@@ -33,7 +33,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DEVICES_JSON = ROOT / "Sources/DeviceLookup/Resources/devices.json"
 PLATFORMS = ["iPhoneOS", "AppleTVOS"]
 PREFIXES = ("iPhone", "iPad", "iPod", "AppleTV")
-FIELD_ORDER = ["name", "chip", "diagonal", "cellular", "soc"]
+FIELD_ORDER = ["name", "chip", "diag", "cell", "soc"]
 
 
 def natural_key(identifier):
@@ -127,10 +127,10 @@ def main():
         if not entry.get("chip"):
             same_soc = sorted(soc_chips.get(entry.get("soc"), []))
             missing.append(f"chip (same SoC: {', '.join(same_soc)})" if same_soc else "chip")
-        if not identifier.startswith("AppleTV") and not entry.get("diagonal"):
-            missing.append("diagonal")
+        if not identifier.startswith("AppleTV") and not entry.get("diag"):
+            missing.append("diag")
         if identifier in added and identifier.startswith("iPad"):
-            missing.append("cellular?")
+            missing.append("cell?")
         if missing:
             print(f"TO FILL  {identifier:<14} {entry['name']}: {', '.join(missing)}")
 

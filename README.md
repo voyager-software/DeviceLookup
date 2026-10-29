@@ -39,9 +39,9 @@ Scripts/update-devices.py            # report what's new or different
 Scripts/update-devices.py --write    # add new identifiers to devices.json
 ```
 
-It reads Xcode's `device_traits.db`, adds missing identifiers with their name and SoC code, and lists what still needs filling in by hand: `chip`, `diagonal`, and `cellular` for iPads. It never overwrites existing values. `DeviceTests.allDevicesHaveData` fails until each device has a chip and a diagonal.
+It reads Xcode's `device_traits.db`, adds missing identifiers with their name and SoC code, and lists what still needs filling in by hand: `chip`, `diag` (screen diagonal in inches), and `cell` (cellular) for iPads. It never overwrites existing values. `DeviceTests.allDevicesHaveData` fails until each device has a chip and a diagonal.
 
-Mac data comes from the MacModelParser project.
+Mac data comes from the MacModelParser project. After regenerating it there, run `Scripts/import-macs.py`, which keeps only the kind, name and model identifiers (`ids`).
 
 ## Coming from DeviceKit
 
