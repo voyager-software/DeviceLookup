@@ -47,11 +47,28 @@ struct DeviceTests {
         #expect(!device.hasCellular)
     }
 
+    @Test func watch() {
+        let device = Device(modelIdentifier: "Watch7,20")
+        #expect(device.isWatch)
+        #expect(device.modelName == "Apple Watch Series 11 (GPS + Cellular) 46mm")
+        #expect(device.chip == "S10")
+        #expect(device.hasCellular)
+        #expect(!Device(modelIdentifier: "Watch7,18").hasCellular)
+    }
+
+    /// Xcode's board names, not DeviceKit, decide the case size: DeviceKit has the SE 3 sizes swapped.
+    @Test func `watch case sizes`() {
+        #expect(Device(modelIdentifier: "Watch7,13").modelName == "Apple Watch SE 3 (GPS) 40mm")
+        #expect(Device(modelIdentifier: "Watch7,14").modelName == "Apple Watch SE 3 (GPS) 44mm")
+        #expect(Device(modelIdentifier: "Watch7,15").modelName == "Apple Watch SE 3 (GPS + Cellular) 40mm")
+    }
+
     @Test(arguments: [
         ("iPhone1,1", Device.Family.phone),
         ("iPad17,3", .pad),
         ("iPod9,1", .pod),
         ("AppleTV14,1", .tv),
+        ("Watch8,1", .watch),
         ("Mac15,6", .mac),
         ("MacBookPro18,3", .mac),
         ("iMac21,2", .mac),

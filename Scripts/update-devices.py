@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Sync Sources/DeviceLookup/Resources/devices.json with Xcode's device database.
 
-Xcode ships the identifier, marketing name and SoC code of every iPhone, iPad, iPod touch and
-Apple TV it can build for, in `Platforms/*/usr/standalone/device_traits.db`. New devices appear
+Xcode ships the identifier, marketing name and SoC code of every iPhone, iPad, iPod touch,
+Apple TV and Apple Watch it can build for, in `Platforms/*/usr/standalone/device_traits.db`. New devices appear
 there in the Xcode release that supports them, which is usually around the announcement.
 
 The script adds identifiers missing from devices.json and reports what still needs a hand edit.
@@ -13,12 +13,15 @@ It never overwrites a field already in devices.json, so hand-curated names and v
     Scripts/update-devices.py --xcode /Applications/Xcode-beta.app
 
 Fields:
-    name      marketing name, from Xcode
+    name      marketing name, from Xcode. Xcode names most watches without their case size, so
+              by hand, append it as Xcode does for the older ones, e.g. "Apple Watch Series 9 (GPS) 45mm".
+              The report says whether each one is the small or large case.
     soc       Apple's SoC code (e.g. "t8150"), from Xcode
     chip      e.g. "A19 Pro"; by hand. The report suggests the chips of devices with the same SoC,
               but one SoC can ship under several names (A19 and A19 Pro are both t8150).
     diag      screen diagonal in inches; by hand (not needed for Apple TV)
-    cell      true for cellular iPad models; by hand (iPhones are always cellular)
+    cell      true for cellular iPad and Apple Watch models (iPhones are always cellular). Set
+              automatically when Xcode's name says "Cellular", otherwise by hand.
 """
 
 import argparse
@@ -31,8 +34,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DEVICES_JSON = ROOT / "Sources/DeviceLookup/Resources/devices.json"
-PLATFORMS = ["iPhoneOS", "AppleTVOS"]
-PREFIXES = ("iPhone", "iPad", "iPod", "AppleTV")
+PLATFORMS = ["iPhoneOS", "AppleTVOS", "WatchOS"]
+PREFIXES = ("iPhone", "iPad", "iPod", "AppleTV", "Watch")
 FIELD_ORDER = ["name", "chip", "diag", "cell", "soc"]
 
 
@@ -63,14 +66,25 @@ def read_xcode(dev_dir):
             sys.exit(f"Missing {db}")
         with sqlite3.connect(f"file:{db}?mode=ro", uri=True) as conn:
             rows = conn.execute(
-                "SELECT ProductType, ProductDescription, Platform, CompatibleDeviceFallback FROM Devices"
+                "SELECT ProductType, ProductDescription, Platform, CompatibleDeviceFallback, Target FROM Devices"
             )
-            for product_type, name, soc, fallback in rows:
+            for product_type, name, soc, fallback, target in rows:
                 # Some iPads are listed once per thinning variant, as "iPad17,1-A" and "iPad17,1-B".
                 identifier = re.sub(r"-[A-Z]$", "", product_type)
                 if is_relevant(identifier) and identifier not in devices:
-                    devices[identifier] = {"name": name, "soc": soc, "fallback": fallback}
+                    devices[identifier] = {"name": name, "soc": soc, "fallback": fallback, "target": target}
     return devices
+
+
+def watch_case(target):
+    """"small" or "large" for a watch that comes in two case sizes, from its board name, e.g. "n207sap"."""
+    match = re.search(r"([sb])ap$", target or "")
+    return {"s": "small", "b": "large"}[match.group(1)] if match else None
+
+
+def same_name(ours, xcode_name):
+    """Whether our name is Xcode's, allowing a case size we appended, e.g. "... (GPS) 45mm"."""
+    return ours == xcode_name or re.fullmatch(re.escape(xcode_name) + r" \d+mm", ours) is not None
 
 
 def chips_by_soc(entries):
@@ -104,6 +118,8 @@ def main():
         entry = entries.get(identifier)
         if entry is None:
             entry = {"name": info["name"], "soc": info["soc"]}
+            if "Cellular" in info["name"]:
+                entry["cell"] = True
             entries[identifier] = entry
             added.append(identifier)
             closest = xcode.get(info["fallback"], {}).get("name", info["fallback"])
@@ -113,7 +129,7 @@ def main():
             entry["soc"] = info["soc"]
         if not entry.get("name"):
             entry["name"] = info["name"]
-        elif entry["name"] != info["name"]:
+        elif not same_name(entry["name"], info["name"]):
             print(f"NAME     {identifier:<14} ours: {entry['name']!r}  Xcode: {info['name']!r}")
 
     for identifier in sorted(set(entries) - set(xcode), key=natural_key):
@@ -129,8 +145,11 @@ def main():
             missing.append(f"chip (same SoC: {', '.join(same_soc)})" if same_soc else "chip")
         if not identifier.startswith("AppleTV") and not entry.get("diag"):
             missing.append("diag")
-        if identifier in added and identifier.startswith("iPad"):
+        if identifier in added and identifier.startswith(("iPad", "Watch")) and not re.search(r"GPS|Cellular", entry["name"]):
             missing.append("cell?")
+        size = watch_case(xcode.get(identifier, {}).get("target")) if identifier.startswith("Watch") else None
+        if size and not re.search(r" \d+mm$", entry["name"]):
+            missing.append(f"case size in name ({size} case)")
         if missing:
             print(f"TO FILL  {identifier:<14} {entry['name']}: {', '.join(missing)}")
 

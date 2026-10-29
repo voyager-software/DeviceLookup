@@ -19,6 +19,408 @@
     "chip": "A15 Bionic",
     "soc": "t8110"
   },
+  "Watch1,1": {
+    "name": "Apple Watch (1st generation) 38mm",
+    "chip": "S1",
+    "diag": 1.5,
+    "soc": "s7002"
+  },
+  "Watch1,2": {
+    "name": "Apple Watch (1st generation) 42mm",
+    "chip": "S1",
+    "diag": 1.6,
+    "soc": "s7002"
+  },
+  "Watch2,3": {
+    "name": "Apple Watch Series 2 38mm",
+    "chip": "S2",
+    "diag": 1.5,
+    "soc": "t8002"
+  },
+  "Watch2,4": {
+    "name": "Apple Watch Series 2 42mm",
+    "chip": "S2",
+    "diag": 1.6,
+    "soc": "t8002"
+  },
+  "Watch2,6": {
+    "name": "Apple Watch Series 1 38mm",
+    "chip": "S1P",
+    "diag": 1.5,
+    "soc": "t8002"
+  },
+  "Watch2,7": {
+    "name": "Apple Watch Series 1 42mm",
+    "chip": "S1P",
+    "diag": 1.6,
+    "soc": "t8002"
+  },
+  "Watch3,1": {
+    "name": "Apple Watch Series 3 (GPS + Cellular) 38mm",
+    "chip": "S3",
+    "diag": 1.5,
+    "cell": true,
+    "soc": "t8004"
+  },
+  "Watch3,2": {
+    "name": "Apple Watch Series 3 (GPS + Cellular) 42mm",
+    "chip": "S3",
+    "diag": 1.6,
+    "cell": true,
+    "soc": "t8004"
+  },
+  "Watch3,3": {
+    "name": "Apple Watch Series 3 (GPS) 38mm",
+    "chip": "S3",
+    "diag": 1.5,
+    "soc": "t8004"
+  },
+  "Watch3,4": {
+    "name": "Apple Watch Series 3 (GPS) 42mm",
+    "chip": "S3",
+    "diag": 1.6,
+    "soc": "t8004"
+  },
+  "Watch4,1": {
+    "name": "Apple Watch Series 4 40mm",
+    "chip": "S4",
+    "diag": 1.8,
+    "soc": "t8006"
+  },
+  "Watch4,2": {
+    "name": "Apple Watch Series 4 44mm",
+    "chip": "S4",
+    "diag": 2.0,
+    "soc": "t8006"
+  },
+  "Watch4,3": {
+    "name": "Apple Watch Series 4 40mm",
+    "chip": "S4",
+    "diag": 1.8,
+    "cell": true,
+    "soc": "t8006"
+  },
+  "Watch4,4": {
+    "name": "Apple Watch Series 4 44mm",
+    "chip": "S4",
+    "diag": 2.0,
+    "cell": true,
+    "soc": "t8006"
+  },
+  "Watch5,1": {
+    "name": "Apple Watch Series 5 40mm",
+    "chip": "S5",
+    "diag": 1.8,
+    "soc": "t8006"
+  },
+  "Watch5,2": {
+    "name": "Apple Watch Series 5 44mm",
+    "chip": "S5",
+    "diag": 2.0,
+    "soc": "t8006"
+  },
+  "Watch5,3": {
+    "name": "Apple Watch Series 5 40mm",
+    "chip": "S5",
+    "diag": 1.8,
+    "cell": true,
+    "soc": "t8006"
+  },
+  "Watch5,4": {
+    "name": "Apple Watch Series 5 44mm",
+    "chip": "S5",
+    "diag": 2.0,
+    "cell": true,
+    "soc": "t8006"
+  },
+  "Watch5,9": {
+    "name": "Apple Watch SE (GPS) 40mm",
+    "chip": "S5",
+    "diag": 1.8,
+    "soc": "t8006"
+  },
+  "Watch5,10": {
+    "name": "Apple Watch SE (GPS) 44mm",
+    "chip": "S5",
+    "diag": 2.0,
+    "soc": "t8006"
+  },
+  "Watch5,11": {
+    "name": "Apple Watch SE (GPS + Cellular) 40mm",
+    "chip": "S5",
+    "diag": 1.8,
+    "cell": true,
+    "soc": "t8006"
+  },
+  "Watch5,12": {
+    "name": "Apple Watch SE (GPS + Cellular) 44mm",
+    "chip": "S5",
+    "diag": 2.0,
+    "cell": true,
+    "soc": "t8006"
+  },
+  "Watch6,1": {
+    "name": "Apple Watch Series 6 (GPS) 40mm",
+    "chip": "S6",
+    "diag": 1.8,
+    "soc": "t8301"
+  },
+  "Watch6,2": {
+    "name": "Apple Watch Series 6 (GPS) 44mm",
+    "chip": "S6",
+    "diag": 2.0,
+    "soc": "t8301"
+  },
+  "Watch6,3": {
+    "name": "Apple Watch Series 6 (GPS + Cellular) 40mm",
+    "chip": "S6",
+    "diag": 1.8,
+    "cell": true,
+    "soc": "t8301"
+  },
+  "Watch6,4": {
+    "name": "Apple Watch Series 6 (GPS + Cellular) 44mm",
+    "chip": "S6",
+    "diag": 2.0,
+    "cell": true,
+    "soc": "t8301"
+  },
+  "Watch6,6": {
+    "name": "Apple Watch Series 7 (GPS) 41mm",
+    "chip": "S7",
+    "diag": 1.8,
+    "soc": "t8301"
+  },
+  "Watch6,7": {
+    "name": "Apple Watch Series 7 (GPS) 45mm",
+    "chip": "S7",
+    "diag": 2.0,
+    "soc": "t8301"
+  },
+  "Watch6,8": {
+    "name": "Apple Watch Series 7 (GPS + Cellular) 41mm",
+    "chip": "S7",
+    "diag": 1.8,
+    "cell": true,
+    "soc": "t8301"
+  },
+  "Watch6,9": {
+    "name": "Apple Watch Series 7 (GPS + Cellular) 45mm",
+    "chip": "S7",
+    "diag": 2.0,
+    "cell": true,
+    "soc": "t8301"
+  },
+  "Watch6,10": {
+    "name": "Apple Watch SE (GPS) 40mm",
+    "chip": "S8",
+    "diag": 1.8,
+    "soc": "t8301"
+  },
+  "Watch6,11": {
+    "name": "Apple Watch SE (GPS) 44mm",
+    "chip": "S8",
+    "diag": 2.0,
+    "soc": "t8301"
+  },
+  "Watch6,12": {
+    "name": "Apple Watch SE (GPS + Cellular) 40mm",
+    "chip": "S8",
+    "diag": 1.8,
+    "cell": true,
+    "soc": "t8301"
+  },
+  "Watch6,13": {
+    "name": "Apple Watch SE (GPS + Cellular) 44mm",
+    "chip": "S8",
+    "diag": 2.0,
+    "cell": true,
+    "soc": "t8301"
+  },
+  "Watch6,14": {
+    "name": "Apple Watch Series 8 (GPS) 41mm",
+    "chip": "S8",
+    "diag": 1.8,
+    "soc": "t8301"
+  },
+  "Watch6,15": {
+    "name": "Apple Watch Series 8 (GPS) 45mm",
+    "chip": "S8",
+    "diag": 2.0,
+    "soc": "t8301"
+  },
+  "Watch6,16": {
+    "name": "Apple Watch Series 8 (GPS + Cellular) 41mm",
+    "chip": "S8",
+    "diag": 1.8,
+    "cell": true,
+    "soc": "t8301"
+  },
+  "Watch6,17": {
+    "name": "Apple Watch Series 8 (GPS + Cellular) 45mm",
+    "chip": "S8",
+    "diag": 2.0,
+    "cell": true,
+    "soc": "t8301"
+  },
+  "Watch6,18": {
+    "name": "Apple Watch Ultra",
+    "chip": "S8",
+    "diag": 2.2,
+    "cell": true,
+    "soc": "t8301"
+  },
+  "Watch7,1": {
+    "name": "Apple Watch Series 9 (GPS) 41mm",
+    "chip": "S9",
+    "diag": 1.9,
+    "soc": "t8310"
+  },
+  "Watch7,2": {
+    "name": "Apple Watch Series 9 (GPS) 45mm",
+    "chip": "S9",
+    "diag": 2.0,
+    "soc": "t8310"
+  },
+  "Watch7,3": {
+    "name": "Apple Watch Series 9 (GPS + Cellular) 41mm",
+    "chip": "S9",
+    "diag": 1.9,
+    "cell": true,
+    "soc": "t8310"
+  },
+  "Watch7,4": {
+    "name": "Apple Watch Series 9 (GPS + Cellular) 45mm",
+    "chip": "S9",
+    "diag": 2.0,
+    "cell": true,
+    "soc": "t8310"
+  },
+  "Watch7,5": {
+    "name": "Apple Watch Ultra 2",
+    "chip": "S9",
+    "diag": 2.2,
+    "cell": true,
+    "soc": "t8310"
+  },
+  "Watch7,8": {
+    "name": "Apple Watch Series 10 (GPS) 42mm",
+    "chip": "S10",
+    "diag": 1.9,
+    "soc": "t8310"
+  },
+  "Watch7,9": {
+    "name": "Apple Watch Series 10 (GPS) 46mm",
+    "chip": "S10",
+    "diag": 2.0,
+    "soc": "t8310"
+  },
+  "Watch7,10": {
+    "name": "Apple Watch Series 10 (GPS + Cellular) 42mm",
+    "chip": "S10",
+    "diag": 1.9,
+    "cell": true,
+    "soc": "t8310"
+  },
+  "Watch7,11": {
+    "name": "Apple Watch Series 10 (GPS + Cellular) 46mm",
+    "chip": "S10",
+    "diag": 2.0,
+    "cell": true,
+    "soc": "t8310"
+  },
+  "Watch7,12": {
+    "name": "Apple Watch Ultra 3",
+    "chip": "S10",
+    "diag": 2.2,
+    "cell": true,
+    "soc": "t8310"
+  },
+  "Watch7,13": {
+    "name": "Apple Watch SE 3 (GPS) 40mm",
+    "chip": "S10",
+    "diag": 1.8,
+    "soc": "t8310"
+  },
+  "Watch7,14": {
+    "name": "Apple Watch SE 3 (GPS) 44mm",
+    "chip": "S10",
+    "diag": 2.0,
+    "soc": "t8310"
+  },
+  "Watch7,15": {
+    "name": "Apple Watch SE 3 (GPS + Cellular) 40mm",
+    "chip": "S10",
+    "diag": 1.8,
+    "cell": true,
+    "soc": "t8310"
+  },
+  "Watch7,16": {
+    "name": "Apple Watch SE 3 (GPS + Cellular) 44mm",
+    "chip": "S10",
+    "diag": 2.0,
+    "cell": true,
+    "soc": "t8310"
+  },
+  "Watch7,17": {
+    "name": "Apple Watch Series 11 (GPS) 42mm",
+    "chip": "S10",
+    "diag": 1.9,
+    "soc": "t8310"
+  },
+  "Watch7,18": {
+    "name": "Apple Watch Series 11 (GPS) 46mm",
+    "chip": "S10",
+    "diag": 2.0,
+    "soc": "t8310"
+  },
+  "Watch7,19": {
+    "name": "Apple Watch Series 11 (GPS + Cellular) 42mm",
+    "chip": "S10",
+    "diag": 1.9,
+    "cell": true,
+    "soc": "t8310"
+  },
+  "Watch7,20": {
+    "name": "Apple Watch Series 11 (GPS + Cellular) 46mm",
+    "chip": "S10",
+    "diag": 2.0,
+    "cell": true,
+    "soc": "t8310"
+  },
+  "Watch8,1": {
+    "name": "Apple Watch Ultra 4",
+    "chip": "S11",
+    "diag": 2.04,
+    "cell": true,
+    "soc": "t8320"
+  },
+  "Watch8,2": {
+    "name": "Apple Watch Series 12 (GPS) 42mm",
+    "chip": "S11",
+    "diag": 1.79,
+    "soc": "t8320"
+  },
+  "Watch8,3": {
+    "name": "Apple Watch Series 12 (GPS) 46mm",
+    "chip": "S11",
+    "diag": 1.99,
+    "soc": "t8320"
+  },
+  "Watch8,4": {
+    "name": "Apple Watch Series 12 (GPS + Cellular) 42mm",
+    "chip": "S11",
+    "diag": 1.79,
+    "cell": true,
+    "soc": "t8320"
+  },
+  "Watch8,5": {
+    "name": "Apple Watch Series 12 (GPS + Cellular) 46mm",
+    "chip": "S11",
+    "diag": 1.99,
+    "cell": true,
+    "soc": "t8320"
+  },
   "iPad2,1": {
     "name": "iPad 2",
     "chip": "A5",

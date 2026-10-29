@@ -15,6 +15,7 @@ public extension Device {
         case pad
         case pod
         case tv
+        case watch
         case mac
         case vision
         case unknown
@@ -32,6 +33,8 @@ public extension Device {
                 .pod
             case let id where id.hasPrefix("AppleTV"):
                 .tv
+            case let id where id.hasPrefix("Watch"):
+                .watch
             case let id where id.hasPrefix("Mac") || id.hasPrefix("iMac"):
                 .mac
             case let id where id.hasPrefix("RealityDevice"):

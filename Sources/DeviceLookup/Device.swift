@@ -78,7 +78,7 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
         }
     }()
 
-    /// Every iPhone, iPad, iPod touch and Apple TV in the bundled data, in identifier order.
+    /// Every iPhone, iPad, iPod touch, Apple TV and Apple Watch in the bundled data, in identifier order.
     public static var all: [Device] {
         DeviceTable.sortedIdentifiers.map(Device.init(modelIdentifier:))
     }
@@ -89,7 +89,8 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
     /// The kind of device, derived from the model identifier.
     public let family: Family
 
-    /// The marketing name, e.g. "iPhone 17 Pro", or the model identifier when the device is not in the bundled data.
+    /// The marketing name, e.g. "iPhone 17 Pro" or "Apple Watch Series 11 (GPS) 46mm", or the model identifier
+    /// when the device is not in the bundled data.
     public let modelName: String
 
     /// The chip, e.g. "A19 Pro". On a Mac, the CPU brand string of the running Mac, e.g. "Apple M3 Pro".
@@ -98,7 +99,7 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
     /// The screen diagonal in inches, when known.
     public let diagonal: Double?
 
-    /// Whether the device has a cellular radio. Every iPhone does; only cellular iPad models do.
+    /// Whether the device has a cellular radio. Every iPhone does; only cellular iPad and Apple Watch models do.
     public let hasCellular: Bool
 
     /// Whether this is a simulator, in which case the other properties describe the simulated device.
@@ -121,6 +122,10 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
 
     public var isTV: Bool {
         self.family == .tv
+    }
+
+    public var isWatch: Bool {
+        self.family == .watch
     }
 
     public var isMac: Bool {

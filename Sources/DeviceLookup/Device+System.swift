@@ -12,12 +12,14 @@ import Foundation
 // so they describe the device this code runs on, not a looked-up `Device`.
 
 public extension Device {
-    /// "iOS", "iPadOS", "tvOS", "visionOS" or "macOS" (also under Mac Catalyst).
+    /// "iOS", "iPadOS", "tvOS", "watchOS", "visionOS" or "macOS" (also under Mac Catalyst).
     var operatingSystemName: String {
         #if os(macOS) || targetEnvironment(macCatalyst)
         "macOS"
         #elseif os(tvOS)
         "tvOS"
+        #elseif os(watchOS)
+        "watchOS"
         #elseif os(visionOS)
         "visionOS"
         #else
@@ -62,7 +64,7 @@ public extension Device {
         self.homeVolumeValues(.volumeAvailableCapacityKey)?.volumeAvailableCapacity.map(Int64.init)
     }
 
-    #if !os(tvOS)
+    #if !os(tvOS) && !os(watchOS)
     /// The volume’s available capacity in bytes for storing important resources.
     var volumeAvailableCapacityForImportantUsage: Int64? {
         self.homeVolumeValues(.volumeAvailableCapacityForImportantUsageKey)?.volumeAvailableCapacityForImportantUsage
