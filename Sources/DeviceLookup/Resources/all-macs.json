@@ -1,0 +1,3308 @@
+[
+  {
+    "colors" : [
+      "Blue",
+      "Green",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Silver",
+      "Yellow"
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "Mac16,3"
+    ],
+    "name" : "iMac (24-inch, 2024, Four ports)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front and back of iMac (24-inch, 2024, Four Ports)",
+      "Ports: Four Thunderbolt / USB 4 ports"
+    ],
+    "parts" : [
+      "MCR24xx/A",
+      "MD2P4xx/A",
+      "MD2Q4xx/A",
+      "MD2T4xx/A",
+      "MD2U4xx/A",
+      "MD2V4xx/A",
+      "MD2W4xx/A",
+      "MD2X4xx/A",
+      "MD2Y4xx/A",
+      "MD3A4xx/A",
+      "MD3D4xx/A",
+      "MD3E4xx/A",
+      "MD3F4xx/A",
+      "MD3G4xx/A",
+      "MD3H4xx/A",
+      "MWUU3xx/A",
+      "MWUV3xx/A",
+      "MWUW3xx/A",
+      "MWUX3xx/A",
+      "MWUY3xx/A",
+      "MWV03xx/A",
+      "MWV13xx/A",
+      "MWV33xx/A",
+      "MWV43xx/A",
+      "MWV53xx/A",
+      "MWV63xx/A",
+      "MWV73xx/A",
+      "MWV83xx/A",
+      "MWV93xx/A",
+      "MWVA3xx/A",
+      "MWVC3xx/A",
+      "MWVD3xx/A",
+      "MWVE3xx/A",
+      "MWVF3xx/A",
+      "MWVG3xx/A",
+      "MWVH3xx/A",
+      "MWVJ3xx/A",
+      "MWVK3xx/A",
+      "MWVL3xx/A",
+      "MWVN3xx/A",
+      "MWVP3xx/A",
+      "MWVQ3xx/A",
+      "MWVR3xx/A"
+    ],
+    "variant" : "24-inch, 2024, Four ports"
+  },
+  {
+    "colors" : [
+      "Blue",
+      "Green",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Silver",
+      "Yellow"
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "Mac16,2"
+    ],
+    "name" : "iMac (24-inch, 2024, Two ports)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front and back of iMac (24-inch, 2024, Two Ports)",
+      "Ports: Two Thunderbolt / USB 4 ports"
+    ],
+    "parts" : [
+      "MWUD3xx/A",
+      "MWUE3xx/A",
+      "MWUF3xx/A",
+      "MWUG3xx/A",
+      "MWUH3xx/A",
+      "MWUJ3xx/A",
+      "MWUK3xx/A",
+      "MWUL3xx/A",
+      "MWUN3xx/A",
+      "MWUPxx/A",
+      "MWUQ3xx/A",
+      "MWUR3xx/A",
+      "MWUT3xx/A"
+    ],
+    "variant" : "24-inch, 2024, Two ports"
+  },
+  {
+    "colors" : [
+      "Blue",
+      "Green",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Silver",
+      "Yellow"
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "Mac15,5"
+    ],
+    "name" : "iMac (24-inch, 2023, Four ports)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front and back of iMac (24-inch, 2023) with two Thunderbolt / USB 4 ports and two USB 3 ports.",
+      "Ports: Two Thunderbolt / USB 4 ports, Two USB 3 ports"
+    ],
+    "parts" : [
+      "MQRJ3xx/A",
+      "MQRK3xx/A",
+      "MQRL3xx/A",
+      "MQRM3xx/A",
+      "MQRN3xx/A",
+      "MQRP3xx/A",
+      "MQRQ3xx/A",
+      "MQRR3xx/A",
+      "MQRT3xx/A",
+      "MQRU3xx/A",
+      "MQRV3xx/A",
+      "MQRW3xx/A",
+      "MQRX3xx/A",
+      "MQRY3xx/A"
+    ],
+    "variant" : "24-inch, 2023, Four ports"
+  },
+  {
+    "colors" : [
+      "Blue",
+      "Green",
+      "Pink",
+      "Silver"
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "Mac15,4"
+    ],
+    "name" : "iMac (24-inch, 2023, Two ports)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front and back of iMac (24-inch, 2023) with two Thunderbolt / USB 4 ports.",
+      "Ports: Two Thunderbolt / USB 4 ports"
+    ],
+    "parts" : [
+      "MQR93xx/A",
+      "MQRA3xx/A",
+      "MQRC3xx/A",
+      "MQRD3xx/A"
+    ],
+    "variant" : "24-inch, 2023, Two ports"
+  },
+  {
+    "colors" : [
+      "Blue",
+      "Green",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Silver",
+      "Yellow"
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac21,1"
+    ],
+    "name" : "iMac (24-inch, M1, 2021)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front and back of iMac (24-inch, M1, 2021) with two Thunderbolt / USB 4 ports and two USB 3 ports.",
+      "Ports: Two Thunderbolt / USB 4 ports, Two USB 3 ports"
+    ],
+    "parts" : [
+      "MGPC3xx/A",
+      "MGPD3xx/A",
+      "MGPF3xx/A",
+      "MGPG3xx/A",
+      "MGPH3xx/A",
+      "MGPJ3xx/A",
+      "MGPK3xx/A",
+      "MGPL3xx/A",
+      "MGPM3xx/A",
+      "MGPN3xx/A",
+      "MGPP3xx/A",
+      "MGPQ3xx/A",
+      "MGPR3xx/A",
+      "MGPT3xx/A"
+    ],
+    "variant" : "24-inch, M1, 2021"
+  },
+  {
+    "colors" : [
+      "Blue",
+      "Green",
+      "Pink",
+      "Silver"
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac21,2"
+    ],
+    "name" : "iMac (24-inch, M1, 2021)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front and back of iMac (24-inch, M1, 2021) with two Thunderbolt / USB 4 ports.",
+      "Ports: Two Thunderbolt / USB 4 ports"
+    ],
+    "parts" : [
+      "MGTF3xx/a",
+      "MJV83xx/a",
+      "MJV93xx/a",
+      "MJVA3xx/a"
+    ],
+    "variant" : "24-inch, M1, 2021"
+  },
+  {
+    "colors" : [
+      "Blue",
+      "Green",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Silver",
+      "Yellow"
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac21,1"
+    ],
+    "name" : "iMac (24-inch, M1, 2021)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Ports: Two Thunderbolt / USB 4 ports, Two USB 3 ports"
+    ],
+    "parts" : [
+      "MGPC3xx/A",
+      "MGPD3xx/A",
+      "MGPF3xx/A",
+      "MGPG3xx/A",
+      "MGPH3xx/A",
+      "MGPJ3xx/A",
+      "MGPK3xx/A",
+      "MGPL3xx/A",
+      "MGPM3xx/A",
+      "MGPN3xx/A",
+      "MGPP3xx/A",
+      "MGPQ3xx/A",
+      "MGPR3xx/A",
+      "MGPT3xx/A"
+    ],
+    "variant" : "24-inch, M1, 2021"
+  },
+  {
+    "colors" : [
+      "Blue",
+      "Green",
+      "Pink",
+      "Silver"
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac21,2"
+    ],
+    "name" : "iMac (24-inch, M1, 2021)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Ports: Two Thunderbolt / USB 4 ports"
+    ],
+    "parts" : [
+      "MGTF3xx/a",
+      "MJV83xx/a",
+      "MJV93xx/a",
+      "MJVA3xx/a"
+    ],
+    "variant" : "24-inch, M1, 2021"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac20,1",
+      "iMac20,2"
+    ],
+    "name" : "iMac (Retina 5K, 27-inch, 2020)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MXWT2xx/A",
+      "MXWU2xx/A",
+      "MXWV2xx/A"
+    ],
+    "variant" : "Retina 5K, 27-inch, 2020"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac19,1"
+    ],
+    "name" : "iMac (Retina 5K, 27-inch, 2019)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MRQYxx/A",
+      "MRR0xx/A",
+      "MRR1xx/A"
+    ],
+    "variant" : "Retina 5K, 27-inch, 2019"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac19,2"
+    ],
+    "name" : "iMac (Retina 4K, 21.5-inch, 2019)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MHK23xx/A",
+      "MRT3xx/A",
+      "MRT4xx/A"
+    ],
+    "variant" : "Retina 4K, 21.5-inch, 2019"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac Pro",
+    "models" : [
+      "iMacPro1,1"
+    ],
+    "name" : "iMac Pro",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MHLV3xx/A",
+      "MQ2Y2xx/A"
+    ],
+    "variant" : ""
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac18,3"
+    ],
+    "name" : "iMac (Retina 5K, 27-inch, 2017)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MNE92xx/A",
+      "MNEA2xx/A",
+      "MNED2xx/A"
+    ],
+    "variant" : "Retina 5K, 27-inch, 2017"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac18,2"
+    ],
+    "name" : "iMac (Retina 4K, 21.5-inch, 2017)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MNDY2xx/A",
+      "MNE02xx/A"
+    ],
+    "variant" : "Retina 4K, 21.5-inch, 2017"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac18,1"
+    ],
+    "name" : "iMac (21.5-inch, 2017)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MHK03xx/A",
+      "MMQA2xx/A"
+    ],
+    "variant" : "21.5-inch, 2017"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac17,1"
+    ],
+    "name" : "iMac (Retina 5K, 27-inch, Late 2015)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MK462xx/A",
+      "MK472xx/A",
+      "MK482xx/A"
+    ],
+    "variant" : "Retina 5K, 27-inch, Late 2015"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac16,2"
+    ],
+    "name" : "iMac (Retina 4K, 21.5-inch, Late 2015)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MK452xx/A"
+    ],
+    "variant" : "Retina 4K, 21.5-inch, Late 2015"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac16,1"
+    ],
+    "name" : "iMac (21.5-inch, Late 2015)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MK142xx/A",
+      "MK442xx/A"
+    ],
+    "variant" : "21.5-inch, Late 2015"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac15,1"
+    ],
+    "name" : "iMac (Retina 5K, 27-inch, Mid 2015)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MF885xx/A"
+    ],
+    "variant" : "Retina 5K, 27-inch, Mid 2015"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac15,1"
+    ],
+    "name" : "iMac (Retina 5K, 27-inch, Late 2014)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MF886xx/A"
+    ],
+    "variant" : "Retina 5K, 27-inch, Late 2014"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac14,4"
+    ],
+    "name" : "iMac (21.5-inch, Mid 2014)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MF883xx/A",
+      "MG022xx/A"
+    ],
+    "variant" : "21.5-inch, Mid 2014"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac14,2"
+    ],
+    "name" : "iMac (27-inch, Late 2013)",
+    "notes" : [
+      "Latest compatible operating system: macOS Catalina 10.15.7"
+    ],
+    "parts" : [
+      "ME086xx/A",
+      "ME088xx/A"
+    ],
+    "variant" : "27-inch, Late 2013"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac14,1"
+    ],
+    "name" : "iMac (21.5-inch, Late 2013)",
+    "notes" : [
+      "Latest compatible operating system: macOS Catalina 10.15.7"
+    ],
+    "parts" : [
+      "ME086xx/A",
+      "ME087xx/A"
+    ],
+    "variant" : "21.5-inch, Late 2013"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac13,2"
+    ],
+    "name" : "iMac (27-inch, Late 2012)",
+    "notes" : [
+      "Latest compatible operating system: macOS Catalina 10.15.7"
+    ],
+    "parts" : [
+      "MD095xx/A",
+      "MD096xx/A"
+    ],
+    "variant" : "27-inch, Late 2012"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac13,1"
+    ],
+    "name" : "iMac (21.5-inch, Late 2012)",
+    "notes" : [
+      "Latest compatible operating system: macOS Catalina 10.15.7"
+    ],
+    "parts" : [
+      "MD093xx/A",
+      "MD094xx/A"
+    ],
+    "variant" : "21.5-inch, Late 2012"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac12,2"
+    ],
+    "name" : "iMac (27-inch, Mid 2011)",
+    "notes" : [
+      "Latest compatible operating system: macOS High Sierra 10.13.6"
+    ],
+    "parts" : [
+      "MC813xx/A",
+      "MC814xx/A"
+    ],
+    "variant" : "27-inch, Mid 2011"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac12,1"
+    ],
+    "name" : "iMac (21.5-inch, Mid 2011)",
+    "notes" : [
+      "Latest compatible operating system: macOS High Sierra 10.13.6"
+    ],
+    "parts" : [
+      "MC309xx/A",
+      "MC812xx/A"
+    ],
+    "variant" : "21.5-inch, Mid 2011"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac11,3"
+    ],
+    "name" : "iMac (27-inch, Mid 2010)",
+    "notes" : [
+      "Latest compatible operating system: macOS High Sierra 10.13.6"
+    ],
+    "parts" : [
+      "MC510xx/A",
+      "MC511xx/A"
+    ],
+    "variant" : "27-inch, Mid 2010"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac11,2"
+    ],
+    "name" : "iMac (21.5-inch, Mid 2010)",
+    "notes" : [
+      "Latest compatible operating system: macOS High Sierra 10.13.6"
+    ],
+    "parts" : [
+      "MC508xx/A",
+      "MC509xx/A"
+    ],
+    "variant" : "21.5-inch, Mid 2010"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac10,1"
+    ],
+    "name" : "iMac (27-inch, Late 2009)",
+    "notes" : [
+      "Latest compatible operating system: macOS High Sierra 10.13.6"
+    ],
+    "parts" : [
+      "MB952xx/A",
+      "MB953xx/A"
+    ],
+    "variant" : "27-inch, Late 2009"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac10,1"
+    ],
+    "name" : "iMac (21.5-inch, Late 2009)",
+    "notes" : [
+      "Latest compatible operating system: macOS High Sierra 10.13.6"
+    ],
+    "parts" : [
+      "MB950xx/A",
+      "MC413xx/A"
+    ],
+    "variant" : "21.5-inch, Late 2009"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac9,1"
+    ],
+    "name" : "iMac (24-inch, Early 2009)",
+    "notes" : [
+      "Latest compatible operating system: OS X El Capitan 10.11.6"
+    ],
+    "parts" : [
+      "MB418xx/A",
+      "MB419xx/A"
+    ],
+    "variant" : "24-inch, Early 2009"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "iMac",
+    "models" : [
+      "iMac9,1"
+    ],
+    "name" : "iMac (20-inch, Early 2009)",
+    "notes" : [
+      "Latest compatible operating system: OS X El Capitan 10.11.6"
+    ],
+    "parts" : [
+      "MB417xx/A",
+      "MC019xx/A"
+    ],
+    "variant" : "20-inch, Early 2009"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Studio",
+    "models" : [
+      "Mac16,9"
+    ],
+    "name" : "Mac Studio (2025)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front and back of Mac Studio (2025).",
+      "Chip: M4 Max",
+      "Front ports: Two USB-C ports"
+    ],
+    "parts" : [
+      "MU963xx/A"
+    ],
+    "variant" : "2025"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Studio",
+    "models" : [
+      "Mac15,14"
+    ],
+    "name" : "Mac Studio (2025)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front and back of Mac Studio (2025).",
+      "Chip: M3 Ultra",
+      "Front ports: Two Thunderbolt 5 ports"
+    ],
+    "parts" : [
+      "MU973xx/A"
+    ],
+    "variant" : "2025"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Studio",
+    "models" : [
+      "Mac14,13"
+    ],
+    "name" : "Mac Studio (2023)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front and back of Mac Studio (2023).",
+      "Chip: M2 Max",
+      "Front ports: Two USB-C ports"
+    ],
+    "parts" : [
+      "MQH73xx/A"
+    ],
+    "variant" : "2023"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Studio",
+    "models" : [
+      "Mac14,14"
+    ],
+    "name" : "Mac Studio (2023)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front and back of Mac Studio (2023).",
+      "Chip: M2 Ultra",
+      "Front ports: Two Thunderbolt 4 ports"
+    ],
+    "parts" : [
+      "MQH63xx/A"
+    ],
+    "variant" : "2023"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Studio",
+    "models" : [
+      "Mac13,1"
+    ],
+    "name" : "Mac Studio (2022)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front and back of Mac Studio (2022).",
+      "Chip: M1 Max",
+      "Front ports: Two USB-C ports"
+    ],
+    "parts" : [
+      "MJMV2xx/a"
+    ],
+    "variant" : "2022"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Studio",
+    "models" : [
+      "Mac13,2"
+    ],
+    "name" : "Mac Studio (2022)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front and back of Mac Studio (2022).",
+      "Chip: M1 Ultra",
+      "Front ports: Two Thunderbolt 4 ports"
+    ],
+    "parts" : [
+      "MJMW3xx/a"
+    ],
+    "variant" : "2022"
+  },
+  {
+    "colors" : [
+      "Gold",
+      "Rose Gold",
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook",
+    "models" : [
+      "MacBook10,1"
+    ],
+    "name" : "MacBook (Retina, 12-inch, 2017)",
+    "notes" : [
+      "Beginning in 2018, this MacBook model is available in space gray, silver, and the gold color shown here."
+    ],
+    "parts" : [
+      "MNYF2XX/A",
+      "MNYG2XX/A",
+      "MNYH2XX/A",
+      "MNYJ2XX/A",
+      "MNYK2XX/A",
+      "MNYL2XX/A",
+      "MNYM2XX/A",
+      "MNYN2XX/A"
+    ],
+    "variant" : "Retina, 12-inch, 2017"
+  },
+  {
+    "colors" : [
+      "Gold",
+      "Rose Gold",
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook",
+    "models" : [
+      "MacBook9,1"
+    ],
+    "name" : "MacBook (Retina, 12-inch, Early 2016)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MLH72xx/A",
+      "MLH82xx/A",
+      "MLHA2xx/A",
+      "MLHC2xx/A",
+      "MLHE2xx/A",
+      "MLHF2xx/A",
+      "MMGL2xx/A",
+      "MMGM2xx/A"
+    ],
+    "variant" : "Retina, 12-inch, Early 2016"
+  },
+  {
+    "colors" : [
+      "Gold",
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook",
+    "models" : [
+      "MacBook8,1"
+    ],
+    "name" : "MacBook (Retina, 12-inch, Early 2015)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MF855xx/A",
+      "MF865xx/A",
+      "MJY32xx/A",
+      "MJY42xx/A",
+      "MK4M2xx/A",
+      "MK4N2xx/A"
+    ],
+    "variant" : "Retina, 12-inch, Early 2015"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook",
+    "models" : [
+      "MacBook7,1"
+    ],
+    "name" : "MacBook (13-inch, Mid 2010)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC516xx/A"
+    ],
+    "variant" : "13-inch, Mid 2010"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook",
+    "models" : [
+      "MacBook6,1"
+    ],
+    "name" : "MacBook (13-inch, Late 2009)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC207xx/A"
+    ],
+    "variant" : "13-inch, Late 2009"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook",
+    "models" : [
+      "MacBook5,2"
+    ],
+    "name" : "MacBook (13-inch, Mid 2009)",
+    "newestOS" : "OS X El Capitan 10.11.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC240xx/A"
+    ],
+    "variant" : "13-inch, Mid 2009"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook",
+    "models" : [
+      "MacBook5,2"
+    ],
+    "name" : "MacBook (13-inch, Early 2009)",
+    "newestOS" : "OS X El Capitan 10.11.6",
+    "parts" : [
+      "MB881xx/A"
+    ],
+    "variant" : "13-inch, Early 2009"
+  },
+  {
+    "colors" : [
+      "Midnight",
+      "Silver",
+      "Sky Blue",
+      "Starlight"
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "Mac17,4"
+    ],
+    "name" : "MacBook Air (15-inch, M5, 2026)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MDV94xx/A",
+      "MDVA4xx/A",
+      "MDVC4xx/A",
+      "MDVD4xx/A",
+      "MDVE4xx/A",
+      "MDVF4xx/A",
+      "MDVH4xx/A",
+      "MDVK4xx/A",
+      "MDVN4xx/A",
+      "MDVQ4xx/A",
+      "MDVT4xx/A",
+      "MDVU4xx/A"
+    ],
+    "variant" : "15-inch, M5, 2026"
+  },
+  {
+    "colors" : [
+      "Midnight",
+      "Silver",
+      "Sky Blue",
+      "Starlight"
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "Mac17,3"
+    ],
+    "name" : "MacBook Air (13-inch, M5, 2026)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MDH74xx/A",
+      "MDH84xx/A",
+      "MDHA4xx/A",
+      "MDHC4xx/A",
+      "MDHD4xx/A",
+      "MDHE4xx/A",
+      "MDHF4xx/A",
+      "MDHG4xx/A",
+      "MDHH4xx/A",
+      "MDHJ4xx/A",
+      "MDHK4xx/A"
+    ],
+    "variant" : "13-inch, M5, 2026"
+  },
+  {
+    "colors" : [
+      "Midnight",
+      "Silver",
+      "Sky Blue",
+      "Starlight"
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "Mac16,13"
+    ],
+    "name" : "MacBook Air (15-inch, M4, 2025)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front of MacBook Air (15-inch, M4, 2025)."
+    ],
+    "parts" : [
+      "MC6J4xx/A",
+      "MC6K4xx/A",
+      "MC6L4xx/A",
+      "MC7A4xx/A",
+      "MC7C4xx/A",
+      "MC7D4xx/A",
+      "MDG34xx/A",
+      "MDG84xx/A",
+      "MDG94xx/A",
+      "MW1G3xx/A",
+      "MW1H3xx/A",
+      "MW1J3xx/A",
+      "MW1K3xx/A",
+      "MW1L3xx/A",
+      "MW1M3xx/A"
+    ],
+    "variant" : "15-inch, M4, 2025"
+  },
+  {
+    "colors" : [
+      "Midnight",
+      "Silver",
+      "Sky Blue",
+      "Starlight"
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "Mac16,12"
+    ],
+    "name" : "MacBook Air (13-inch, M4, 2025)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front of MacBook Air (13-inch, M4, 2025)."
+    ],
+    "parts" : [
+      "MC654xx/A",
+      "MC6A4xx/A",
+      "MC6C4xx/A",
+      "MC6T4xx/A",
+      "MC6U4xx/A",
+      "MC6V4xx/A",
+      "MDG24xx/A",
+      "MDG54xx/A",
+      "MDG64xx/A",
+      "MW0W3xx/A",
+      "MW0X3xx/A",
+      "MW0Y3xx/A",
+      "MW103xx/A",
+      "MW123xx/A",
+      "MW133xx/A"
+    ],
+    "variant" : "13-inch, M4, 2025"
+  },
+  {
+    "colors" : [
+      "Midnight",
+      "Silver",
+      "Space Gray",
+      "Starlight"
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "Mac15,13"
+    ],
+    "name" : "MacBook Air (15-inch, M3, 2024)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front of MacBook Air (15-inch, M3, 2024)."
+    ],
+    "parts" : [
+      "MRYM3xx/A",
+      "MRYN3xx/A",
+      "MRYP3xx/A",
+      "MRYQ3xx/A",
+      "MRYR3xx/A",
+      "MRYT3xx/A",
+      "MRYU3xx/A",
+      "MRYV3xx/A",
+      "MXD13xx/A",
+      "MXD23xx/A",
+      "MXD33xx/A",
+      "MXD43xx/A"
+    ],
+    "variant" : "15-inch, M3, 2024"
+  },
+  {
+    "colors" : [
+      "Midnight",
+      "Silver",
+      "Space Gray",
+      "Starlight"
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "Mac15,12"
+    ],
+    "name" : "MacBook Air (13-inch, M3, 2024)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front of MacBook Air (13-inch, M3, 2024)."
+    ],
+    "parts" : [
+      "MRXN3xx/A",
+      "MRXP3xx/A",
+      "MRXQ3xx/A",
+      "MRXR3xx/A",
+      "MRXT3xx/A",
+      "MRXU3xx/A",
+      "MRXV3xx/A",
+      "MRXW3xx/A",
+      "MXCR3xx/A",
+      "MXCT3xx/A",
+      "MXCU3xx/A",
+      "MXCV3xx/A"
+    ],
+    "variant" : "13-inch, M3, 2024"
+  },
+  {
+    "colors" : [
+      "Midnight",
+      "Silver",
+      "Space Gray",
+      "Starlight"
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "Mac14,15"
+    ],
+    "name" : "MacBook Air (15-inch, M2, 2023)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front of MacBook Air (15-inch, M2, 2023)."
+    ],
+    "parts" : [
+      "MQKP3xx/A",
+      "MQKQ3xx/A",
+      "MQKR3xx/A",
+      "MQKT3xx/A",
+      "MQKU3xx/A",
+      "MQKV3xx/A",
+      "MQKW3xx/A",
+      "MQKX3xx/A"
+    ],
+    "variant" : "15-inch, M2, 2023"
+  },
+  {
+    "colors" : [
+      "Midnight",
+      "Silver",
+      "Space Gray",
+      "Starlight"
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "Mac14,2"
+    ],
+    "name" : "MacBook Air (M2, 2022)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MLXW3xx/A",
+      "MLXX3xx/A",
+      "MLXY3xx/A",
+      "MLY03xx/A",
+      "MLY13xx/A",
+      "MLY23xx/A",
+      "MLY33xx/A",
+      "MLY43xx/A"
+    ],
+    "variant" : "M2, 2022"
+  },
+  {
+    "colors" : [
+      "Gold",
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir10,1"
+    ],
+    "name" : "MacBook Air (M1, 2020)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MGN63xx/A",
+      "MGN73xx/A",
+      "MGN93xx/A",
+      "MGNA3xx/A",
+      "MGND3xx/A",
+      "MGNE3xx/A"
+    ],
+    "variant" : "M1, 2020"
+  },
+  {
+    "colors" : [
+      "Gold",
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir9,1"
+    ],
+    "name" : "MacBook Air (Retina, 13-inch, 2020)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MVH22xx/A",
+      "MVH42xx/A",
+      "MVH52xx/A",
+      "MWTJ2xx/A",
+      "MWTK2xx/A",
+      "MWTL2xx/A"
+    ],
+    "variant" : "Retina, 13-inch, 2020"
+  },
+  {
+    "colors" : [
+      "Gold",
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir8,2"
+    ],
+    "name" : "MacBook Air (Retina, 13-inch, 2019)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MVFH2xx/A",
+      "MVFJ2xx/A",
+      "MVFK2xx/A",
+      "MVFL2xx/A",
+      "MVFM2xx/A",
+      "MVFN2xx/A",
+      "MVH62xx/A",
+      "MVH82xx/A"
+    ],
+    "variant" : "Retina, 13-inch, 2019"
+  },
+  {
+    "colors" : [
+      "Gold",
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir8,1"
+    ],
+    "name" : "MacBook Air (Retina, 13-inch, 2018)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MRE82xx/A",
+      "MRE92xx/A",
+      "MREA2xx/A",
+      "MREC2xx/A",
+      "MREE2xx/A",
+      "MREF2xx/A",
+      "MUQT2xx/A",
+      "MUQU2xx/A",
+      "MUQV2xx/A"
+    ],
+    "variant" : "Retina, 13-inch, 2018"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir7,2"
+    ],
+    "name" : "MacBook Air (13-inch, 2017)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MQD32xx/A",
+      "MQD42xx/A",
+      "MQD52xx/A"
+    ],
+    "variant" : "13-inch, 2017"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir7,2"
+    ],
+    "name" : "MacBook Air (13-inch, Early 2015)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MJVE2xx/A",
+      "MJVG2xx/A",
+      "MMGF2xx/A",
+      "MMGG2xx/A"
+    ],
+    "variant" : "13-inch, Early 2015"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir7,1"
+    ],
+    "name" : "MacBook Air (11-inch, Early 2015)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MJVM2xx/A",
+      "MJVP2xx/A"
+    ],
+    "variant" : "11-inch, Early 2015"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir6,2"
+    ],
+    "name" : "MacBook Air (13-inch, Early 2014)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD760xx/B",
+      "MD761xx/B"
+    ],
+    "variant" : "13-inch, Early 2014"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir6,1"
+    ],
+    "name" : "MacBook Air (11-inch, Early 2014)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD711xx/B",
+      "MD712xx/B"
+    ],
+    "variant" : "11-inch, Early 2014"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir6,2"
+    ],
+    "name" : "MacBook Air (13-inch, Mid 2013)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD760xx/A",
+      "MD761xx/A"
+    ],
+    "variant" : "13-inch, Mid 2013"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir6,1"
+    ],
+    "name" : "MacBook Air (11-inch, Mid 2013)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD711xx/A",
+      "MD712xx/A"
+    ],
+    "variant" : "11-inch, Mid 2013"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir5,2"
+    ],
+    "name" : "MacBook Air (13-inch, Mid 2012)",
+    "newestOS" : "macOS Catalina 10.15.7",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD231xx/A",
+      "MD232xx/A"
+    ],
+    "variant" : "13-inch, Mid 2012"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir5,1"
+    ],
+    "name" : "MacBook Air (11-inch, Mid 2012)",
+    "newestOS" : "macOS Catalina 10.15.7",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD223xx/A",
+      "MD224xx/A"
+    ],
+    "variant" : "11-inch, Mid 2012"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir4,2"
+    ],
+    "name" : "MacBook Air (13-inch, Mid 2011)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC965xx/A",
+      "MC966xx/A"
+    ],
+    "variant" : "13-inch, Mid 2011"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir4,1"
+    ],
+    "name" : "MacBook Air (11-inch, Mid 2011)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC968xx/A",
+      "MC969xx/A"
+    ],
+    "variant" : "11-inch, Mid 2011"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir3,2"
+    ],
+    "name" : "MacBook Air (13-inch, Late 2010)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC503xx/A",
+      "MC504xx/A"
+    ],
+    "variant" : "13-inch, Late 2010"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir3,1"
+    ],
+    "name" : "MacBook Air (11-inch, Late 2010)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC505xx/A",
+      "MC506xx/A"
+    ],
+    "variant" : "11-inch, Late 2010"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Air",
+    "models" : [
+      "MacBookAir2,1"
+    ],
+    "name" : "MacBook Air (Mid 2009)",
+    "newestOS" : "OS X El Capitan 10.11.6",
+    "parts" : [
+      "MC233xx/A",
+      "MC234xx/A",
+      "MC505xx/A"
+    ],
+    "variant" : "Mid 2009"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Black"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "Mac17,7",
+      "Mac17,9"
+    ],
+    "name" : "MacBook Pro (14-inch, M5 Pro or M5 Max, 2026)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "This model has the M5 Pro or M5 Max chip and includes three Thunderbolt 5 ports."
+    ],
+    "parts" : [
+      "MGDN4xx/A",
+      "MGDP4xx/A",
+      "MGDQxx/A",
+      "MGDR4xx/A",
+      "MGDT4xx/A",
+      "MGDU4xx/A"
+    ],
+    "variant" : "14-inch, M5 Pro or M5 Max, 2026"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Black"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "Mac17,6",
+      "Mac17,8"
+    ],
+    "name" : "MacBook Pro (16-inch, M5 Pro or M5 Max, 2026)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "This model has the M5 Pro or M5 Max chip and includes three Thunderbolt 5 ports."
+    ],
+    "parts" : [
+      "MGE44xx/A",
+      "MGE64xx/A",
+      "MGE74xx/A",
+      "MGE94xx/A",
+      "MGEA4xx/A",
+      "MGEC4xx/A",
+      "MGED4xx/A",
+      "MGEE4xx/A"
+    ],
+    "variant" : "16-inch, M5 Pro or M5 Max, 2026"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Black"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "Mac17,2"
+    ],
+    "name" : "MacBook Pro (14-inch, M5, 2025)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MDE04xx/A",
+      "MDE14xx/A",
+      "MDE34xx/A",
+      "MDE44xx/A",
+      "MDE54xx/A",
+      "MDE64xx/A"
+    ],
+    "variant" : "14-inch, M5, 2025"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Black"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "Mac16,1"
+    ],
+    "name" : "MacBook Pro (14-inch, 2024)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "This model has the M4 chip and includes three Thunderbolt 4 ports."
+    ],
+    "parts" : [
+      "MCX04xx/A",
+      "MCX14xx/A",
+      "MW2U3xx/A",
+      "MW2V3xx/A",
+      "MW2W3xx/A",
+      "MW2X3xx/A",
+      "MXCM3xx/A",
+      "MXCN3xx/A"
+    ],
+    "variant" : "14-inch, 2024"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Black"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "Mac16,6",
+      "Mac16,8"
+    ],
+    "name" : "MacBook Pro (14-inch, 2024)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "This model has the M4 Pro or M4 Max chip and includes three Thunderbolt 4 ports."
+    ],
+    "parts" : [
+      "MX2E3xx/A",
+      "MX2F3xx/A",
+      "MX2G3xx/A",
+      "MX2H3xx/A",
+      "MX2J3xx/A",
+      "MX2K3xx/A",
+      "MXE63xx/A"
+    ],
+    "variant" : "14-inch, 2024"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Black"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "Mac16,5",
+      "Mac16,7"
+    ],
+    "name" : "MacBook Pro (16-inch, 2024)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "This model has the M4 Pro or M4 Max chip and includes three Thunderbolt 4 ports."
+    ],
+    "parts" : [
+      "MX2T3xx/A",
+      "MX2U3xx/A",
+      "MX2V3xx/A",
+      "MX2W3xx/A",
+      "MX2X3xx/A",
+      "MX2Y3xx/A",
+      "MX303xx/A",
+      "MX313xx/A"
+    ],
+    "variant" : "16-inch, 2024"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "Mac15,3"
+    ],
+    "name" : "MacBook Pro (14-inch, Nov 2023)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "This model has the M3 chip and includes two Thunderbolt / USB 4 ports."
+    ],
+    "parts" : [
+      "MR7J3xx/A",
+      "MR7K3xx/A",
+      "MRX23xx/A",
+      "MTL73xx/A",
+      "MTL83xx/A",
+      "MTLC3xx/A",
+      "MXE03xx/A",
+      "MXE13xx/A"
+    ],
+    "variant" : "14-inch, Nov 2023"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Black"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "Mac15,10",
+      "Mac15,6",
+      "Mac15,8"
+    ],
+    "name" : "MacBook Pro (14-inch, Nov 2023)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "This model has the M3 Pro or M3 Max chip and includes three Thunderbolt 4 ports."
+    ],
+    "parts" : [
+      "FRX33xx/A",
+      "FRX43xx/A",
+      "FRX54xx/A",
+      "FRX63xx/A",
+      "FRX73xx/A",
+      "FRX83xx/A",
+      "MRX33xx/A",
+      "MRX43xx/A",
+      "MRX53xx/A",
+      "MRX63xx/A",
+      "MRX73xx/A",
+      "MRX83xx/A"
+    ],
+    "variant" : "14-inch, Nov 2023"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Black"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "Mac15,11",
+      "Mac15,7",
+      "Mac15,9"
+    ],
+    "name" : "MacBook Pro (16-inch, Nov 2023)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "This model has the M3 Pro or M3 Max chip and includes three Thunderbolt 4 ports."
+    ],
+    "parts" : [
+      "FRW13xx/A",
+      "FRW23xx/A",
+      "FRW33xx/A",
+      "FRW43xx/A",
+      "FRW63xx/A",
+      "FRW73xx/A",
+      "FUW63xx/A",
+      "FUW73xx/A",
+      "MRW13xx/A",
+      "MRW23xx/A",
+      "MRW33xx/A",
+      "MRW43xx/A",
+      "MRW63xx/A",
+      "MRW73xx/A"
+    ],
+    "variant" : "16-inch, Nov 2023"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "Mac14,5",
+      "Mac14,9"
+    ],
+    "name" : "MacBook Pro (14-inch, 2023)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MPHE3xx/A",
+      "MPHF3xx/A",
+      "MPHG3xx/A",
+      "MPHH3xx/A",
+      "MPHJ3xx/A",
+      "MPHK3xx/A"
+    ],
+    "variant" : "14-inch, 2023"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "Mac14,10",
+      "Mac14,6"
+    ],
+    "name" : "MacBook Pro (16-inch, 2023)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MNW83xx/A",
+      "MNW93xx/A",
+      "MNWC3xx/A",
+      "MNWD3xx/A",
+      "MNWF3xx/A",
+      "MNWG3xx/A",
+      "MNWJ3xx/A",
+      "MNWK3xx/A"
+    ],
+    "variant" : "16-inch, 2023"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "Mac14,7"
+    ],
+    "name" : "MacBook Pro (13-inch, M2, 2022)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MNEH3xx/A",
+      "MNEJ3xx/A",
+      "MNEP3xx/A",
+      "MNEQ3xx/A"
+    ],
+    "variant" : "13-inch, M2, 2022"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro18,3",
+      "MacBookPro18,4"
+    ],
+    "name" : "MacBook Pro (14-inch, 2021)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MKGP3xx/A",
+      "MKGQ3xx/A",
+      "MKGR3xx/A",
+      "MKGT3xx/A"
+    ],
+    "variant" : "14-inch, 2021"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro18,1",
+      "MacBookPro18,2"
+    ],
+    "name" : "MacBook Pro (16-inch, 2021)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MK183xx/A",
+      "MK193xx/A",
+      "MK1A3xx/A",
+      "MK1E3xx/A",
+      "MK1F3xx/A",
+      "MK1H3xx/A"
+    ],
+    "variant" : "16-inch, 2021"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro17,1"
+    ],
+    "name" : "MacBook Pro (13-inch, M1, 2020)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MYD83xx/A",
+      "MYD92xx/A",
+      "MYDA2xx/A",
+      "MYDC2xx/A"
+    ],
+    "variant" : "13-inch, M1, 2020"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro16,3"
+    ],
+    "name" : "MacBook Pro (13-inch, 2020, Two Thunderbolt 3 ports)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MXK32xx/A",
+      "MXK52xx/A",
+      "MXK62xx/A",
+      "MXK72xx/A"
+    ],
+    "variant" : "13-inch, 2020, Two Thunderbolt 3 ports"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro16,2"
+    ],
+    "name" : "MacBook Pro (13-inch, 2020, Four Thunderbolt 3 ports)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MWP42xx/A",
+      "MWP52xx/A",
+      "MWP62xx/A",
+      "MWP72xx/A",
+      "MWP82xx/A"
+    ],
+    "variant" : "13-inch, 2020, Four Thunderbolt 3 ports"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro16,1",
+      "MacBookPro16,4"
+    ],
+    "name" : "MacBook Pro (16-inch, 2019)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MVVJ2xx/A",
+      "MVVK2xx/A",
+      "MVVL2xx/A",
+      "MVVM2xx/A"
+    ],
+    "variant" : "16-inch, 2019"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro15,4"
+    ],
+    "name" : "MacBook Pro (13-inch, 2019, Two Thunderbolt 3 ports)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MUHN2xx/A",
+      "MUHP2xx/a",
+      "MUHQ2xx/A",
+      "MUHR2xx/A",
+      "MUHR2xx/B"
+    ],
+    "variant" : "13-inch, 2019, Two Thunderbolt 3 ports"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro15,1",
+      "MacBookPro15,3"
+    ],
+    "name" : "MacBook Pro (15-inch, 2019)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MV902xx/A",
+      "MV912xx/A",
+      "MV922xx/A",
+      "MV932xx/A",
+      "MV942xx/A",
+      "MV952xx/A"
+    ],
+    "variant" : "15-inch, 2019"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro15,2"
+    ],
+    "name" : "MacBook Pro (13-inch, 2019, Four Thunderbolt 3 ports)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MV962xx/A",
+      "MV972xx/A",
+      "MV982xx/A",
+      "MV992xx/A",
+      "MV9A2xx/A"
+    ],
+    "variant" : "13-inch, 2019, Four Thunderbolt 3 ports"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro15,1"
+    ],
+    "name" : "MacBook Pro (15-inch, 2018)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MR932xx/A",
+      "MR942xx/A",
+      "MR952xx/A",
+      "MR962xx/A",
+      "MR972xx/A",
+      "MUQH2xx/A"
+    ],
+    "variant" : "15-inch, 2018"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro15,2"
+    ],
+    "name" : "MacBook Pro (13-inch, 2018, Four Thunderbolt 3 ports)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MR9Q2xx/A",
+      "MR9R2xx/A",
+      "MR9T2xx/A",
+      "MR9U2xx/A",
+      "MR9V2xx/A"
+    ],
+    "variant" : "13-inch, 2018, Four Thunderbolt 3 ports"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro14,3"
+    ],
+    "name" : "MacBook Pro (15-inch, 2017)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MPTR2xx/A",
+      "MPTT2xx/A",
+      "MPTU2xx/A",
+      "MPTV2xx/A",
+      "MPTW2xx/A",
+      "MPTX2xx/A"
+    ],
+    "variant" : "15-inch, 2017"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro14,2"
+    ],
+    "name" : "MacBook Pro (13-inch, 2017, Four Thunderbolt 3 ports)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MPXV2xx/A",
+      "MPXW2xx/A",
+      "MPXX2xx/A",
+      "MPXY2xx/A",
+      "MQ002xx/A",
+      "MQ012xx/A"
+    ],
+    "variant" : "13-inch, 2017, Four Thunderbolt 3 ports"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro14,1"
+    ],
+    "name" : "MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MPXQ2xx/A",
+      "MPXR2xx/A",
+      "MPXT2xx/A",
+      "MPXU2xx/A"
+    ],
+    "variant" : "13-inch, 2017, Two Thunderbolt 3 ports"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro13,3"
+    ],
+    "name" : "MacBook Pro (15-inch, 2016)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MLH32xx/A",
+      "MLH42xx/A",
+      "MLH52xx/A",
+      "MLW72xx/A",
+      "MLW82xx/A",
+      "MLW92xx/A"
+    ],
+    "variant" : "15-inch, 2016"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro13,2"
+    ],
+    "name" : "MacBook Pro (13-inch, 2016, Four Thunderbolt 3 ports)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MLH12xx/A",
+      "MLVP2xx/A",
+      "MNQF2xx/A",
+      "MNQG2xx/A",
+      "MPDK2xx/A",
+      "MPDL2xx/A"
+    ],
+    "variant" : "13-inch, 2016, Four Thunderbolt 3 ports"
+  },
+  {
+    "colors" : [
+      "Silver",
+      "Space Gray"
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro13,1"
+    ],
+    "name" : "MacBook Pro (13-inch, 2016, Two Thunderbolt 3 ports)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MLL42xx/A",
+      "MLUQ2xx/A"
+    ],
+    "variant" : "13-inch, 2016, Two Thunderbolt 3 ports"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro11,4",
+      "MacBookPro11,5"
+    ],
+    "name" : "MacBook Pro (Retina, 15-inch, Mid 2015)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MJLQ2xx/A",
+      "MJLT2xx/A",
+      "MJLU2xx/A"
+    ],
+    "variant" : "Retina, 15-inch, Mid 2015"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro12,1"
+    ],
+    "name" : "MacBook Pro (Retina, 13-inch, Early 2015)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MF839xx/A",
+      "MF840xx/A",
+      "MF841xx/A",
+      "MF843xx/A"
+    ],
+    "variant" : "Retina, 13-inch, Early 2015"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro11,2",
+      "MacBookPro11,3"
+    ],
+    "name" : "MacBook Pro (Retina, 15-inch, Mid 2014)",
+    "newestOS" : "macOS Big Sur 11.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MGXA2xx/A",
+      "MGXC2xx/A"
+    ],
+    "variant" : "Retina, 15-inch, Mid 2014"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro11,1"
+    ],
+    "name" : "MacBook Pro (Retina, 13-inch, Mid 2014)",
+    "newestOS" : "macOS Big Sur 11.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MGX72xx/A",
+      "MGX82xx/A",
+      "MGX92xx/A"
+    ],
+    "variant" : "Retina, 13-inch, Mid 2014"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro11,2",
+      "MacBookPro11,3"
+    ],
+    "name" : "MacBook Pro (Retina, 15-inch, Late 2013)",
+    "newestOS" : "macOS Big Sur 11.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "ME293xx/A",
+      "ME294xx/A"
+    ],
+    "variant" : "Retina, 15-inch, Late 2013"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro11,1"
+    ],
+    "name" : "MacBook Pro (Retina, 13-inch, Late 2013)",
+    "newestOS" : "macOS Big Sur 11.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "ME864xx/A",
+      "ME865xx/A",
+      "ME866xx/A"
+    ],
+    "variant" : "Retina, 13-inch, Late 2013"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro10,1"
+    ],
+    "name" : "MacBook Pro (Retina, 15-inch, Early 2013)",
+    "newestOS" : "macOS Catalina 10.15.7",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "ME664xx/A",
+      "ME665xx/A"
+    ],
+    "variant" : "Retina, 15-inch, Early 2013"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro10,2"
+    ],
+    "name" : "MacBook Pro (Retina, 13-inch, Early 2013)",
+    "newestOS" : "macOS Catalina 10.15.7",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD212xx/A",
+      "ME662xx/A"
+    ],
+    "variant" : "Retina, 13-inch, Early 2013"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro10,2"
+    ],
+    "name" : "MacBook Pro (Retina, 13-inch, Late 2012)",
+    "newestOS" : "macOS Catalina 10.15.7",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD212xx/A",
+      "MD213xx/A"
+    ],
+    "variant" : "Retina, 13-inch, Late 2012"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro10,1"
+    ],
+    "name" : "MacBook Pro (Retina, 15-inch, Mid 2012)",
+    "newestOS" : "macOS Catalina 10.15.7",
+    "notes" : [
+
+    ],
+    "parts" : [
+
+    ],
+    "variant" : "Retina, 15-inch, Mid 2012"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro9,1"
+    ],
+    "name" : "MacBook Pro (15-inch, Mid 2012)",
+    "newestOS" : "macOS Catalina 10.15.7",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD103xx/A",
+      "MD104xx/A"
+    ],
+    "variant" : "15-inch, Mid 2012"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro9,2"
+    ],
+    "name" : "MacBook Pro (13-inch, Mid 2012)",
+    "newestOS" : "macOS Catalina 10.15.7",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD101xx/A",
+      "MD102xx/A"
+    ],
+    "variant" : "13-inch, Mid 2012"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro8,3"
+    ],
+    "name" : "MacBook Pro (17-inch, Late 2011)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD311xx/A"
+    ],
+    "variant" : "17-inch, Late 2011"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro8,2"
+    ],
+    "name" : "MacBook Pro (15-inch, Late 2011)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD318xx/A",
+      "MD322xx/A"
+    ],
+    "variant" : "15-inch, Late 2011"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro8,1"
+    ],
+    "name" : "MacBook Pro (13-inch, Late 2011)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD313xx/A",
+      "MD314xx/A"
+    ],
+    "variant" : "13-inch, Late 2011"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro8,3"
+    ],
+    "name" : "MacBook Pro (17-inch, Early 2011)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC725xx/A"
+    ],
+    "variant" : "17-inch, Early 2011"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro8,2"
+    ],
+    "name" : "MacBook Pro (15-inch, Early 2011)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC721xx/A",
+      "MC723xx/A"
+    ],
+    "variant" : "15-inch, Early 2011"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro8,1"
+    ],
+    "name" : "MacBook Pro (13-inch, Early 2011)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC700xx/A",
+      "MC724xx/A"
+    ],
+    "variant" : "13-inch, Early 2011"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro6,1"
+    ],
+    "name" : "MacBook Pro (17-inch, Mid 2010)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC024xx/A"
+    ],
+    "variant" : "17-inch, Mid 2010"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro6,2"
+    ],
+    "name" : "MacBook Pro (15-inch, Mid 2010)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC371xx/A",
+      "MC372xx/A",
+      "MC373xx/A"
+    ],
+    "variant" : "15-inch, Mid 2010"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro7,1"
+    ],
+    "name" : "MacBook Pro (13-inch, Mid 2010)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC374xx/A",
+      "MC375xx/A"
+    ],
+    "variant" : "13-inch, Mid 2010"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro5,2"
+    ],
+    "name" : "MacBook Pro (17-inch, Mid 2009)",
+    "newestOS" : "OS X El Capitan 10.11.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC226xx/A"
+    ],
+    "variant" : "17-inch, Mid 2009"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro5,3"
+    ],
+    "name" : "MacBook Pro (15-inch, Mid 2009)",
+    "newestOS" : "OS X El Capitan 10.11.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MB985xx/A",
+      "MB986xx/A"
+    ],
+    "variant" : "15-inch, Mid 2009"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro5,3"
+    ],
+    "name" : "MacBook Pro (15-inch, 2.53GHz, Mid 2009)",
+    "newestOS" : "OS X El Capitan 10.11.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC118xx/A"
+    ],
+    "variant" : "15-inch, 2.53GHz, Mid 2009"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro5,5"
+    ],
+    "name" : "MacBook Pro (13-inch, Mid 2009)",
+    "newestOS" : "OS X El Capitan 10.11.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MB990xx/A",
+      "MB991xx/A"
+    ],
+    "variant" : "13-inch, Mid 2009"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro5,2"
+    ],
+    "name" : "MacBook Pro (17-inch, Early 2009)",
+    "newestOS" : "OS X El Capitan 10.11.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MB604xx/A"
+    ],
+    "variant" : "17-inch, Early 2009"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro5,1"
+    ],
+    "name" : "MacBook Pro (15-inch, Late 2008)",
+    "newestOS" : "OS X El Capitan 10.11.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MB470xx/A",
+      "MB471xx/A"
+    ],
+    "variant" : "15-inch, Late 2008"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro4,1"
+    ],
+    "name" : "MacBook Pro (17-inch, Early 2008)",
+    "newestOS" : "OS X El Capitan 10.11.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MB166xx/A"
+    ],
+    "variant" : "17-inch, Early 2008"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "MacBook Pro",
+    "models" : [
+      "MacBookPro4,1"
+    ],
+    "name" : "MacBook Pro (15-inch, Early 2008)",
+    "newestOS" : "OS X El Capitan 10.11.6",
+    "parts" : [
+      "MB133xx/A",
+      "MB134xx/A"
+    ],
+    "variant" : "15-inch, Early 2008"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac mini",
+    "models" : [
+      "Mac18,5"
+    ],
+    "name" : "Mac mini (M6, 2026)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MHQK4xx/A",
+      "MHQL4xx/A",
+      "MHQM4xx/A",
+      "MHQV4xx/A"
+    ],
+    "variant" : "M6, 2026"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac mini",
+    "models" : [
+      "Mac17,16"
+    ],
+    "name" : "Mac mini (M5 Pro, 2026)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MHQN4xx/A",
+      "MHQU4xx/A"
+    ],
+    "variant" : "M5 Pro, 2026"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac mini",
+    "models" : [
+      "Mac16,10",
+      "Mac16,11"
+    ],
+    "name" : "Mac mini (2024)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "Front and back of Mac mini (2024)."
+    ],
+    "parts" : [
+      "MCX44xx/A",
+      "MCYT4xx/A",
+      "MDAP4xx/A",
+      "MDAQ4xx/A",
+      "MDAY4xx/A",
+      "MU9D3xx/A",
+      "MU9E3xx/A"
+    ],
+    "variant" : "2024"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac mini",
+    "models" : [
+      "Mac14,3"
+    ],
+    "name" : "Mac mini (2023)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "This model has the M2 chip and includes two Thunderbolt 4 ports."
+    ],
+    "parts" : [
+      "MMFJ3xx/A",
+      "MMFK3xx/A"
+    ],
+    "variant" : "2023"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac mini",
+    "models" : [
+      "Mac14,12"
+    ],
+    "name" : "Mac mini (2023)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "This model has the M2 Pro chip and includes four Thunderbolt 4 ports."
+    ],
+    "parts" : [
+      "MNH73xx/A"
+    ],
+    "variant" : "2023"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac mini",
+    "models" : [
+      "Macmini9,1"
+    ],
+    "name" : "Mac mini (M1, 2020)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MGNR3xx/A",
+      "MGNT3xx/A"
+    ],
+    "variant" : "M1, 2020"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac mini",
+    "models" : [
+      "Macmini8,1"
+    ],
+    "name" : "Mac mini (2018)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MRTR2xx/A",
+      "MRTT2xx/A",
+      "MXNF2xx/A",
+      "MXNG2xx/A"
+    ],
+    "variant" : "2018"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac mini",
+    "models" : [
+      "Macmini7,1"
+    ],
+    "name" : "Mac mini (Late 2014)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MGEM2xx/A",
+      "MGEN2xx/A",
+      "MGEQ2xx/A"
+    ],
+    "variant" : "Late 2014"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac mini",
+    "models" : [
+      "Macmini6,1; Macmini6,2"
+    ],
+    "name" : "Mac mini (Late 2012)",
+    "newestOS" : "macOS Catalina 10.15.7",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD387xx/A; MD388xx/A",
+      "MD389xx/A"
+    ],
+    "variant" : "Late 2012"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac mini",
+    "models" : [
+      "Macmini5,1; Macmini5,2"
+    ],
+    "name" : "Mac mini (Mid 2011)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC815xx/A; MC816xx/A",
+      "MC936xx/A"
+    ],
+    "variant" : "Mid 2011"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac mini",
+    "models" : [
+      "Macmini4,1"
+    ],
+    "name" : "Mac mini (Mid 2010)",
+    "newestOS" : "macOS High Sierra 10.13.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC270xx/A",
+      "MC438xx/A"
+    ],
+    "variant" : "Mid 2010"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac mini",
+    "models" : [
+      "Macmini3,1"
+    ],
+    "name" : "Mac mini (Late 2009)",
+    "newestOS" : "OS X El Capitan 10.11.6",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC238xx/A",
+      "MC239xx/A",
+      "MC408xx/A"
+    ],
+    "variant" : "Late 2009"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac mini",
+    "models" : [
+      "Macmini3,1"
+    ],
+    "name" : "Mac mini (Early 2009)",
+    "newestOS" : "OS X El Capitan 10.11.6",
+    "parts" : [
+      "MB463xx/A",
+      "MB464xx/A"
+    ],
+    "variant" : "Early 2009"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Pro",
+    "models" : [
+      "Mac14,8"
+    ],
+    "name" : "Mac Pro (2023)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "id-mac-pro-2019"
+    ],
+    "parts" : [
+
+    ],
+    "variant" : "2023"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Pro",
+    "models" : [
+      "Mac14,8"
+    ],
+    "name" : "Mac Pro (Rack, 2023)",
+    "newestOS" : "macOS 27 Golden Gate",
+    "notes" : [
+      "id-mac-pro-2019-rack"
+    ],
+    "parts" : [
+
+    ],
+    "variant" : "Rack, 2023"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Pro",
+    "models" : [
+      "MacPro7,1"
+    ],
+    "name" : "Mac Pro (2019)",
+    "notes" : [
+
+    ],
+    "parts" : [
+
+    ],
+    "variant" : "2019"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Pro",
+    "models" : [
+      "MacPro7,1"
+    ],
+    "name" : "Mac Pro (Rack, 2019)",
+    "notes" : [
+
+    ],
+    "parts" : [
+
+    ],
+    "variant" : "Rack, 2019"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Pro",
+    "models" : [
+      "MacPro6,1"
+    ],
+    "name" : "Mac Pro (Late 2013)",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD878xx/A",
+      "ME253xx/A"
+    ],
+    "variant" : "Late 2013"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Pro",
+    "models" : [
+      "MacPro5,1"
+    ],
+    "name" : "Mac Pro (Mid 2012)",
+    "newestOS" : "macOS Mojave 10.14.6.*",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MD770xx/A",
+      "MD771xx/A"
+    ],
+    "variant" : "Mid 2012"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Pro Server",
+    "models" : [
+      "MacPro5,1"
+    ],
+    "name" : "Mac Pro Server (Mid 2012)",
+    "newestOS" : "macOS Mojave 10.14.6.*",
+    "notes" : [
+      "To install macOS Mojave on Mac Pro models from 2012, a Metal-capable graphics card is required."
+    ],
+    "parts" : [
+      "MD772xx/A"
+    ],
+    "variant" : "Mid 2012"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Pro",
+    "models" : [
+      "MacPro5,1"
+    ],
+    "name" : "Mac Pro (Mid 2010)",
+    "newestOS" : "macOS Mojave 10.14.6.*",
+    "notes" : [
+
+    ],
+    "parts" : [
+      "MC250xx/A",
+      "MC560xx/A",
+      "MC561xx/A"
+    ],
+    "variant" : "Mid 2010"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Pro Server",
+    "models" : [
+      "MacPro5,1"
+    ],
+    "name" : "Mac Pro Server (Mid 2010)",
+    "newestOS" : "macOS Mojave 10.14.6.*",
+    "notes" : [
+      "To install macOS Mojave on Mac Pro models from 2010, a Metal-capable graphics card is required."
+    ],
+    "parts" : [
+      "MC915xx/A"
+    ],
+    "variant" : "Mid 2010"
+  },
+  {
+    "colors" : [
+
+    ],
+    "kind" : "Mac Pro",
+    "models" : [
+      "MacPro4,1"
+    ],
+    "name" : "Mac Pro (Early 2009)",
+    "newestOS" : "OS X El Capitan 10.11.6",
+    "parts" : [
+      "MB535xx/A",
+      "MB871xx/A"
+    ],
+    "variant" : "Early 2009"
+  }
+]
