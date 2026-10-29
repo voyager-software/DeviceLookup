@@ -25,14 +25,18 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
         self.family = Family(modelIdentifier: modelIdentifier)
         self.isSimulator = isSimulator
 
-        if let entry = DeviceTable.entries[modelIdentifier] {
+        // Only look in the data that can hold this family, so each platform decodes one file.
+        let lookInDevices = self.family != .mac
+        let lookInMacs = self.family == .mac || self.family == .unknown
+
+        if lookInDevices, let entry = DeviceTable.entries[modelIdentifier] {
             self.isKnown = true
             self.modelName = entry.name
             self.chip = chip ?? entry.chip
             self.diagonal = entry.diagonal
             self.hasCellular = self.family == .phone || entry.cellular == true
         }
-        else if let mac = Mac.find(model: modelIdentifier) {
+        else if lookInMacs, let mac = Mac.find(model: modelIdentifier) {
             self.isKnown = true
             self.modelName = mac.name
             self.chip = chip

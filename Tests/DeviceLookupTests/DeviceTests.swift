@@ -148,6 +148,16 @@ struct MacTests {
         #expect(Mac.find(model: "iMac21,2")?.name == "iMac (24-inch, M1, 2021)")
     }
 
+    /// `Device` looks a `.mac` identifier up only in the Mac data, and anything else only in the device data.
+    @Test func `families match the data they are looked up in`() {
+        for model in Mac.all.flatMap(\.models) {
+            #expect(Device.Family(modelIdentifier: model) == .mac, "\(model)")
+        }
+        for identifier in DeviceTable.entries.keys {
+            #expect(Device.Family(modelIdentifier: identifier) != .mac, "\(identifier)")
+        }
+    }
+
     @Test func `no unknown kinds`() {
         #expect(!Mac.all.isEmpty)
         #expect(Mac.all.allSatisfy { $0.kind != .unknown })
