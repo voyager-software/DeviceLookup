@@ -233,6 +233,20 @@
   },
   {
     "kind": "Mac Studio",
+    "name": "Mac Studio (M5 Max, 2026)",
+    "ids": [
+      "Mac17,14"
+    ]
+  },
+  {
+    "kind": "Mac Studio",
+    "name": "Mac Studio (M5 Ultra, 2026)",
+    "ids": [
+      "Mac17,15"
+    ]
+  },
+  {
+    "kind": "Mac Studio",
     "name": "Mac Studio (2025)",
     "ids": [
       "Mac16,9"
