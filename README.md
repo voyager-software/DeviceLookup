@@ -8,9 +8,11 @@ Device details are data (`Resources/devices.json`, `Resources/all-macs.json`), n
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/voyager-software/DeviceLookup.git", from: "2026.10.0"),
+    .package(url: "https://github.com/voyager-software/DeviceLookup.git", from: "2026.10.4"),
 ]
 ```
+
+Requires Swift 6 (Xcode 16 or later) and iOS 15, tvOS 15, watchOS 9, macOS 12 or Mac Catalyst 15.
 
 ## Usage
 
@@ -55,4 +57,6 @@ Mac data comes from the MacModelParser project. After regenerating it there, run
 | `device.isOneOf([.appleTVHD, ...])` | compare `device.modelIdentifier` |
 | `device.name`, `.systemName`, `.model` (`UIDevice`) | not provided; use `UIDevice` on the main actor |
 
-Chip and screen-size values were first imported from [DeviceKit](https://github.com/devicekit/DeviceKit) (MIT).
+## License
+
+MIT. See [LICENSE](LICENSE), which also carries the license of [DeviceKit](https://github.com/devicekit/DeviceKit), where the chip and screen-size values were first imported from.
