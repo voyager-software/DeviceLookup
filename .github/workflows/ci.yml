@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # swift-tools-version 6.0 promises Xcode 16 support. The tests use Swift 6.2 syntax, so only the library builds here.
+  oldest-xcode:
+    name: Build (Xcode 16.0)
+    runs-on: macos-15
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_16.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift build
+
+  test:
+    name: Test (${{ matrix.platform }})
+    runs-on: macos-26
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [macOS, iOS, tvOS, watchOS, Mac Catalyst]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test
+        shell: bash
+        run: |
+          set -euo pipefail
+          # The id of the first available simulator whose runtime matches, e.g. "iOS".
+          simulator() {
+            xcrun simctl list devices available --json | python3 -c '
+          import json, sys
+          prefix = "com.apple.CoreSimulator.SimRuntime." + sys.argv[1] + "-"
+          devices = json.load(sys.stdin)["devices"]
+          runtimes = sorted((r for r in devices if r.startswith(prefix) and devices[r]), reverse=True)
+          print(devices[runtimes[0]][0]["udid"])
+          ' "$1"
+          }
+          case "${{ matrix.platform }}" in
+            macOS) swift test ;;
+            iOS) xcodebuild test -scheme DeviceLookup -destination "id=$(simulator iOS)" -quiet ;;
+            tvOS) xcodebuild test -scheme DeviceLookup -destination "id=$(simulator tvOS)" -quiet ;;
+            # watchOS simulators aren't always installed, so build the tests rather than run them.
+            watchOS) xcodebuild build-for-testing -scheme DeviceLookup -destination "generic/platform=watchOS Simulator" -quiet ;;
+            "Mac Catalyst") xcodebuild test -scheme DeviceLookup -destination "platform=macOS,variant=Mac Catalyst" -quiet ;;
+          esac

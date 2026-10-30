@@ -1,5 +1,9 @@
 # DeviceLookup
 
+[![CI](https://github.com/voyager-software/DeviceLookup/actions/workflows/ci.yml/badge.svg)](https://github.com/voyager-software/DeviceLookup/actions/workflows/ci.yml)
+[![Swift versions](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fvoyager-software%2FDeviceLookup%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/voyager-software/DeviceLookup)
+[![Platforms](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fvoyager-software%2FDeviceLookup%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/voyager-software/DeviceLookup)
+
 Names, chips, screen sizes and families for iPhone, iPad, iPod touch, Apple TV, Apple Watch and Mac model identifiers, plus the running device's OS, memory and storage details. Replaces DeviceKit and MacLookup.
 
 Device details are data (`Resources/devices.json`, `Resources/all-macs.json`), not code, so adding a device is a JSON edit. A device missing from the data still resolves: its family comes from the identifier prefix and its name falls back to the identifier.
