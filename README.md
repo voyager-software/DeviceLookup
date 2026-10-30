@@ -41,11 +41,11 @@ Mac.find(model: "Mac14,7")?.name                // "MacBook Pro (13-inch, M2, 20
 
 DeviceLookup is maintained by [Voyager Software](https://github.com/voyager-software) and used in its own shipping apps, including PocketLion, so new devices matter to us as much as to you.
 
-New devices are added once the Xcode release that supports them is out, which is usually around the announcement. The aim is a release within a week. If a device is missing, [open an issue](https://github.com/voyager-software/DeviceLookup/issues) with its model identifier. Until it's added, the device still gets the right `family`, and its `modelName` is the identifier.
+New devices are added once the Xcode release that supports them is out, which is usually around the announcement. A weekly workflow checks the newest Xcode on GitHub's runners, betas included, and opens a pull request when it lists devices that aren't in the data yet. The aim is a release within a week. If a device is missing, [open an issue](https://github.com/voyager-software/DeviceLookup/issues) with its model identifier. Until it's added, the device still gets the right `family`, and its `modelName` is the identifier.
 
 ## Updating the data
 
-When a new Xcode ships, run:
+The [Update devices](.github/workflows/update-devices.yml) workflow runs the update script every Monday and opens a pull request with whatever it adds, plus its report of what to fill in. You can also run it from the Actions tab, or locally when a new Xcode ships:
 
 ```sh
 Scripts/update-devices.py            # report what's new or different

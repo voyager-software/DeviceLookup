@@ -1,0 +1,79 @@
+name: Update devices
+
+# Checks the newest Xcode on GitHub's runners, betas and release candidates included, for device
+# identifiers missing from devices.json, and opens a pull request that adds them. The report in the
+# pull request lists what still needs filling in by hand: chips, diagonals, cellular and watch case sizes.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays, 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-devices
+
+jobs:
+  update:
+    runs-on: xcode-27
+    env:
+      BRANCH: update-devices
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Find the newest Xcode
+        run: |
+          xcode=$(ls -d /Applications/Xcode_[0-9]*.app | sort -V | tail -1)
+          echo "XCODE=$xcode" >> "$GITHUB_ENV"
+          echo "Using $xcode"
+
+      # Build on an open pull request rather than replace it, so values filled in there are kept.
+      # The script never overwrites a value that's already in devices.json.
+      - name: Check out the open pull request
+        run: |
+          if [ "$(gh pr view "$BRANCH" --json state --jq .state 2>/dev/null)" = "OPEN" ]; then
+            git checkout "$BRANCH"
+            echo "PR_OPEN=1" >> "$GITHUB_ENV"
+          fi
+
+      - name: Update devices.json
+        run: |
+          python3 Scripts/update-devices.py --write --xcode "$XCODE" | tee "$RUNNER_TEMP/report.txt"
+
+      - name: Open or update the pull request
+        run: |
+          if git diff --quiet -- Sources/DeviceLookup/Resources/devices.json; then
+            echo "Nothing new in $(basename "$XCODE" .app)."
+            exit 0
+          fi
+
+          added=$(grep -c '^NEW ' "$RUNNER_TEMP/report.txt" || true)
+          {
+            echo "Xcode lists device identifiers that devices.json doesn't have. This adds them with their names and SoC codes."
+            echo
+            echo "Before merging, fill in what the report lists under TO FILL, and append the case size to new watch names. The tests fail until every device has a chip and a diagonal."
+            echo
+            echo '```'
+            cat "$RUNNER_TEMP/report.txt"
+            echo '```'
+          } > "$RUNNER_TEMP/body.md"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git commit -am "Add $added devices from $(basename "$XCODE" .app)"
+
+          if [ -n "${PR_OPEN:-}" ]; then
+            git push origin "$BRANCH"
+            gh pr edit "$BRANCH" --body-file "$RUNNER_TEMP/body.md"
+          else
+            # Any branch left from an earlier, closed pull request is replaced.
+            git push --force origin "$BRANCH"
+            gh pr create --head "$BRANCH" --title "Add new devices from Xcode" --body-file "$RUNNER_TEMP/body.md"
+          fi
