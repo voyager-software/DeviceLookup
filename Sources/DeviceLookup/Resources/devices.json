@@ -21,6 +21,7 @@
   },
   "AppleTV18,1": {
     "name": "Apple TV 4K (4th generation)",
+    "chip": "A19",
     "soc": "t8150"
   },
   "Watch1,1": {
