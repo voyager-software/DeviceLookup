@@ -35,7 +35,8 @@ public extension Device {
                 .tv
             case let id where id.hasPrefix("Watch"):
                 .watch
-            case let id where id.hasPrefix("Mac") || id.hasPrefix("iMac"):
+            // "VirtualMac2,1" is a macOS virtual machine, such as a CI runner.
+            case let id where id.hasPrefix("Mac") || id.hasPrefix("iMac") || id.hasPrefix("VirtualMac"):
                 .mac
             case let id where id.hasPrefix("RealityDevice"):
                 .vision

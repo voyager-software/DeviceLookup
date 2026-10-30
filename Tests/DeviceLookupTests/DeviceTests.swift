@@ -73,6 +73,7 @@ struct DeviceTests {
         ("MacBookPro18,3", .mac),
         ("iMac21,2", .mac),
         ("Macmini9,1", .mac),
+        ("VirtualMac2,1", .mac),
         ("RealityDevice14,1", .vision),
         ("arm64", .unknown),
     ])
@@ -114,7 +115,10 @@ struct DeviceTests {
     @Test func `current mac`() {
         let device = Device.current
         #expect(device.isMac)
-        #expect(device.isKnown, "\(device.modelIdentifier) is missing from all-macs.json")
+        // A virtual machine isn't a Mac model, so it isn't in the data.
+        if !device.modelIdentifier.hasPrefix("VirtualMac") {
+            #expect(device.isKnown, "\(device.modelIdentifier) is missing from all-macs.json")
+        }
         #expect(device.chip?.hasPrefix("Apple") == true)
         #expect(device.operatingSystemName == "macOS")
     }
