@@ -37,6 +37,12 @@ Device(modelIdentifier: "Watch7,18").modelName  // "Apple Watch Series 11 (GPS) 
 Mac.find(model: "Mac14,7")?.name                // "MacBook Pro (13-inch, M2, 2022)"
 ```
 
+## Maintenance
+
+DeviceLookup is maintained by [Voyager Software](https://github.com/voyager-software) and used in its own shipping apps, including PocketLion, so new devices matter to us as much as to you.
+
+New devices are added once the Xcode release that supports them is out, which is usually around the announcement. The aim is a release within a week. If a device is missing, [open an issue](https://github.com/voyager-software/DeviceLookup/issues) with its model identifier. Until it's added, the device still gets the right `family`, and its `modelName` is the identifier.
+
 ## Updating the data
 
 When a new Xcode ships, run:
