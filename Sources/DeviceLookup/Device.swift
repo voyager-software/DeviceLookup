@@ -100,7 +100,7 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
     /// The chip, e.g. "A19 Pro". On a Mac, the CPU brand string of the running Mac, e.g. "Apple M3 Pro".
     public let chip: String?
 
-    /// The screen diagonal in inches, when known.
+    /// The screen diagonal in inches, when known. For a foldable such as iPhone Duo, the inner display's.
     public let diagonal: Double?
 
     /// Whether the device has a cellular radio. Every iPhone does; only cellular iPad and Apple Watch models do.

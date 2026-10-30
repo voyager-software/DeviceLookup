@@ -11,7 +11,7 @@ import Testing
 
 struct DeviceTests {
     /// Devices in the data whose chip or diagonal has not been filled in yet. Fill them in and remove them here.
-    static let awaitingData: Set<String> = ["iPhone19,4"]
+    static let awaitingData: Set<String> = []
 
     @Test func `known phone`() {
         let device = Device(modelIdentifier: "iPhone18,1")

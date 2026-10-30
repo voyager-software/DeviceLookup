@@ -1450,6 +1450,8 @@
   },
   "iPhone19,4": {
     "name": "iPhone Duo",
+    "chip": "A20 Pro",
+    "diag": 7.6,
     "soc": "t8160"
   },
   "iPhone19,7": {
