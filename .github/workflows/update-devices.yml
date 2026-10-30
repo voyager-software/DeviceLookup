@@ -3,6 +3,8 @@ name: Update devices
 # Checks the newest Xcode on GitHub's runners, betas and release candidates included, for device
 # identifiers missing from devices.json, and opens a pull request that adds them. The report in the
 # pull request lists what still needs filling in by hand: chips, diagonals, cellular and watch case sizes.
+# GitHub holds CI on a pull request opened by github-actions[bot] until a maintainer approves it on the
+# pull request page.
 
 on:
   schedule:
@@ -10,7 +12,6 @@ on:
   workflow_dispatch:
 
 permissions:
-  actions: write
   contents: write
   pull-requests: write
 
@@ -79,6 +80,3 @@ jobs:
             git push --force origin "$BRANCH"
             gh pr create --head "$BRANCH" --title "Add new devices from Xcode" --body-file "$RUNNER_TEMP/body.md"
           fi
-
-          # Pushes made with the Actions token don't start other workflows, so start CI here.
-          gh workflow run ci.yml --ref "$BRANCH"
