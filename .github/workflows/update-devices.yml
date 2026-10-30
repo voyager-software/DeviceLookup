@@ -10,6 +10,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: write
   contents: write
   pull-requests: write
 
@@ -67,7 +68,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B "$BRANCH"
-          git commit -am "Add $added devices from $(basename "$XCODE" .app)"
+          [ "$added" = 1 ] && devices=device || devices=devices
+          git commit -am "Add $added $devices from $(basename "$XCODE" .app)"
 
           if [ -n "${PR_OPEN:-}" ]; then
             git push origin "$BRANCH"
@@ -77,3 +79,6 @@ jobs:
             git push --force origin "$BRANCH"
             gh pr create --head "$BRANCH" --title "Add new devices from Xcode" --body-file "$RUNNER_TEMP/body.md"
           fi
+
+          # Pushes made with the Actions token don't start other workflows, so start CI here.
+          gh workflow run ci.yml --ref "$BRANCH"
