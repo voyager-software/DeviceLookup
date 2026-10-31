@@ -35,6 +35,7 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
             self.year = entry.year
             self.chip = chip ?? entry.chip
             self.diagonal = entry.diagonal
+            self.screen = entry.screen
             self.hasCellular = self.family == .phone || entry.cellular == true
         }
         else if lookInMacs, let mac = Mac.find(model: modelIdentifier) {
@@ -43,6 +44,7 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
             self.year = mac.year
             self.chip = chip
             self.diagonal = nil
+            self.screen = nil
             self.hasCellular = false
         }
         else {
@@ -51,6 +53,7 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
             self.year = nil
             self.chip = chip
             self.diagonal = nil
+            self.screen = nil
             self.hasCellular = self.family == .phone
         }
     }
@@ -123,6 +126,10 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
 
     /// The screen diagonal in inches, when known. For a foldable such as iPhone Duo, the inner display's.
     public let diagonal: Double?
+
+    /// The main screen's size, scale, corner radius and Dynamic Island, when known. Apple TV and Apple Vision Pro
+    /// have none.
+    public let screen: Screen?
 
     /// Whether the device has a cellular radio. Every iPhone does; only cellular iPad and Apple Watch models do.
     public let hasCellular: Bool

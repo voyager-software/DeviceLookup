@@ -12,6 +12,9 @@ DeviceLookup's ``Device`` has the same name as DeviceKit's and covers what most 
 | `device.description` | ``Device/description`` |
 | `device.cpu.description` | ``Device/chip`` |
 | `device.diagonal` (-1 when unknown) | ``Device/diagonal`` (`nil` when unknown) |
+| `device.hasDynamicIsland` | ``Device/screen``?.``Device/Screen/hasDynamicIsland`` |
+| `device.hasRoundedDisplayCorners` | ``Device/screen``?.``Device/Screen/cornerRadius`` is above 0 |
+| `device.screenRatio` | ``Device/screen``?.``Device/Screen/width`` and ``Device/Screen/height`` |
 | `device.isPhone`, `.isPad`, `.isPod` | ``Device/isPhone``, ``Device/isPad``, ``Device/isPod`` |
 | `device.isSimulator` | ``Device/isSimulator`` |
 | `device.realDevice` | not needed; ``Device/current`` already describes the simulated device |
@@ -41,8 +44,9 @@ New devices never change the set's meaning, so no code needs updating when they 
 DeviceLookup leaves out per-model hardware facts that an Apple framework reports more accurately at runtime:
 
 - Face ID or Touch ID: `LAContext().biometryType`.
-- Dynamic Island, sensor housing and rounded corners: the safe area insets.
 - Cameras and LiDAR: `AVCaptureDevice.DiscoverySession`.
-- Screen ratio and pixel density: `UIScreen`.
+- Pixel density: `UIScreen`.
+
+To lay out around the Dynamic Island, the sensor housing or rounded corners, use the safe area insets rather than ``Device/screen``: they also account for orientation and window size.
 
 It also leaves out state that `UIDevice`, `UIScreen` and `ProcessInfo` already provide, such as battery level, screen brightness, Low Power Mode, orientation and thermal state. Those change while the app runs, and the `UIDevice` and `UIScreen` ones need the main actor, so ``Device`` leaves them to those APIs and stays `Sendable`.

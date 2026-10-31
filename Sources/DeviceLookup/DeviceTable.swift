@@ -18,6 +18,7 @@ enum DeviceTable {
             case chip
             case diagonal = "diag"
             case cellular = "cell"
+            case screen
         }
 
         let name: String
@@ -25,6 +26,7 @@ enum DeviceTable {
         let chip: String?
         let diagonal: Double?
         let cellular: Bool?
+        let screen: Device.Screen?
     }
 
     static let entries: [String: Entry] = {

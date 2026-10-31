@@ -1,0 +1,61 @@
+//
+//  Screen.swift
+//  DeviceLookup
+//
+//  Created by Gabor Shaio on 2026-10-31.
+//  Copyright © 2026 Voyager Software Inc. All rights reserved.
+//
+
+import Foundation
+
+public extension Device {
+    /// A device's main screen, as apps see it. For a foldable such as iPhone Duo, the inner display.
+    struct Screen: Hashable, Sendable, Decodable {
+        // MARK: Lifecycle
+
+        public init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            self.width = try container.decode(Int.self, forKey: .width)
+            self.height = try container.decode(Int.self, forKey: .height)
+            self.scale = try container.decode(Int.self, forKey: .scale)
+            self.cornerRadius = try container.decodeIfPresent(Double.self, forKey: .cornerRadius) ?? 0
+            self.hasDynamicIsland = try container.decodeIfPresent(Bool.self, forKey: .hasDynamicIsland) ?? false
+        }
+
+        init(width: Int, height: Int, scale: Int, cornerRadius: Double = 0, hasDynamicIsland: Bool = false) {
+            self.width = width
+            self.height = height
+            self.scale = scale
+            self.cornerRadius = cornerRadius
+            self.hasDynamicIsland = hasDynamicIsland
+        }
+
+        // MARK: Public
+
+        /// The width in points, in portrait, e.g. 402.
+        public let width: Int
+
+        /// The height in points, in portrait, e.g. 874.
+        public let height: Int
+
+        /// The points-to-pixels scale, e.g. 3. Width and height times the scale give the size apps render at,
+        /// which on iPhone 6 Plus through 8 Plus is downsampled to fit the panel.
+        public let scale: Int
+
+        /// The radius of the display's rounded corners in points, e.g. 62, or 0 for square corners.
+        public let cornerRadius: Double
+
+        /// Whether the screen has a Dynamic Island.
+        public let hasDynamicIsland: Bool
+
+        // MARK: Private
+
+        private enum CodingKeys: String, CodingKey {
+            case width = "w"
+            case height = "h"
+            case scale
+            case cornerRadius = "corner"
+            case hasDynamicIsland = "island"
+        }
+    }
+}

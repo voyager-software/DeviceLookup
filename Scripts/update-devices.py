@@ -5,7 +5,9 @@ Xcode ships the identifier, marketing name and SoC code of every iPhone, iPad, i
 Apple TV, Apple Watch and Apple Vision Pro it can build for, in `Platforms/*/usr/standalone/device_traits.db`. New devices appear
 there in the Xcode release that supports them, which is usually around the announcement.
 
-The script adds identifiers missing from devices.json and reports what still needs a hand edit.
+Xcode's simulator device types, in /Library/Developer/CoreSimulator/Profiles/DeviceTypes, give each model's
+screen. The script adds identifiers missing from devices.json, fills in screens from the simulators, and
+reports what still needs a hand edit.
 It never overwrites a field already in devices.json, so hand-curated names and values are kept.
 
     Scripts/update-devices.py                  # report only
@@ -25,11 +27,18 @@ Fields:
     cell      true for cellular iPad and Apple Watch models (iPhones are always cellular). Set
               automatically when Xcode's name says "Cellular" or the device Xcode falls back to is
               cellular, otherwise by hand.
+    screen    the main screen, from the simulator for the model; by hand for models too old to have one:
+              w, h      portrait size in points, e.g. 402 x 874 (the inner display for a foldable)
+              scale     e.g. 3
+              corner    the display's corner radius in points, left out for square corners
+              island    true when it has a Dynamic Island
+              Apple TV and Apple Vision Pro have none.
 """
 
 import argparse
 import datetime
 import json
+import plistlib
 import re
 import sqlite3
 import subprocess
@@ -40,7 +49,9 @@ ROOT = Path(__file__).resolve().parent.parent
 DEVICES_JSON = ROOT / "Sources/DeviceLookup/Resources/devices.json"
 PLATFORMS = ["iPhoneOS", "AppleTVOS", "WatchOS", "XROS"]
 PREFIXES = ("iPhone", "iPad", "iPod", "AppleTV", "Watch", "RealityDevice")
-FIELD_ORDER = ["name", "year", "chip", "diag", "cell", "soc"]
+FIELD_ORDER = ["name", "year", "chip", "diag", "cell", "screen", "soc"]
+SIMULATOR_PROFILES = Path("/Library/Developer/CoreSimulator/Profiles/DeviceTypes")
+NO_SCREEN = ("AppleTV", "RealityDevice")
 
 
 def natural_key(identifier):
@@ -80,6 +91,34 @@ def read_xcode(dev_dir):
     return devices
 
 
+def read_screens(profiles):
+    """Each identifier's main screen, from Xcode's simulator device types."""
+    screens = {}
+    for path in sorted(profiles.glob("*.simdevicetype")):
+        resources = path / "Contents/Resources"
+        try:
+            profile = plistlib.loads((resources / "profile.plist").read_bytes())
+            capabilities = plistlib.loads((resources / "capabilities.plist").read_bytes()).get("capabilities", {})
+        except (OSError, plistlib.InvalidFileException):
+            continue
+        displays = capabilities.get("displays") or []
+        if not displays:
+            continue
+        # The first display is the device's own; the others are external screens it can drive.
+        display = displays[0]
+        scale = int(display["scale"])
+        screen = {"w": round(display["width"] / scale), "h": round(display["height"] / scale), "scale": scale}
+        # The display's own corners: on a foldable they're tighter than the device's (DeviceCornerRadius).
+        corner = round(float(display.get("cornerRadiusUL") or 0), 2)
+        if corner:
+            screen["corner"] = int(corner) if corner.is_integer() else corner
+        if capabilities.get("DeviceSupportsDynamicIsland"):
+            screen["island"] = True
+        for identifier in {profile.get("modelIdentifier"), *profile.get("representedModelIdentifiers", [])} - {None}:
+            screens.setdefault(identifier, screen)
+    return screens
+
+
 def watch_case(target):
     """"small" or "large" for a watch that comes in two case sizes, from its board name, e.g. "n207sap"."""
     match = re.search(r"([sb])ap$", target or "")
@@ -112,9 +151,10 @@ def main():
     dev_dir = developer_dir(args.xcode)
     xcode = read_xcode(dev_dir)
     entries = json.loads(DEVICES_JSON.read_text()) if DEVICES_JSON.exists() else {}
+    screens = read_screens(SIMULATOR_PROFILES)
 
     print(f"Xcode: {dev_dir}")
-    print(f"{len(xcode)} identifiers in Xcode, {len(entries)} in devices.json\n")
+    print(f"{len(xcode)} identifiers in Xcode, {len(entries)} in devices.json, {len(screens)} with simulator screens\n")
 
     added = []
     for identifier in sorted(xcode, key=natural_key):
@@ -137,6 +177,11 @@ def main():
         elif not same_name(entry["name"], info["name"]):
             print(f"NAME     {identifier:<14} ours: {entry['name']!r}  Xcode: {info['name']!r}")
 
+    for identifier, entry in entries.items():
+        if "screen" not in entry and identifier in screens and not identifier.startswith(NO_SCREEN):
+            entry["screen"] = screens[identifier]
+            print(f"SCREEN   {identifier:<14} {entry['name']}: {screens[identifier]}")
+
     for identifier in sorted(set(entries) - set(xcode), key=natural_key):
         print(f"NOT IN XCODE {identifier:<10} {entries[identifier]['name']}")
 
@@ -150,8 +195,10 @@ def main():
         if not entry.get("chip"):
             same_soc = sorted(soc_chips.get(entry.get("soc"), []))
             missing.append(f"chip (same SoC: {', '.join(same_soc)})" if same_soc else "chip")
-        if not identifier.startswith(("AppleTV", "RealityDevice")) and not entry.get("diag"):
+        if not identifier.startswith(NO_SCREEN) and not entry.get("diag"):
             missing.append("diag")
+        if not identifier.startswith(NO_SCREEN) and not entry.get("screen"):
+            missing.append("screen")
         if identifier in added and identifier.startswith(("iPad", "Watch")) and not entry.get("cell") and not re.search(r"GPS|Cellular", entry["name"]):
             missing.append("cell?")
         size = watch_case(xcode.get(identifier, {}).get("target")) if identifier.startswith("Watch") else None

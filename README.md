@@ -36,6 +36,7 @@ device.deviceDescription    // "iPhone 17 Pro, A19 Pro"  /  "MacBook Pro (14-inc
 device.family               // .phone (raw value "phone")
 device.year                 // 2025
 device.diagonal             // 6.3
+device.screen?.cornerRadius // 62 (points; also width, height, scale and hasDynamicIsland)
 device.hasCellular          // true
 device.isSimulator          // false
 
@@ -65,7 +66,7 @@ Scripts/update-devices.py            # report what's new or different
 Scripts/update-devices.py --write    # add new identifiers to devices.json
 ```
 
-It reads Xcode's `device_traits.db`, adds missing identifiers with their name, SoC code and the current year as their release year (correct it if a device ships the next year), and lists what still needs filling in by hand: `chip`, `diag` (screen diagonal in inches; the inner display for a foldable), `cell` (cellular) for iPads and watches whose name doesn't say, and the case size for watches. Xcode names most watches without one, so append it to the name, e.g. "Apple Watch Series 11 (GPS) 46mm"; the report says whether it's the small or large case. It never overwrites existing values. The tests fail until each device has a year, a chip and a diagonal (except Apple TV and Apple Vision Pro), and each watch name its case size.
+It reads Xcode's `device_traits.db`, adds missing identifiers with their name, SoC code and the current year as their release year (correct it if a device ships the next year), takes each model's screen from Xcode's simulator device types, and lists what still needs filling in by hand: `chip`, `diag` (screen diagonal in inches; the inner display for a foldable), `cell` (cellular) for iPads and watches whose name doesn't say, and the case size for watches. Xcode names most watches without one, so append it to the name, e.g. "Apple Watch Series 11 (GPS) 46mm"; the report says whether it's the small or large case. It never overwrites existing values. The tests fail until each device has a year, a chip, a diagonal and a screen (Apple TV and Apple Vision Pro need only the first two), and each watch name its case size.
 
 Mac data comes from Apple's "Identify your Mac model" support pages, one per Mac family:
 
@@ -87,7 +88,7 @@ It keeps each Mac's family, name, release year and model identifiers (`ids`), ne
 | `device.isOneOf([.appleTVHD, ...])` | compare `device.modelIdentifier` |
 | `device.name`, `.systemName`, `.model` (`UIDevice`) | not provided; use `UIDevice` on the main actor |
 
-The [migration guide](Sources/DeviceLookup/DeviceLookup.docc/MigratingFromDeviceKit.md) covers the rest: checking for specific models without enum cases, and the runtime APIs to use for features DeviceLookup leaves out, such as Face ID and the Dynamic Island.
+The [migration guide](Sources/DeviceLookup/DeviceLookup.docc/MigratingFromDeviceKit.md) covers the rest: checking for specific models without enum cases, and the runtime APIs to use for features DeviceLookup leaves out, such as Face ID and cameras.
 
 ## License
 
