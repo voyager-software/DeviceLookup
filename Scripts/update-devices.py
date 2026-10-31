@@ -27,11 +27,12 @@ Fields:
     cell      true for cellular iPad and Apple Watch models (iPhones are always cellular). Set
               automatically when Xcode's name says "Cellular" or the device Xcode falls back to is
               cellular, otherwise by hand.
+    island    true when it has a Dynamic Island, from the simulator for the model
     screen    the main screen, from the simulator for the model; by hand for models too old to have one:
-              w, h      portrait size in points, e.g. 402 x 874 (the inner display for a foldable)
+              w, h      portrait size in points, e.g. 402 x 874
               scale     e.g. 3
               corner    the display's corner radius in points, left out for square corners
-              island    true when it has a Dynamic Island
+              The main screen is the largest built-in display, so for a foldable it's the inner one.
               Apple TV and Apple Vision Pro have none.
 """
 
@@ -49,7 +50,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DEVICES_JSON = ROOT / "Sources/DeviceLookup/Resources/devices.json"
 PLATFORMS = ["iPhoneOS", "AppleTVOS", "WatchOS", "XROS"]
 PREFIXES = ("iPhone", "iPad", "iPod", "AppleTV", "Watch", "RealityDevice")
-FIELD_ORDER = ["name", "year", "chip", "diag", "cell", "screen", "soc"]
+FIELD_ORDER = ["name", "year", "chip", "diag", "cell", "island", "screen", "soc"]
 SIMULATOR_PROFILES = Path("/Library/Developer/CoreSimulator/Profiles/DeviceTypes")
 NO_SCREEN = ("AppleTV", "RealityDevice")
 
@@ -91,9 +92,9 @@ def read_xcode(dev_dir):
     return devices
 
 
-def read_screens(profiles):
-    """Each identifier's main screen, from Xcode's simulator device types."""
-    screens = {}
+def read_simulators(profiles):
+    """Each identifier's main screen, and the identifiers with a Dynamic Island, from Xcode's simulator device types."""
+    screens, islands = {}, set()
     for path in sorted(profiles.glob("*.simdevicetype")):
         resources = path / "Contents/Resources"
         try:
@@ -101,22 +102,22 @@ def read_screens(profiles):
             capabilities = plistlib.loads((resources / "capabilities.plist").read_bytes()).get("capabilities", {})
         except (OSError, plistlib.InvalidFileException):
             continue
-        displays = capabilities.get("displays") or []
+        identifiers = {profile.get("modelIdentifier"), *profile.get("representedModelIdentifiers", [])} - {None}
+        if capabilities.get("DeviceSupportsDynamicIsland"):
+            islands |= identifiers
+        # The device's own displays, not the external ones it can drive. A foldable has two; the inner one is larger.
+        displays = [display for display in capabilities.get("displays") or [] if display.get("displayType") == "integrated"]
         if not displays:
             continue
-        # The first display is the device's own; the others are external screens it can drive.
-        display = displays[0]
+        display = max(displays, key=lambda display: display["width"] * display["height"])
         scale = int(display["scale"])
         screen = {"w": round(display["width"] / scale), "h": round(display["height"] / scale), "scale": scale}
-        # The display's own corners: on a foldable they're tighter than the device's (DeviceCornerRadius).
         corner = round(float(display.get("cornerRadiusUL") or 0), 2)
         if corner:
             screen["corner"] = int(corner) if corner.is_integer() else corner
-        if capabilities.get("DeviceSupportsDynamicIsland"):
-            screen["island"] = True
-        for identifier in {profile.get("modelIdentifier"), *profile.get("representedModelIdentifiers", [])} - {None}:
+        for identifier in identifiers:
             screens.setdefault(identifier, screen)
-    return screens
+    return screens, islands
 
 
 def watch_case(target):
@@ -151,7 +152,7 @@ def main():
     dev_dir = developer_dir(args.xcode)
     xcode = read_xcode(dev_dir)
     entries = json.loads(DEVICES_JSON.read_text()) if DEVICES_JSON.exists() else {}
-    screens = read_screens(SIMULATOR_PROFILES)
+    screens, islands = read_simulators(SIMULATOR_PROFILES)
 
     print(f"Xcode: {dev_dir}")
     print(f"{len(xcode)} identifiers in Xcode, {len(entries)} in devices.json, {len(screens)} with simulator screens\n")
@@ -181,6 +182,9 @@ def main():
         if "screen" not in entry and identifier in screens and not identifier.startswith(NO_SCREEN):
             entry["screen"] = screens[identifier]
             print(f"SCREEN   {identifier:<14} {entry['name']}: {screens[identifier]}")
+        if identifier in islands and not entry.get("island"):
+            entry["island"] = True
+            print(f"ISLAND   {identifier:<14} {entry['name']}")
 
     for identifier in sorted(set(entries) - set(xcode), key=natural_key):
         print(f"NOT IN XCODE {identifier:<10} {entries[identifier]['name']}")

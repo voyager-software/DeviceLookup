@@ -36,7 +36,8 @@ device.deviceDescription    // "iPhone 17 Pro, A19 Pro"  /  "MacBook Pro (14-inc
 device.family               // .phone (raw value "phone")
 device.year                 // 2025
 device.diagonal             // 6.3
-device.screen?.cornerRadius // 62 (points; also width, height, scale and hasDynamicIsland)
+device.screen?.cornerRadius // 62 (points; also width, height and scale)
+device.hasDynamicIsland     // true
 device.hasCellular          // true
 device.isSimulator          // false
 

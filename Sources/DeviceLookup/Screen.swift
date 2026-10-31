@@ -9,7 +9,8 @@
 import Foundation
 
 public extension Device {
-    /// A device's main screen, as apps see it. For a foldable such as iPhone Duo, the inner display.
+    /// A device's main screen, as apps see it: its largest built-in display, so for a foldable such as iPhone Duo,
+    /// the inner one.
     struct Screen: Hashable, Sendable, Decodable {
         // MARK: Lifecycle
 
@@ -19,15 +20,13 @@ public extension Device {
             self.height = try container.decode(Int.self, forKey: .height)
             self.scale = try container.decode(Int.self, forKey: .scale)
             self.cornerRadius = try container.decodeIfPresent(Double.self, forKey: .cornerRadius) ?? 0
-            self.hasDynamicIsland = try container.decodeIfPresent(Bool.self, forKey: .hasDynamicIsland) ?? false
         }
 
-        init(width: Int, height: Int, scale: Int, cornerRadius: Double = 0, hasDynamicIsland: Bool = false) {
+        init(width: Int, height: Int, scale: Int, cornerRadius: Double = 0) {
             self.width = width
             self.height = height
             self.scale = scale
             self.cornerRadius = cornerRadius
-            self.hasDynamicIsland = hasDynamicIsland
         }
 
         // MARK: Public
@@ -45,9 +44,6 @@ public extension Device {
         /// The radius of the display's rounded corners in points, e.g. 62, or 0 for square corners.
         public let cornerRadius: Double
 
-        /// Whether the screen has a Dynamic Island.
-        public let hasDynamicIsland: Bool
-
         // MARK: Private
 
         private enum CodingKeys: String, CodingKey {
@@ -55,7 +51,6 @@ public extension Device {
             case height = "h"
             case scale
             case cornerRadius = "corner"
-            case hasDynamicIsland = "island"
         }
     }
 }

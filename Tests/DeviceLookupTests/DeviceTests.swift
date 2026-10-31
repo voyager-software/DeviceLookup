@@ -64,12 +64,12 @@ struct DeviceTests {
     }
 
     @Test func screens() {
-        #expect(Device(modelIdentifier: "iPhone18,1").screen == .init(width: 402, height: 874, scale: 3, cornerRadius: 62, hasDynamicIsland: true))
+        #expect(Device(modelIdentifier: "iPhone18,1").screen == .init(width: 402, height: 874, scale: 3, cornerRadius: 62))
         #expect(Device(modelIdentifier: "iPhone10,1").screen == .init(width: 375, height: 667, scale: 2))
         #expect(Device(modelIdentifier: "iPad19,2").screen?.cornerRadius == 47)
         #expect(Device(modelIdentifier: "Watch7,18").screen == .init(width: 208, height: 248, scale: 2, cornerRadius: 50))
-        // A foldable's screen is its inner display, whose corners are tighter than the device's.
-        #expect(Device(modelIdentifier: "iPhone19,4").screen == .init(width: 466, height: 678, scale: 3, cornerRadius: 8, hasDynamicIsland: true))
+        // A foldable's main screen is its larger, inner display, not the cover screen.
+        #expect(Device(modelIdentifier: "iPhone19,4").screen == .init(width: 669, height: 951, scale: 3, cornerRadius: 55))
         #expect(Device(modelIdentifier: "AppleTV18,1").screen == nil)
         #expect(Device(modelIdentifier: "RealityDevice17,1").screen == nil)
         #expect(Device(modelIdentifier: "iPhone99,1").screen == nil)
@@ -77,10 +77,11 @@ struct DeviceTests {
 
     /// The Dynamic Island started with iPhone 14 Pro. iPhone 14 Plus and the e models don't have one, and it's only on iPhones.
     @Test func `dynamic island`() {
-        let withIsland = Device.all.filter { $0.screen?.hasDynamicIsland == true }.map(\.modelIdentifier)
+        let withIsland = Device.all.filter(\.hasDynamicIsland).map(\.modelIdentifier)
         #expect(withIsland.contains("iPhone15,2"))
         #expect(!withIsland.contains("iPhone14,8"))
         #expect(!withIsland.contains("iPhone18,5"))
+        #expect(withIsland.contains("iPhone19,4"))
         #expect(withIsland.allSatisfy { $0.hasPrefix("iPhone") })
     }
 

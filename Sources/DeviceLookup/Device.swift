@@ -36,6 +36,7 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
             self.chip = chip ?? entry.chip
             self.diagonal = entry.diagonal
             self.screen = entry.screen
+            self.hasDynamicIsland = entry.dynamicIsland == true
             self.hasCellular = self.family == .phone || entry.cellular == true
         }
         else if lookInMacs, let mac = Mac.find(model: modelIdentifier) {
@@ -45,6 +46,7 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
             self.chip = chip
             self.diagonal = nil
             self.screen = nil
+            self.hasDynamicIsland = false
             self.hasCellular = false
         }
         else {
@@ -54,6 +56,7 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
             self.chip = chip
             self.diagonal = nil
             self.screen = nil
+            self.hasDynamicIsland = false
             self.hasCellular = self.family == .phone
         }
     }
@@ -127,9 +130,11 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
     /// The screen diagonal in inches, when known. For a foldable such as iPhone Duo, the inner display's.
     public let diagonal: Double?
 
-    /// The main screen's size, scale, corner radius and Dynamic Island, when known. Apple TV and Apple Vision Pro
-    /// have none.
+    /// The main screen's size, scale and corner radius, when known. Apple TV and Apple Vision Pro have none.
     public let screen: Screen?
+
+    /// Whether the device has a Dynamic Island.
+    public let hasDynamicIsland: Bool
 
     /// Whether the device has a cellular radio. Every iPhone does; only cellular iPad and Apple Watch models do.
     public let hasCellular: Bool

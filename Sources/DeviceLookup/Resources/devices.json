@@ -2773,12 +2773,12 @@
     "year": 2022,
     "chip": "A16 Bionic",
     "diag": 6.1,
+    "island": true,
     "screen": {
       "w": 393,
       "h": 852,
       "scale": 3,
-      "corner": 55,
-      "island": true
+      "corner": 55
     },
     "soc": "t8120"
   },
@@ -2787,12 +2787,12 @@
     "year": 2022,
     "chip": "A16 Bionic",
     "diag": 6.7,
+    "island": true,
     "screen": {
       "w": 430,
       "h": 932,
       "scale": 3,
-      "corner": 55,
-      "island": true
+      "corner": 55
     },
     "soc": "t8120"
   },
@@ -2801,12 +2801,12 @@
     "year": 2023,
     "chip": "A16 Bionic",
     "diag": 6.1,
+    "island": true,
     "screen": {
       "w": 393,
       "h": 852,
       "scale": 3,
-      "corner": 55,
-      "island": true
+      "corner": 55
     },
     "soc": "t8120"
   },
@@ -2815,12 +2815,12 @@
     "year": 2023,
     "chip": "A16 Bionic",
     "diag": 6.7,
+    "island": true,
     "screen": {
       "w": 430,
       "h": 932,
       "scale": 3,
-      "corner": 55,
-      "island": true
+      "corner": 55
     },
     "soc": "t8120"
   },
@@ -2829,12 +2829,12 @@
     "year": 2023,
     "chip": "A17 Pro",
     "diag": 6.1,
+    "island": true,
     "screen": {
       "w": 393,
       "h": 852,
       "scale": 3,
-      "corner": 55,
-      "island": true
+      "corner": 55
     },
     "soc": "t8130"
   },
@@ -2843,12 +2843,12 @@
     "year": 2023,
     "chip": "A17 Pro",
     "diag": 6.7,
+    "island": true,
     "screen": {
       "w": 430,
       "h": 932,
       "scale": 3,
-      "corner": 55,
-      "island": true
+      "corner": 55
     },
     "soc": "t8130"
   },
@@ -2857,12 +2857,12 @@
     "year": 2024,
     "chip": "A18 Pro",
     "diag": 6.3,
+    "island": true,
     "screen": {
       "w": 402,
       "h": 874,
       "scale": 3,
-      "corner": 62,
-      "island": true
+      "corner": 62
     },
     "soc": "t8140"
   },
@@ -2871,12 +2871,12 @@
     "year": 2024,
     "chip": "A18 Pro",
     "diag": 6.9,
+    "island": true,
     "screen": {
       "w": 440,
       "h": 956,
       "scale": 3,
-      "corner": 62,
-      "island": true
+      "corner": 62
     },
     "soc": "t8140"
   },
@@ -2885,12 +2885,12 @@
     "year": 2024,
     "chip": "A18",
     "diag": 6.1,
+    "island": true,
     "screen": {
       "w": 393,
       "h": 852,
       "scale": 3,
-      "corner": 55,
-      "island": true
+      "corner": 55
     },
     "soc": "t8140"
   },
@@ -2899,12 +2899,12 @@
     "year": 2024,
     "chip": "A18",
     "diag": 6.7,
+    "island": true,
     "screen": {
       "w": 430,
       "h": 932,
       "scale": 3,
-      "corner": 55,
-      "island": true
+      "corner": 55
     },
     "soc": "t8140"
   },
@@ -2926,12 +2926,12 @@
     "year": 2025,
     "chip": "A19 Pro",
     "diag": 6.3,
+    "island": true,
     "screen": {
       "w": 402,
       "h": 874,
       "scale": 3,
-      "corner": 62,
-      "island": true
+      "corner": 62
     },
     "soc": "t8150"
   },
@@ -2940,12 +2940,12 @@
     "year": 2025,
     "chip": "A19 Pro",
     "diag": 6.9,
+    "island": true,
     "screen": {
       "w": 440,
       "h": 956,
       "scale": 3,
-      "corner": 62,
-      "island": true
+      "corner": 62
     },
     "soc": "t8150"
   },
@@ -2954,12 +2954,12 @@
     "year": 2025,
     "chip": "A19",
     "diag": 6.3,
+    "island": true,
     "screen": {
       "w": 402,
       "h": 874,
       "scale": 3,
-      "corner": 62,
-      "island": true
+      "corner": 62
     },
     "soc": "t8150"
   },
@@ -2968,12 +2968,12 @@
     "year": 2025,
     "chip": "A19 Pro",
     "diag": 6.5,
+    "island": true,
     "screen": {
       "w": 420,
       "h": 912,
       "scale": 3,
-      "corner": 62,
-      "island": true
+      "corner": 62
     },
     "soc": "t8150"
   },
@@ -2995,12 +2995,12 @@
     "year": 2026,
     "chip": "A20 Pro",
     "diag": 6.3,
+    "island": true,
     "screen": {
       "w": 402,
       "h": 874,
       "scale": 3,
-      "corner": 62,
-      "island": true
+      "corner": 62
     },
     "soc": "t8160"
   },
@@ -3009,12 +3009,12 @@
     "year": 2026,
     "chip": "A20 Pro",
     "diag": 6.9,
+    "island": true,
     "screen": {
       "w": 440,
       "h": 956,
       "scale": 3,
-      "corner": 62,
-      "island": true
+      "corner": 62
     },
     "soc": "t8160"
   },
@@ -3023,12 +3023,12 @@
     "year": 2026,
     "chip": "A20 Pro",
     "diag": 7.6,
+    "island": true,
     "screen": {
-      "w": 466,
-      "h": 678,
+      "w": 669,
+      "h": 951,
       "scale": 3,
-      "corner": 8,
-      "island": true
+      "corner": 55
     },
     "soc": "t8160"
   },
@@ -3037,12 +3037,12 @@
     "year": 2026,
     "chip": "A20 Pro",
     "diag": 6.9,
+    "island": true,
     "screen": {
       "w": 440,
       "h": 956,
       "scale": 3,
-      "corner": 62,
-      "island": true
+      "corner": 62
     },
     "soc": "t8160"
   },

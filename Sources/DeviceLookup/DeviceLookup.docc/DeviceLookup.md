@@ -48,6 +48,7 @@ On a simulator, ``Device/current`` describes the simulated device. Under Mac Cat
 - ``Device/diagonal``
 - ``Device/screen``
 - ``Device/Screen``
+- ``Device/hasDynamicIsland``
 - ``Device/hasCellular``
 - ``Device/description``
 - ``Device/deviceDescription``
