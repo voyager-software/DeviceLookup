@@ -8,7 +8,7 @@
   <a href="https://swiftpackageindex.com/voyager-software/DeviceLookup"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fvoyager-software%2FDeviceLookup%2Fbadge%3Ftype%3Dplatforms" alt="Platforms"></a>
 </p>
 
-Names, release years, chips, screen sizes and families for iPhone, iPad, iPod touch, Apple TV, Apple Watch, Apple Vision Pro and Mac model identifiers, plus the running device's OS, memory and storage details. `Device` is `Sendable` and never touches `UIDevice`, so you can use it from any thread or actor without hopping to the main actor. Replaces DeviceKit and MacLookup.
+Names, release years, chips, screens and families for iPhone, iPad, iPod touch, Apple TV, Apple Watch, Apple Vision Pro and Mac model identifiers, plus the running device's OS, memory and storage details. `Device` is `Sendable` and never touches `UIDevice`, so you can use it from any thread or actor without hopping to the main actor. Replaces DeviceKit and MacLookup.
 
 Device details are data (`Resources/devices.json`, `Resources/macs.json`), not code, so adding a device is a JSON edit. A device missing from the data still resolves: its family comes from the identifier prefix and its name falls back to the identifier.
 
@@ -56,7 +56,7 @@ Device.physicalMemory                           // 8589934592 (bytes)
 
 DeviceLookup is maintained by [Voyager Software](https://github.com/voyager-software) and used in its own shipping apps, including PocketLion, so new devices matter to us as much as to you.
 
-New devices are added once the Xcode release that supports them is out, which is usually around the announcement. A weekly workflow checks the newest Xcode on GitHub's runners, betas included, and Apple's Mac identification pages, and opens a pull request when either lists devices that aren't in the data yet. The aim is a release within a week. If a device is missing, [open an issue](https://github.com/voyager-software/DeviceLookup/issues) with its model identifier. Until it's added, the device still gets the right `family`, and its `modelName` is the identifier.
+New devices are added once the Xcode release that supports them is out, which is usually around the announcement. A weekly workflow checks the newest Xcode on GitHub's runners, betas included, its simulators, and Apple's Mac identification pages, and opens a pull request when either lists devices that aren't in the data yet. The aim is a release within a week. If a device is missing, [open an issue](https://github.com/voyager-software/DeviceLookup/issues) with its model identifier. Until it's added, the device still gets the right `family`, and its `modelName` is the identifier.
 
 ## Updating the data
 
@@ -67,7 +67,7 @@ Scripts/update-devices.py            # report what's new or different
 Scripts/update-devices.py --write    # add new identifiers to devices.json
 ```
 
-It reads Xcode's `device_traits.db`, adds missing identifiers with their name, SoC code and the current year as their release year (correct it if a device ships the next year), takes each model's screen from Xcode's simulator device types, and lists what still needs filling in by hand: `chip`, `diag` (screen diagonal in inches; the inner display for a foldable), `cell` (cellular) for iPads and watches whose name doesn't say, and the case size for watches. Xcode names most watches without one, so append it to the name, e.g. "Apple Watch Series 11 (GPS) 46mm"; the report says whether it's the small or large case. It never overwrites existing values. The tests fail until each device has a year, a chip, a diagonal and a screen (Apple TV and Apple Vision Pro need only the first two), and each watch name its case size.
+It reads Xcode's `device_traits.db`, adds missing identifiers with their name, SoC code and the current year as their release year (correct it if a device ships the next year), takes each model's screen and Dynamic Island from Xcode's simulator device types (for a foldable, the larger, inner display), and lists what still needs filling in by hand: `chip`, `diag` (screen diagonal in inches; the inner display for a foldable), `cell` (cellular) for iPads and watches whose name doesn't say, `screen` for models too old to have a simulator, and the case size for watches. Xcode names most watches without one, so append it to the name, e.g. "Apple Watch Series 11 (GPS) 46mm"; the report says whether it's the small or large case. It never overwrites existing values. The tests fail until each device has a year, a chip, a diagonal and a screen (Apple TV and Apple Vision Pro need only the first two), and each watch name its case size.
 
 Mac data comes from Apple's "Identify your Mac model" support pages, one per Mac family:
 
@@ -86,6 +86,7 @@ It keeps each Mac's family, name, release year and model identifiers (`ids`), ne
 | `device.description` | `device.description` |
 | `device.cpu.description` | `device.chip` |
 | `device.diagonal` (-1 when unknown) | `device.diagonal` (`nil` when unknown) |
+| `device.hasDynamicIsland` | `device.hasDynamicIsland` |
 | `device.isOneOf([.appleTVHD, ...])` | compare `device.modelIdentifier` |
 | `device.name`, `.systemName`, `.model` (`UIDevice`) | not provided; use `UIDevice` on the main actor |
 
@@ -93,4 +94,4 @@ The [migration guide](Sources/DeviceLookup/DeviceLookup.docc/MigratingFromDevice
 
 ## License
 
-MIT. See [LICENSE](LICENSE). The chip and screen-size values were first imported from [DeviceKit](https://github.com/devicekit/DeviceKit), whose license is in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+MIT. See [LICENSE](LICENSE). The chip and screen-diagonal values were first imported from [DeviceKit](https://github.com/devicekit/DeviceKit), whose license is in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
