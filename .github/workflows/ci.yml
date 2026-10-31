@@ -35,9 +35,10 @@ jobs:
           echo "Using $xcode"
           swift test
 
+  # The current Xcode release: the xcode-27 image's default, which is what apps ship with.
   test:
     name: Test (${{ matrix.platform }})
-    runs-on: macos-26
+    runs-on: xcode-27
     strategy:
       fail-fast: false
       matrix:
