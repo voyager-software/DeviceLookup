@@ -18,6 +18,24 @@ DeviceLookup's ``Device`` has the same name as DeviceKit's and covers what most 
 | `device == .iPhone15Pro`, `device.isOneOf([...])` | compare ``Device/modelIdentifier`` |
 | `device.name`, `.systemName`, `.model` | not provided; use `UIDevice` on the main actor |
 
+### Checking for specific models
+
+Where DeviceKit compares enum cases, keep a set of model identifiers, with a comment naming each one:
+
+```swift
+// DeviceKit
+Device.current.isOneOf([.appleTVHD, .appleTV4K])
+
+// DeviceLookup
+let modelsWithoutLiquidGlass: Set<String> = [
+    "AppleTV5,3", // Apple TV HD
+    "AppleTV6,2", // Apple TV 4K (1st generation)
+]
+modelsWithoutLiquidGlass.contains(Device.current.modelIdentifier)
+```
+
+New devices never change the set's meaning, so no code needs updating when they ship. Compare identifiers rather than ``Device`` values: two devices are equal only when every property matches, so ``Device/current`` on a simulator never equals a device you looked up. To check for a kind of device rather than particular models, use ``Device/family``.
+
 ### Features without an equivalent
 
 DeviceLookup leaves out per-model hardware facts that an Apple framework reports more accurately at runtime:
