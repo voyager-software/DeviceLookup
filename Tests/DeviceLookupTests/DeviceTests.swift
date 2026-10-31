@@ -202,7 +202,7 @@ struct MacTests {
     /// Each entry is one identifier, e.g. "Macmini6,1", never several run together.
     @Test func `identifiers are well formed`() {
         for model in Mac.all.flatMap(\.modelIdentifiers) {
-            #expect(model.wholeMatch(of: /[A-Za-z]+\d+,\d+/) != nil, "\(model)")
+            #expect(model.range(of: #"^[A-Za-z]+\d+,\d+$"#, options: .regularExpression) != nil, "\(model)")
         }
         #expect(Device(modelIdentifier: "Macmini6,2").modelName == "Mac mini (Late 2012)")
     }
