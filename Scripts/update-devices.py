@@ -2,7 +2,7 @@
 """Sync Sources/DeviceLookup/Resources/devices.json with Xcode's device database.
 
 Xcode ships the identifier, marketing name and SoC code of every iPhone, iPad, iPod touch,
-Apple TV and Apple Watch it can build for, in `Platforms/*/usr/standalone/device_traits.db`. New devices appear
+Apple TV, Apple Watch and Apple Vision Pro it can build for, in `Platforms/*/usr/standalone/device_traits.db`. New devices appear
 there in the Xcode release that supports them, which is usually around the announcement.
 
 The script adds identifiers missing from devices.json and reports what still needs a hand edit.
@@ -19,9 +19,10 @@ Fields:
     soc       Apple's SoC code (e.g. "t8150"), from Xcode
     chip      e.g. "A19 Pro"; by hand. The report suggests the chips of devices with the same SoC,
               but one SoC can ship under several names (A19 and A19 Pro are both t8150).
-    diag      screen diagonal in inches; by hand (not needed for Apple TV)
+    diag      screen diagonal in inches; by hand (not needed for Apple TV or Apple Vision Pro)
     cell      true for cellular iPad and Apple Watch models (iPhones are always cellular). Set
-              automatically when Xcode's name says "Cellular", otherwise by hand.
+              automatically when Xcode's name says "Cellular" or the device Xcode falls back to is
+              cellular, otherwise by hand.
 """
 
 import argparse
@@ -34,8 +35,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DEVICES_JSON = ROOT / "Sources/DeviceLookup/Resources/devices.json"
-PLATFORMS = ["iPhoneOS", "AppleTVOS", "WatchOS"]
-PREFIXES = ("iPhone", "iPad", "iPod", "AppleTV", "Watch")
+PLATFORMS = ["iPhoneOS", "AppleTVOS", "WatchOS", "XROS"]
+PREFIXES = ("iPhone", "iPad", "iPod", "AppleTV", "Watch", "RealityDevice")
 FIELD_ORDER = ["name", "chip", "diag", "cell", "soc"]
 
 
@@ -118,7 +119,8 @@ def main():
         entry = entries.get(identifier)
         if entry is None:
             entry = {"name": info["name"], "soc": info["soc"]}
-            if "Cellular" in info["name"]:
+            # A device falls back to its predecessor of the same kind, so a cellular predecessor means cellular.
+            if "Cellular" in info["name"] or entries.get(info["fallback"], {}).get("cell"):
                 entry["cell"] = True
             entries[identifier] = entry
             added.append(identifier)
@@ -143,9 +145,9 @@ def main():
         if not entry.get("chip"):
             same_soc = sorted(soc_chips.get(entry.get("soc"), []))
             missing.append(f"chip (same SoC: {', '.join(same_soc)})" if same_soc else "chip")
-        if not identifier.startswith("AppleTV") and not entry.get("diag"):
+        if not identifier.startswith(("AppleTV", "RealityDevice")) and not entry.get("diag"):
             missing.append("diag")
-        if identifier in added and identifier.startswith(("iPad", "Watch")) and not re.search(r"GPS|Cellular", entry["name"]):
+        if identifier in added and identifier.startswith(("iPad", "Watch")) and not entry.get("cell") and not re.search(r"GPS|Cellular", entry["name"]):
             missing.append("cell?")
         size = watch_case(xcode.get(identifier, {}).get("target")) if identifier.startswith("Watch") else None
         if size and not re.search(r" \d+mm$", entry["name"]):

@@ -24,6 +24,16 @@
     "chip": "A19",
     "soc": "t8150"
   },
+  "RealityDevice14,1": {
+    "name": "Apple Vision Pro",
+    "chip": "M2",
+    "soc": "t8112"
+  },
+  "RealityDevice17,1": {
+    "name": "Apple Vision Pro (M5)",
+    "chip": "M5",
+    "soc": "t8142"
+  },
   "Watch1,1": {
     "name": "Apple Watch (1st generation) 38mm",
     "chip": "S1",
@@ -987,6 +997,7 @@
     "name": "iPad Air 11-inch (M3)",
     "chip": "M3",
     "diag": 10.9,
+    "cell": true,
     "soc": "t8122"
   },
   "iPad15,5": {
@@ -999,6 +1010,7 @@
     "name": "iPad Air 13-inch (M3)",
     "chip": "M3",
     "diag": 12.9,
+    "cell": true,
     "soc": "t8122"
   },
   "iPad15,7": {
@@ -1011,6 +1023,7 @@
     "name": "iPad (A16)",
     "chip": "A16 Bionic",
     "diag": 10.9,
+    "cell": true,
     "soc": "t8120"
   },
   "iPad16,1": {
@@ -1023,6 +1036,7 @@
     "name": "iPad mini (A17 Pro)",
     "chip": "A17 Pro",
     "diag": 8.3,
+    "cell": true,
     "soc": "t8130"
   },
   "iPad16,3": {
@@ -1061,6 +1075,7 @@
     "name": "iPad Air 11-inch (M4)",
     "chip": "M4",
     "diag": 10.9,
+    "cell": true,
     "soc": "t8132"
   },
   "iPad16,10": {
@@ -1073,6 +1088,7 @@
     "name": "iPad Air 13-inch (M4)",
     "chip": "M4",
     "diag": 12.9,
+    "cell": true,
     "soc": "t8132"
   },
   "iPad17,1": {
@@ -1085,6 +1101,7 @@
     "name": "iPad Pro 11-inch (M5)",
     "chip": "M5",
     "diag": 11.0,
+    "cell": true,
     "soc": "t8142"
   },
   "iPad17,3": {
@@ -1097,7 +1114,21 @@
     "name": "iPad Pro 13-inch (M5)",
     "chip": "M5",
     "diag": 13.0,
+    "cell": true,
     "soc": "t8142"
+  },
+  "iPad19,1": {
+    "name": "iPad mini (A20 Pro)",
+    "chip": "A20 Pro",
+    "diag": 8.5,
+    "soc": "t8160"
+  },
+  "iPad19,2": {
+    "name": "iPad mini (A20 Pro)",
+    "chip": "A20 Pro",
+    "diag": 8.5,
+    "cell": true,
+    "soc": "t8160"
   },
   "iPhone4,1": {
     "name": "iPhone 4S",

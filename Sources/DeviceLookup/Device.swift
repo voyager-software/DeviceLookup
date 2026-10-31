@@ -94,7 +94,7 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
         }
     }()
 
-    /// Every iPhone, iPad, iPod touch, Apple TV and Apple Watch in the bundled data, in identifier order.
+    /// Every iPhone, iPad, iPod touch, Apple TV, Apple Watch and Apple Vision Pro in the bundled data, in identifier order.
     /// For Macs, see ``Mac/all``.
     public static var all: [Device] {
         DeviceTable.sortedIdentifiers.map(Device.init(modelIdentifier:))

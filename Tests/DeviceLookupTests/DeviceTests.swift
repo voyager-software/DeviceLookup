@@ -39,6 +39,26 @@ struct DeviceTests {
     @Test func `pad cellular`() {
         #expect(!Device(modelIdentifier: "iPad16,3").hasCellular)
         #expect(Device(modelIdentifier: "iPad16,4").hasCellular)
+        #expect(!Device(modelIdentifier: "iPad19,1").hasCellular)
+        #expect(Device(modelIdentifier: "iPad19,2").hasCellular)
+    }
+
+    /// Xcode doesn't say which iPads are cellular, so a model with several identifiers and none of them cellular
+    /// has probably been missed. Every such iPad so far has come in a cellular version.
+    @Test func `iPads with several identifiers have a cellular one`() {
+        let byName = Dictionary(grouping: Device.all.filter(\.isPad), by: \.modelName)
+        for (name, devices) in byName where devices.count > 1 {
+            #expect(devices.contains { $0.hasCellular }, "\(name): \(devices.map(\.modelIdentifier))")
+        }
+    }
+
+    @Test func `vision pro`() {
+        let device = Device(modelIdentifier: "RealityDevice17,1")
+        #expect(device.isKnown)
+        #expect(device.family == .vision)
+        #expect(device.deviceDescription == "Apple Vision Pro (M5), M5")
+        #expect(device.diagonal == nil)
+        #expect(!device.hasCellular)
     }
 
     @Test func `apple TV`() {
@@ -108,7 +128,7 @@ struct DeviceTests {
             #expect(!device.modelName.isEmpty, "\(device.modelIdentifier)")
             guard !Self.awaitingData.contains(device.modelIdentifier) else { continue }
             #expect(device.chip != nil, "\(device.modelIdentifier) has no chip")
-            if !device.isTV {
+            if !device.isTV, device.family != .vision {
                 #expect(device.diagonal != nil, "\(device.modelIdentifier) has no diagonal")
             }
         }

@@ -4,7 +4,7 @@ Names, chips, screen sizes and families for Apple device model identifiers.
 
 ## Overview
 
-DeviceLookup turns a hardware model identifier such as `iPhone18,1` into what people call the device, "iPhone 17 Pro", along with its chip, screen size and family. It covers iPhone, iPad, iPod touch, Apple TV, Apple Watch and Mac.
+DeviceLookup turns a hardware model identifier such as `iPhone18,1` into what people call the device, "iPhone 17 Pro", along with its chip, screen size and family. It covers iPhone, iPad, iPod touch, Apple TV, Apple Watch, Apple Vision Pro and Mac.
 
 ``Device`` is `Sendable` and never touches `UIDevice`, so you can use it from any thread or actor without hopping to the main actor.
 
