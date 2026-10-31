@@ -1,10 +1,12 @@
 <p align="center"><img src="Assets/logo.png" width="128" height="128" alt="DeviceLookup logo"></p>
 
-# DeviceLookup
+<h1 align="center">DeviceLookup</h1>
 
-[![CI](https://github.com/voyager-software/DeviceLookup/actions/workflows/ci.yml/badge.svg)](https://github.com/voyager-software/DeviceLookup/actions/workflows/ci.yml)
-[![Swift versions](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fvoyager-software%2FDeviceLookup%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/voyager-software/DeviceLookup)
-[![Platforms](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fvoyager-software%2FDeviceLookup%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/voyager-software/DeviceLookup)
+<p align="center">
+  <a href="https://github.com/voyager-software/DeviceLookup/actions/workflows/ci.yml"><img src="https://github.com/voyager-software/DeviceLookup/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://swiftpackageindex.com/voyager-software/DeviceLookup"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fvoyager-software%2FDeviceLookup%2Fbadge%3Ftype%3Dswift-versions" alt="Swift versions"></a>
+  <a href="https://swiftpackageindex.com/voyager-software/DeviceLookup"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fvoyager-software%2FDeviceLookup%2Fbadge%3Ftype%3Dplatforms" alt="Platforms"></a>
+</p>
 
 Names, chips, screen sizes and families for iPhone, iPad, iPod touch, Apple TV, Apple Watch and Mac model identifiers, plus the running device's OS, memory and storage details. `Device` is `Sendable` and never touches `UIDevice`, so you can use it from any thread or actor without hopping to the main actor. Replaces DeviceKit and MacLookup.
 
