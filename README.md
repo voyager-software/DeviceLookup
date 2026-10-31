@@ -36,9 +36,11 @@ let device = Device.current
 device.modelName          // "iPhone 17 Pro"
 device.deviceDescription  // "iPhone 17 Pro, A19 Pro"
 device.isSimulator        // false
+device.screen?.width      // 402 (see Screens)
+device.mac?.family        // nil on an iPhone; .macBookPro on a MacBook Pro (see Macs)
 ```
 
-On a simulator, this is the simulated device. Under Mac Catalyst and in an iPhone or iPad app on a Mac, it's the Mac, e.g. "MacBook Pro (14-inch, Nov 2023), Apple M3 Pro".
+`Device.current` is an ordinary `Device`, so everything in the sections below works on it as well as on a looked-up identifier. On a simulator, it's the simulated device. Under Mac Catalyst and in an iPhone or iPad app on a Mac, it's the Mac, e.g. "MacBook Pro (14-inch, Nov 2023), Apple M3 Pro".
 
 ### Any model identifier
 
