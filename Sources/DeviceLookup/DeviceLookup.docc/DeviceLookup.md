@@ -6,6 +6,8 @@ Names, chips, screen sizes and families for Apple device model identifiers.
 
 DeviceLookup turns a hardware model identifier such as `iPhone18,1` into what people call the device, "iPhone 17 Pro", along with its chip, screen size and kind. It covers iPhone, iPad, iPod touch, Apple TV, Apple Watch and Mac.
 
+``Device`` is `Sendable` and never touches `UIDevice`, so you can use it from any thread or actor without hopping to the main actor.
+
 ```swift
 import DeviceLookup
 
@@ -22,7 +24,7 @@ Device(modelIdentifier: "Mac14,7").mac?.kind    // .macBookPro
 
 The details are bundled data taken from Xcode's own device list, not code, so supporting a new device is a data update rather than new enum cases. A device that's newer than the data still resolves: its ``Device/family`` comes from the identifier prefix and its ``Device/modelName`` falls back to the identifier, so ``Device/isKnown`` tells you which you have.
 
-``Device`` is `Sendable` and never reads `UIDevice`, so you can use it from any thread or actor. On a simulator, ``Device/current`` describes the simulated device, and under Mac Catalyst it describes the Mac rather than an iPad.
+On a simulator, ``Device/current`` describes the simulated device, and under Mac Catalyst it describes the Mac rather than an iPad.
 
 ## Topics
 
