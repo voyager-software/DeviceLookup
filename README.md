@@ -19,7 +19,7 @@ Names, release years, chips, screens and families for iPhone, iPad, iPod touch, 
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/voyager-software/DeviceLookup.git", from: "2026.10.16"),
+    .package(url: "https://github.com/voyager-software/DeviceLookup.git", from: "2026.10.17"),
 ]
 ```
 
