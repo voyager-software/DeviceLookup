@@ -34,7 +34,6 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
             self.modelName = entry.name
             self.year = entry.year
             self.chip = chip ?? entry.chip
-            self.diagonal = entry.diagonal
             self.screen = entry.screen
             self.hasDynamicIsland = entry.dynamicIsland == true
             self.hasCellular = self.family == .phone || entry.cellular == true
@@ -44,7 +43,6 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
             self.modelName = mac.name
             self.year = mac.year
             self.chip = chip
-            self.diagonal = nil
             self.screen = nil
             self.hasDynamicIsland = false
             self.hasCellular = false
@@ -54,7 +52,6 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
             self.modelName = modelIdentifier
             self.year = nil
             self.chip = chip
-            self.diagonal = nil
             self.screen = nil
             self.hasDynamicIsland = false
             self.hasCellular = self.family == .phone
@@ -127,10 +124,8 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
     /// iPhone or iPad app on a Mac, which can't read it.
     public let chip: String?
 
-    /// The screen diagonal in inches, when known. For a foldable such as iPhone Duo, the inner display's.
-    public let diagonal: Double?
-
-    /// The main screen's size, scale and corner radius, when known. Apple TV and Apple Vision Pro have none.
+    /// The main screen's diagonal, size, scale and corner radius, when known. Apple TV and Apple Vision Pro have
+    /// none.
     public let screen: Screen?
 
     /// Whether the device has a Dynamic Island.

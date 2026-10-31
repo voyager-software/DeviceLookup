@@ -23,12 +23,12 @@ Fields:
     soc       Apple's SoC code (e.g. "t8150"), from Xcode
     chip      e.g. "A19 Pro"; by hand. The report suggests the chips of devices with the same SoC,
               but one SoC can ship under several names (A19 and A19 Pro are both t8150).
-    diag      screen diagonal in inches; by hand (not needed for Apple TV or Apple Vision Pro)
     cell      true for cellular iPad and Apple Watch models (iPhones are always cellular). Set
               automatically when Xcode's name says "Cellular" or the device Xcode falls back to is
               cellular, otherwise by hand.
     island    true when it has a Dynamic Island, from the simulator for the model
     screen    the main screen, from the simulator for the model; by hand for models too old to have one:
+              diag      diagonal in inches, e.g. 6.3; always by hand
               w, h      portrait size in points, e.g. 402 x 874
               scale     e.g. 3
               corner    the display's corner radius in points, left out for square corners
@@ -50,7 +50,8 @@ ROOT = Path(__file__).resolve().parent.parent
 DEVICES_JSON = ROOT / "Sources/DeviceLookup/Resources/devices.json"
 PLATFORMS = ["iPhoneOS", "AppleTVOS", "WatchOS", "XROS"]
 PREFIXES = ("iPhone", "iPad", "iPod", "AppleTV", "Watch", "RealityDevice")
-FIELD_ORDER = ["name", "year", "chip", "diag", "cell", "island", "screen", "soc"]
+FIELD_ORDER = ["name", "year", "chip", "cell", "island", "screen", "soc"]
+SCREEN_ORDER = ["diag", "w", "h", "scale", "corner"]
 SIMULATOR_PROFILES = Path("/Library/Developer/CoreSimulator/Profiles/DeviceTypes")
 NO_SCREEN = ("AppleTV", "RealityDevice")
 
@@ -140,7 +141,10 @@ def chips_by_soc(entries):
 
 
 def ordered(entry):
-    return {key: entry[key] for key in FIELD_ORDER if entry.get(key) is not None}
+    result = {key: entry[key] for key in FIELD_ORDER if entry.get(key) is not None}
+    if "screen" in result:
+        result["screen"] = {key: result["screen"][key] for key in SCREEN_ORDER if key in result["screen"]}
+    return result
 
 
 def main():
@@ -180,7 +184,7 @@ def main():
 
     for identifier, entry in entries.items():
         if "screen" not in entry and identifier in screens and not identifier.startswith(NO_SCREEN):
-            entry["screen"] = screens[identifier]
+            entry["screen"] = dict(screens[identifier])
             print(f"SCREEN   {identifier:<14} {entry['name']}: {screens[identifier]}")
         if identifier in islands and not entry.get("island"):
             entry["island"] = True
@@ -199,10 +203,11 @@ def main():
         if not entry.get("chip"):
             same_soc = sorted(soc_chips.get(entry.get("soc"), []))
             missing.append(f"chip (same SoC: {', '.join(same_soc)})" if same_soc else "chip")
-        if not identifier.startswith(NO_SCREEN) and not entry.get("diag"):
-            missing.append("diag")
-        if not identifier.startswith(NO_SCREEN) and not entry.get("screen"):
-            missing.append("screen")
+        if not identifier.startswith(NO_SCREEN):
+            if not entry.get("screen"):
+                missing.append("screen")
+            elif not entry["screen"].get("diag"):
+                missing.append("screen diag")
         if identifier in added and identifier.startswith(("iPad", "Watch")) and not entry.get("cell") and not re.search(r"GPS|Cellular", entry["name"]):
             missing.append("cell?")
         size = watch_case(xcode.get(identifier, {}).get("target")) if identifier.startswith("Watch") else None

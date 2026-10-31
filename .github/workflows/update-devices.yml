@@ -3,7 +3,7 @@ name: Update devices
 # Checks the newest Xcode on GitHub's runners, betas and release candidates included, for device
 # identifiers missing from devices.json, and Apple's "Identify your Mac model" pages for Macs that
 # macs.json doesn't have. Opens a pull request with what it finds. The report in the pull request
-# lists what still needs filling in by hand: chips, diagonals, cellular and watch case sizes.
+# lists what still needs filling in by hand: chips, screen diagonals, cellular and watch case sizes.
 # GitHub holds CI on a pull request opened by github-actions[bot] until a maintainer approves it on the
 # pull request page.
 
@@ -77,7 +77,7 @@ jobs:
               subjects+=("$added $devices from $(basename "$XCODE" .app)")
               echo "Xcode lists device identifiers that devices.json doesn't have. This adds them with their names and SoC codes."
               echo
-              echo "Before merging, fill in what the report lists under TO FILL, check that new devices were released this year, and append the case size to new watch names. The tests fail until every device has a year, a chip, a diagonal and a screen (Apple TV and Apple Vision Pro need only the first two)."
+              echo "Before merging, fill in what the report lists under TO FILL, check that new devices were released this year, and append the case size to new watch names. The tests fail until every device has a year, a chip and a screen with its diagonal (Apple TV and Apple Vision Pro need only the first two)."
               echo
               echo '```'
               cat "$RUNNER_TEMP/devices.txt"

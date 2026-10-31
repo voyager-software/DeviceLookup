@@ -11,7 +11,7 @@ import Foundation
 import Testing
 
 struct DeviceTests {
-    /// Devices in the data whose chip or diagonal has not been filled in yet. Fill them in and remove them here.
+    /// Devices in the data whose chip or screen has not been filled in yet. Fill them in and remove them here.
     static let awaitingData: Set<String> = []
 
     @Test func `known phone`() {
@@ -21,7 +21,7 @@ struct DeviceTests {
         #expect(device.modelName == "iPhone 17 Pro")
         #expect(device.year == 2025)
         #expect(device.chip == "A19 Pro")
-        #expect(device.diagonal == 6.3)
+        #expect(device.screen?.diagonal == 6.3)
         #expect(device.hasCellular)
         #expect(device.deviceDescription == "iPhone 17 Pro, A19 Pro")
     }
@@ -32,7 +32,7 @@ struct DeviceTests {
         #expect(device.family == .phone)
         #expect(device.modelName == "iPhone99,1")
         #expect(device.chip == nil)
-        #expect(device.diagonal == nil)
+        #expect(device.screen == nil)
         #expect(device.hasCellular)
         #expect(device.deviceDescription == "iPhone99,1")
     }
@@ -64,15 +64,23 @@ struct DeviceTests {
     }
 
     @Test func screens() {
-        #expect(Device(modelIdentifier: "iPhone18,1").screen == .init(width: 402, height: 874, scale: 3, cornerRadius: 62))
-        #expect(Device(modelIdentifier: "iPhone10,1").screen == .init(width: 375, height: 667, scale: 2))
+        #expect(Device(modelIdentifier: "iPhone18,1").screen == .init(diagonal: 6.3, width: 402, height: 874, scale: 3, cornerRadius: 62))
+        #expect(Device(modelIdentifier: "iPhone10,1").screen == .init(diagonal: 4.7, width: 375, height: 667, scale: 2))
         #expect(Device(modelIdentifier: "iPad19,2").screen?.cornerRadius == 47)
-        #expect(Device(modelIdentifier: "Watch7,18").screen == .init(width: 208, height: 248, scale: 2, cornerRadius: 50))
+        #expect(Device(modelIdentifier: "Watch7,18").screen == .init(diagonal: 2.0, width: 208, height: 248, scale: 2, cornerRadius: 50))
         // A foldable's main screen is its larger, inner display, not the cover screen.
-        #expect(Device(modelIdentifier: "iPhone19,4").screen == .init(width: 669, height: 951, scale: 3, cornerRadius: 55))
+        #expect(Device(modelIdentifier: "iPhone19,4").screen == .init(diagonal: 7.6, width: 669, height: 951, scale: 3, cornerRadius: 55))
         #expect(Device(modelIdentifier: "AppleTV18,1").screen == nil)
         #expect(Device(modelIdentifier: "RealityDevice17,1").screen == nil)
         #expect(Device(modelIdentifier: "iPhone99,1").screen == nil)
+    }
+
+    /// A screen from the simulator whose diagonal isn't filled in yet is left out, without failing the other entries.
+    @Test func `screen without a diagonal decodes as nil`() throws {
+        let json = #"{"name": "iPhone 99", "screen": {"w": 402, "h": 874, "scale": 3}}"#
+        let entry = try JSONDecoder().decode(DeviceTable.Entry.self, from: Data(json.utf8))
+        #expect(entry.name == "iPhone 99")
+        #expect(entry.screen == nil)
     }
 
     /// The Dynamic Island started with iPhone 14 Pro. iPhone 14 Plus and the e models don't have one, and it's only on iPhones.
@@ -91,7 +99,7 @@ struct DeviceTests {
         #expect(device.isVision)
         #expect(device.year == 2025)
         #expect(device.deviceDescription == "Apple Vision Pro (M5), M5")
-        #expect(device.diagonal == nil)
+        #expect(device.screen == nil)
         #expect(!device.hasCellular)
     }
 
@@ -165,8 +173,7 @@ struct DeviceTests {
             guard !Self.awaitingData.contains(device.modelIdentifier) else { continue }
             #expect(device.chip != nil, "\(device.modelIdentifier) has no chip")
             if !device.isTV, !device.isVision {
-                #expect(device.diagonal != nil, "\(device.modelIdentifier) has no diagonal")
-                #expect(device.screen != nil, "\(device.modelIdentifier) has no screen")
+                #expect(device.screen != nil, "\(device.modelIdentifier) has no screen, or no diagonal in it")
             }
         }
     }
@@ -181,7 +188,7 @@ struct DeviceTests {
     @Test func `awaiting data is still missing`() {
         for identifier in Self.awaitingData {
             let device = Device(modelIdentifier: identifier)
-            #expect(device.chip == nil || device.diagonal == nil, "\(identifier) is complete; remove it from awaitingData")
+            #expect(device.chip == nil || device.screen == nil, "\(identifier) is complete; remove it from awaitingData")
         }
     }
 

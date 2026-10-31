@@ -16,7 +16,7 @@ device.modelName          // "iPhone 17 Pro"
 device.deviceDescription  // "iPhone 17 Pro, A19 Pro"
 device.year               // 2025
 device.family             // .phone
-device.diagonal           // 6.3
+device.screen?.diagonal   // 6.3 (inches)
 device.screen?.width      // 402 (points; also height, scale and cornerRadius)
 device.hasDynamicIsland   // true
 
@@ -47,7 +47,6 @@ On a simulator, ``Device/current`` describes the simulated device. Under Mac Cat
 - ``Device/modelName``
 - ``Device/chip``
 - ``Device/year``
-- ``Device/diagonal``
 - ``Device/screen``
 - ``Device/Screen``
 - ``Device/hasDynamicIsland``

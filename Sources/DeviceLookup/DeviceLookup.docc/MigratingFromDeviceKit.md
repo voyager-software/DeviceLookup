@@ -11,7 +11,7 @@ DeviceLookup's ``Device`` has the same name as DeviceKit's and covers what most 
 | `Device.identifier` | ``Device/machineIdentifier`` |
 | `device.description` | ``Device/description`` |
 | `device.cpu.description` | ``Device/chip`` |
-| `device.diagonal` (-1 when unknown) | ``Device/diagonal`` (`nil` when unknown) |
+| `device.diagonal` (-1 when unknown) | ``Device/screen``?.``Device/Screen/diagonal`` (`nil` when unknown) |
 | `device.hasDynamicIsland` | ``Device/hasDynamicIsland`` |
 | `device.hasRoundedDisplayCorners` | ``Device/screen``?.``Device/Screen/cornerRadius`` is above 0 |
 | `device.screenRatio` | ``Device/screen``?.``Device/Screen/width`` and ``Device/Screen/height`` |
