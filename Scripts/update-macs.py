@@ -13,6 +13,7 @@ Fields:
     family    the product line, e.g. "MacBook Pro", from the start of the name
     name      e.g. "MacBook Pro (14-inch, M5, 2025)". Newer pages give the year on its own line, so
               it's added to the name as the older entries have it.
+    year      the year it was released, e.g. 2025, from the name
     ids       the model identifiers, e.g. ["Mac17,2"]
 
 Pages get redesigned now and then. If one yields fewer Macs than macs.json has for that family,
@@ -98,6 +99,12 @@ def with_year(name, year):
     return f"{name[:-1]}, {year})" if name.endswith(")") else f"{name} ({year})"
 
 
+def year_of(name):
+    """The last year in a name, e.g. 2015 for "iMac (Retina 5K, 27-inch, Late 2015)"."""
+    years = re.findall(r"\b(?:19|20)\d\d\b", name)
+    return int(years[-1]) if years else None
+
+
 def parse(page_html):
     blocks = Blocks()
     blocks.feed(page_html)
@@ -110,7 +117,8 @@ def parse(page_html):
         elif text.startswith("Model Identifier") and name:
             ids = IDENTIFIER.findall(text)
             if ids:
-                macs.append({"family": family_of(name), "name": with_year(name, year), "ids": sorted(set(ids))})
+                full_name = with_year(name, year)
+                macs.append({"family": family_of(name), "name": full_name, "year": year_of(full_name), "ids": sorted(set(ids))})
     return macs
 
 

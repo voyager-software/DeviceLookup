@@ -77,7 +77,7 @@ jobs:
               subjects+=("$added $devices from $(basename "$XCODE" .app)")
               echo "Xcode lists device identifiers that devices.json doesn't have. This adds them with their names and SoC codes."
               echo
-              echo "Before merging, fill in what the report lists under TO FILL, and append the case size to new watch names. The tests fail until every device has a chip and a diagonal."
+              echo "Before merging, fill in what the report lists under TO FILL, check that new devices were released this year, and append the case size to new watch names. The tests fail until every device has a chip and a diagonal."
               echo
               echo '```'
               cat "$RUNNER_TEMP/devices.txt"

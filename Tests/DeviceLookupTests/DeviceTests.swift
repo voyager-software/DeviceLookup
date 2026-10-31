@@ -19,6 +19,7 @@ struct DeviceTests {
         #expect(device.isKnown)
         #expect(device.isPhone)
         #expect(device.modelName == "iPhone 17 Pro")
+        #expect(device.year == 2025)
         #expect(device.chip == "A19 Pro")
         #expect(device.diagonal == 6.3)
         #expect(device.hasCellular)
@@ -52,10 +53,21 @@ struct DeviceTests {
         }
     }
 
+    /// Xcode gives the 2020 and 2022 Apple Watch SE the same names, so only the year tells them apart.
+    @Test func `year tells same-named models apart`() {
+        let first = Device(modelIdentifier: "Watch5,9")
+        let second = Device(modelIdentifier: "Watch6,10")
+        #expect(first.modelName == second.modelName)
+        #expect(first.year == 2020)
+        #expect(second.year == 2022)
+        #expect(Device(modelIdentifier: "iPhone99,1").year == nil)
+    }
+
     @Test func `vision pro`() {
         let device = Device(modelIdentifier: "RealityDevice17,1")
         #expect(device.isKnown)
-        #expect(device.family == .vision)
+        #expect(device.isVision)
+        #expect(device.year == 2025)
         #expect(device.deviceDescription == "Apple Vision Pro (M5), M5")
         #expect(device.diagonal == nil)
         #expect(!device.hasCellular)
@@ -115,6 +127,7 @@ struct DeviceTests {
         #expect(device.isKnown)
         #expect(device.isMac)
         #expect(device.modelName == "MacBook Pro (13-inch, M2, 2022)")
+        #expect(device.year == 2022)
         #expect(device.mac?.family == .macBookPro)
         #expect(Device(modelIdentifier: "iPhone18,1").mac == nil)
     }
@@ -126,9 +139,10 @@ struct DeviceTests {
         for device in all {
             #expect(device.family != .unknown, "\(device.modelIdentifier)")
             #expect(!device.modelName.isEmpty, "\(device.modelIdentifier)")
+            #expect(device.year != nil, "\(device.modelIdentifier) has no year")
             guard !Self.awaitingData.contains(device.modelIdentifier) else { continue }
             #expect(device.chip != nil, "\(device.modelIdentifier) has no chip")
-            if !device.isTV, device.family != .vision {
+            if !device.isTV, !device.isVision {
                 #expect(device.diagonal != nil, "\(device.modelIdentifier) has no diagonal")
             }
         }
@@ -228,6 +242,15 @@ struct MacTests {
     @Test func `no unknown families`() {
         #expect(!Mac.all.isEmpty)
         #expect(Mac.all.allSatisfy { $0.family != .unknown })
+    }
+
+    @Test func `every Mac has a year`() {
+        for mac in Mac.all {
+            #expect(mac.year != nil, "\(mac.name)")
+        }
+        // A reused identifier gives the newest model's year, like its name.
+        #expect(Device(modelIdentifier: "MacBookPro15,1").year == 2019)
+        #expect(Mac.find(model: "Macmini6,2")?.year == 2012)
     }
 
     /// Each entry is one identifier, e.g. "Macmini6,1", never several run together.

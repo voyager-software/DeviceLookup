@@ -32,6 +32,7 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
         if lookInDevices, let entry = DeviceTable.entries[modelIdentifier] {
             self.isKnown = true
             self.modelName = entry.name
+            self.year = entry.year
             self.chip = chip ?? entry.chip
             self.diagonal = entry.diagonal
             self.hasCellular = self.family == .phone || entry.cellular == true
@@ -39,6 +40,7 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
         else if lookInMacs, let mac = Mac.find(model: modelIdentifier) {
             self.isKnown = true
             self.modelName = mac.name
+            self.year = mac.year
             self.chip = chip
             self.diagonal = nil
             self.hasCellular = false
@@ -46,6 +48,7 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
         else {
             self.isKnown = false
             self.modelName = modelIdentifier
+            self.year = nil
             self.chip = chip
             self.diagonal = nil
             self.hasCellular = self.family == .phone
@@ -110,6 +113,10 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
     /// when the device is not in the bundled data.
     public let modelName: String
 
+    /// The year the model was released, e.g. 2025, when known. For a Mac identifier Apple reused across models,
+    /// the newest model's year.
+    public let year: Int?
+
     /// The chip, e.g. "A19 Pro". On a Mac, the CPU brand string of the running Mac, e.g. "Apple M3 Pro", except in an
     /// iPhone or iPad app on a Mac, which can't read it.
     public let chip: String?
@@ -148,6 +155,10 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
 
     public var isMac: Bool {
         self.family == .mac
+    }
+
+    public var isVision: Bool {
+        self.family == .vision
     }
 
     /// The Mac details, when this device is a known Mac. An identifier Apple reused across models, such as

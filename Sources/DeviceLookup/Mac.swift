@@ -56,6 +56,9 @@ public struct Mac: Decodable, Sendable {
     /// The model name as Apple gives it, e.g. "MacBook Pro (14-inch, M5, 2025)".
     public let name: String
 
+    /// The year the model was released, e.g. 2025.
+    public let year: Int?
+
     /// The model identifiers this Mac shipped with, e.g. ["Mac14,7"].
     public let modelIdentifiers: [String]
 
@@ -71,6 +74,7 @@ public struct Mac: Decodable, Sendable {
     private enum CodingKeys: String, CodingKey {
         case family
         case name
+        case year
         case modelIdentifiers = "ids"
     }
 

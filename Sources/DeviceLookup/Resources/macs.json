@@ -2,6 +2,7 @@
   {
     "family": "iMac",
     "name": "iMac (24-inch, 2024, Four ports)",
+    "year": 2024,
     "ids": [
       "Mac16,3"
     ]
@@ -9,6 +10,7 @@
   {
     "family": "iMac",
     "name": "iMac (24-inch, 2024, Two ports)",
+    "year": 2024,
     "ids": [
       "Mac16,2"
     ]
@@ -16,6 +18,7 @@
   {
     "family": "iMac",
     "name": "iMac (24-inch, 2023, Four ports)",
+    "year": 2023,
     "ids": [
       "Mac15,5"
     ]
@@ -23,6 +26,7 @@
   {
     "family": "iMac",
     "name": "iMac (24-inch, 2023, Two ports)",
+    "year": 2023,
     "ids": [
       "Mac15,4"
     ]
@@ -30,6 +34,7 @@
   {
     "family": "iMac",
     "name": "iMac (24-inch, M1, 2021)",
+    "year": 2021,
     "ids": [
       "iMac21,1"
     ]
@@ -37,6 +42,7 @@
   {
     "family": "iMac",
     "name": "iMac (24-inch, M1, 2021)",
+    "year": 2021,
     "ids": [
       "iMac21,2"
     ]
@@ -44,6 +50,7 @@
   {
     "family": "iMac",
     "name": "iMac (Retina 5K, 27-inch, 2020)",
+    "year": 2020,
     "ids": [
       "iMac20,1",
       "iMac20,2"
@@ -52,6 +59,7 @@
   {
     "family": "iMac",
     "name": "iMac (Retina 5K, 27-inch, 2019)",
+    "year": 2019,
     "ids": [
       "iMac19,1"
     ]
@@ -59,6 +67,7 @@
   {
     "family": "iMac",
     "name": "iMac (Retina 4K, 21.5-inch, 2019)",
+    "year": 2019,
     "ids": [
       "iMac19,2"
     ]
@@ -66,6 +75,7 @@
   {
     "family": "iMac Pro",
     "name": "iMac Pro (2017)",
+    "year": 2017,
     "ids": [
       "iMacPro1,1"
     ]
@@ -73,6 +83,7 @@
   {
     "family": "iMac",
     "name": "iMac (Retina 5K, 27-inch, 2017)",
+    "year": 2017,
     "ids": [
       "iMac18,3"
     ]
@@ -80,6 +91,7 @@
   {
     "family": "iMac",
     "name": "iMac (Retina 4K, 21.5-inch, 2017)",
+    "year": 2017,
     "ids": [
       "iMac18,2"
     ]
@@ -87,6 +99,7 @@
   {
     "family": "iMac",
     "name": "iMac (21.5-inch, 2017)",
+    "year": 2017,
     "ids": [
       "iMac18,1"
     ]
@@ -94,6 +107,7 @@
   {
     "family": "iMac",
     "name": "iMac (Retina 5K, 27-inch, Late 2015)",
+    "year": 2015,
     "ids": [
       "iMac17,1"
     ]
@@ -101,6 +115,7 @@
   {
     "family": "iMac",
     "name": "iMac (Retina 4K, 21.5-inch, Late 2015)",
+    "year": 2015,
     "ids": [
       "iMac16,2"
     ]
@@ -108,6 +123,7 @@
   {
     "family": "iMac",
     "name": "iMac (21.5-inch, Late 2015)",
+    "year": 2015,
     "ids": [
       "iMac16,1"
     ]
@@ -115,6 +131,7 @@
   {
     "family": "iMac",
     "name": "iMac (Retina 5K, 27-inch, Mid 2015)",
+    "year": 2015,
     "ids": [
       "iMac15,1"
     ]
@@ -122,6 +139,7 @@
   {
     "family": "iMac",
     "name": "iMac (Retina 5K, 27-inch, Late 2014)",
+    "year": 2014,
     "ids": [
       "iMac15,1"
     ]
@@ -129,6 +147,7 @@
   {
     "family": "iMac",
     "name": "iMac (21.5-inch, Mid 2014)",
+    "year": 2014,
     "ids": [
       "iMac14,4"
     ]
@@ -136,6 +155,7 @@
   {
     "family": "iMac",
     "name": "iMac (27-inch, Late 2013)",
+    "year": 2013,
     "ids": [
       "iMac14,2"
     ]
@@ -143,6 +163,7 @@
   {
     "family": "iMac",
     "name": "iMac (21.5-inch, Late 2013)",
+    "year": 2013,
     "ids": [
       "iMac14,1"
     ]
@@ -150,6 +171,7 @@
   {
     "family": "iMac",
     "name": "iMac (27-inch, Late 2012)",
+    "year": 2012,
     "ids": [
       "iMac13,2"
     ]
@@ -157,6 +179,7 @@
   {
     "family": "iMac",
     "name": "iMac (21.5-inch, Late 2012)",
+    "year": 2012,
     "ids": [
       "iMac13,1"
     ]
@@ -164,6 +187,7 @@
   {
     "family": "iMac",
     "name": "iMac (27-inch, Mid 2011)",
+    "year": 2011,
     "ids": [
       "iMac12,2"
     ]
@@ -171,6 +195,7 @@
   {
     "family": "iMac",
     "name": "iMac (21.5-inch, Mid 2011)",
+    "year": 2011,
     "ids": [
       "iMac12,1"
     ]
@@ -178,6 +203,7 @@
   {
     "family": "iMac",
     "name": "iMac (27-inch, Mid 2010)",
+    "year": 2010,
     "ids": [
       "iMac11,3"
     ]
@@ -185,6 +211,7 @@
   {
     "family": "iMac",
     "name": "iMac (21.5-inch, Mid 2010)",
+    "year": 2010,
     "ids": [
       "iMac11,2"
     ]
@@ -192,6 +219,7 @@
   {
     "family": "iMac",
     "name": "iMac (27-inch, Late 2009)",
+    "year": 2009,
     "ids": [
       "iMac10,1"
     ]
@@ -199,6 +227,7 @@
   {
     "family": "iMac",
     "name": "iMac (21.5-inch, Late 2009)",
+    "year": 2009,
     "ids": [
       "iMac10,1"
     ]
@@ -206,6 +235,7 @@
   {
     "family": "iMac",
     "name": "iMac (24-inch, Early 2009)",
+    "year": 2009,
     "ids": [
       "iMac9,1"
     ]
@@ -213,6 +243,7 @@
   {
     "family": "iMac",
     "name": "iMac (20-inch, Early 2009)",
+    "year": 2009,
     "ids": [
       "iMac9,1"
     ]
@@ -220,6 +251,7 @@
   {
     "family": "Mac Studio",
     "name": "Mac Studio (M5 Max, 2026)",
+    "year": 2026,
     "ids": [
       "Mac17,14"
     ]
@@ -227,6 +259,7 @@
   {
     "family": "Mac Studio",
     "name": "Mac Studio (M5 Ultra, 2026)",
+    "year": 2026,
     "ids": [
       "Mac17,15"
     ]
@@ -234,6 +267,7 @@
   {
     "family": "Mac Studio",
     "name": "Mac Studio (2025)",
+    "year": 2025,
     "ids": [
       "Mac16,9"
     ]
@@ -241,6 +275,7 @@
   {
     "family": "Mac Studio",
     "name": "Mac Studio (2025)",
+    "year": 2025,
     "ids": [
       "Mac15,14"
     ]
@@ -248,6 +283,7 @@
   {
     "family": "Mac Studio",
     "name": "Mac Studio (2023)",
+    "year": 2023,
     "ids": [
       "Mac14,13"
     ]
@@ -255,6 +291,7 @@
   {
     "family": "Mac Studio",
     "name": "Mac Studio (2023)",
+    "year": 2023,
     "ids": [
       "Mac14,14"
     ]
@@ -262,6 +299,7 @@
   {
     "family": "Mac Studio",
     "name": "Mac Studio (2022)",
+    "year": 2022,
     "ids": [
       "Mac13,1"
     ]
@@ -269,6 +307,7 @@
   {
     "family": "Mac Studio",
     "name": "Mac Studio (2022)",
+    "year": 2022,
     "ids": [
       "Mac13,2"
     ]
@@ -276,6 +315,7 @@
   {
     "family": "MacBook",
     "name": "MacBook (Retina, 12-inch, 2017)",
+    "year": 2017,
     "ids": [
       "MacBook10,1"
     ]
@@ -283,6 +323,7 @@
   {
     "family": "MacBook",
     "name": "MacBook (Retina, 12-inch, Early 2016)",
+    "year": 2016,
     "ids": [
       "MacBook9,1"
     ]
@@ -290,6 +331,7 @@
   {
     "family": "MacBook",
     "name": "MacBook (Retina, 12-inch, Early 2015)",
+    "year": 2015,
     "ids": [
       "MacBook8,1"
     ]
@@ -297,6 +339,7 @@
   {
     "family": "MacBook",
     "name": "MacBook (13-inch, Mid 2010)",
+    "year": 2010,
     "ids": [
       "MacBook7,1"
     ]
@@ -304,6 +347,7 @@
   {
     "family": "MacBook",
     "name": "MacBook (13-inch, Late 2009)",
+    "year": 2009,
     "ids": [
       "MacBook6,1"
     ]
@@ -311,6 +355,7 @@
   {
     "family": "MacBook",
     "name": "MacBook (13-inch, Mid 2009)",
+    "year": 2009,
     "ids": [
       "MacBook5,2"
     ]
@@ -318,6 +363,7 @@
   {
     "family": "MacBook",
     "name": "MacBook (13-inch, Early 2009)",
+    "year": 2009,
     "ids": [
       "MacBook5,2"
     ]
@@ -325,6 +371,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (15-inch, M5, 2026)",
+    "year": 2026,
     "ids": [
       "Mac17,4"
     ]
@@ -332,6 +379,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (13-inch, M5, 2026)",
+    "year": 2026,
     "ids": [
       "Mac17,3"
     ]
@@ -339,6 +387,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (15-inch, M4, 2025)",
+    "year": 2025,
     "ids": [
       "Mac16,13"
     ]
@@ -346,6 +395,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (13-inch, M4, 2025)",
+    "year": 2025,
     "ids": [
       "Mac16,12"
     ]
@@ -353,6 +403,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (15-inch, M3, 2024)",
+    "year": 2024,
     "ids": [
       "Mac15,13"
     ]
@@ -360,6 +411,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (13-inch, M3, 2024)",
+    "year": 2024,
     "ids": [
       "Mac15,12"
     ]
@@ -367,6 +419,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (15-inch, M2, 2023)",
+    "year": 2023,
     "ids": [
       "Mac14,15"
     ]
@@ -374,6 +427,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (M2, 2022)",
+    "year": 2022,
     "ids": [
       "Mac14,2"
     ]
@@ -381,6 +435,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (M1, 2020)",
+    "year": 2020,
     "ids": [
       "MacBookAir10,1"
     ]
@@ -388,6 +443,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (Retina, 13-inch, 2020)",
+    "year": 2020,
     "ids": [
       "MacBookAir9,1"
     ]
@@ -395,6 +451,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (Retina, 13-inch, 2019)",
+    "year": 2019,
     "ids": [
       "MacBookAir8,2"
     ]
@@ -402,6 +459,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (Retina, 13-inch, 2018)",
+    "year": 2018,
     "ids": [
       "MacBookAir8,1"
     ]
@@ -409,6 +467,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (13-inch, 2017)",
+    "year": 2017,
     "ids": [
       "MacBookAir7,2"
     ]
@@ -416,6 +475,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (13-inch, Early 2015)",
+    "year": 2015,
     "ids": [
       "MacBookAir7,2"
     ]
@@ -423,6 +483,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (11-inch, Early 2015)",
+    "year": 2015,
     "ids": [
       "MacBookAir7,1"
     ]
@@ -430,6 +491,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (13-inch, Early 2014)",
+    "year": 2014,
     "ids": [
       "MacBookAir6,2"
     ]
@@ -437,6 +499,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (11-inch, Early 2014)",
+    "year": 2014,
     "ids": [
       "MacBookAir6,1"
     ]
@@ -444,6 +507,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (13-inch, Mid 2013)",
+    "year": 2013,
     "ids": [
       "MacBookAir6,2"
     ]
@@ -451,6 +515,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (11-inch, Mid 2013)",
+    "year": 2013,
     "ids": [
       "MacBookAir6,1"
     ]
@@ -458,6 +523,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (13-inch, Mid 2012)",
+    "year": 2012,
     "ids": [
       "MacBookAir5,2"
     ]
@@ -465,6 +531,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (11-inch, Mid 2012)",
+    "year": 2012,
     "ids": [
       "MacBookAir5,1"
     ]
@@ -472,6 +539,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (13-inch, Mid 2011)",
+    "year": 2011,
     "ids": [
       "MacBookAir4,2"
     ]
@@ -479,6 +547,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (11-inch, Mid 2011)",
+    "year": 2011,
     "ids": [
       "MacBookAir4,1"
     ]
@@ -486,6 +555,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (13-inch, Late 2010)",
+    "year": 2010,
     "ids": [
       "MacBookAir3,2"
     ]
@@ -493,6 +563,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (11-inch, Late 2010)",
+    "year": 2010,
     "ids": [
       "MacBookAir3,1"
     ]
@@ -500,6 +571,7 @@
   {
     "family": "MacBook Air",
     "name": "MacBook Air (Mid 2009)",
+    "year": 2009,
     "ids": [
       "MacBookAir2,1"
     ]
@@ -507,6 +579,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, M5 Pro or M5 Max, 2026)",
+    "year": 2026,
     "ids": [
       "Mac17,7",
       "Mac17,9"
@@ -515,6 +588,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (16-inch, M5 Pro or M5 Max, 2026)",
+    "year": 2026,
     "ids": [
       "Mac17,6",
       "Mac17,8"
@@ -523,6 +597,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, M5, 2025)",
+    "year": 2025,
     "ids": [
       "Mac17,2"
     ]
@@ -530,6 +605,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, 2024)",
+    "year": 2024,
     "ids": [
       "Mac16,1"
     ]
@@ -537,6 +613,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, 2024)",
+    "year": 2024,
     "ids": [
       "Mac16,6",
       "Mac16,8"
@@ -545,6 +622,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (16-inch, 2024)",
+    "year": 2024,
     "ids": [
       "Mac16,5",
       "Mac16,7"
@@ -553,6 +631,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, Nov 2023)",
+    "year": 2023,
     "ids": [
       "Mac15,3"
     ]
@@ -560,6 +639,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, Nov 2023)",
+    "year": 2023,
     "ids": [
       "Mac15,10",
       "Mac15,6",
@@ -569,6 +649,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (16-inch, Nov 2023)",
+    "year": 2023,
     "ids": [
       "Mac15,11",
       "Mac15,7",
@@ -578,6 +659,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, 2023)",
+    "year": 2023,
     "ids": [
       "Mac14,5",
       "Mac14,9"
@@ -586,6 +668,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (16-inch, 2023)",
+    "year": 2023,
     "ids": [
       "Mac14,10",
       "Mac14,6"
@@ -594,6 +677,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, M2, 2022)",
+    "year": 2022,
     "ids": [
       "Mac14,7"
     ]
@@ -601,6 +685,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, 2021)",
+    "year": 2021,
     "ids": [
       "MacBookPro18,3",
       "MacBookPro18,4"
@@ -609,6 +694,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (16-inch, 2021)",
+    "year": 2021,
     "ids": [
       "MacBookPro18,1",
       "MacBookPro18,2"
@@ -617,6 +703,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, M1, 2020)",
+    "year": 2020,
     "ids": [
       "MacBookPro17,1"
     ]
@@ -624,6 +711,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2020, Two Thunderbolt 3 ports)",
+    "year": 2020,
     "ids": [
       "MacBookPro16,3"
     ]
@@ -631,6 +719,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2020, Four Thunderbolt 3 ports)",
+    "year": 2020,
     "ids": [
       "MacBookPro16,2"
     ]
@@ -638,6 +727,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (16-inch, 2019)",
+    "year": 2019,
     "ids": [
       "MacBookPro16,1",
       "MacBookPro16,4"
@@ -646,6 +736,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2019, Two Thunderbolt 3 ports)",
+    "year": 2019,
     "ids": [
       "MacBookPro15,4"
     ]
@@ -653,6 +744,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, 2019)",
+    "year": 2019,
     "ids": [
       "MacBookPro15,1",
       "MacBookPro15,3"
@@ -661,6 +753,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2019, Four Thunderbolt 3 ports)",
+    "year": 2019,
     "ids": [
       "MacBookPro15,2"
     ]
@@ -668,6 +761,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, 2018)",
+    "year": 2018,
     "ids": [
       "MacBookPro15,1"
     ]
@@ -675,6 +769,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2018, Four Thunderbolt 3 ports)",
+    "year": 2018,
     "ids": [
       "MacBookPro15,2"
     ]
@@ -682,6 +777,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, 2017)",
+    "year": 2017,
     "ids": [
       "MacBookPro14,3"
     ]
@@ -689,6 +785,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2017, Four Thunderbolt 3 ports)",
+    "year": 2017,
     "ids": [
       "MacBookPro14,2"
     ]
@@ -696,6 +793,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)",
+    "year": 2017,
     "ids": [
       "MacBookPro14,1"
     ]
@@ -703,6 +801,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, 2016)",
+    "year": 2016,
     "ids": [
       "MacBookPro13,3"
     ]
@@ -710,6 +809,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2016, Four Thunderbolt 3 ports)",
+    "year": 2016,
     "ids": [
       "MacBookPro13,2"
     ]
@@ -717,6 +817,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2016, Two Thunderbolt 3 ports)",
+    "year": 2016,
     "ids": [
       "MacBookPro13,1"
     ]
@@ -724,6 +825,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 15-inch, Mid 2015)",
+    "year": 2015,
     "ids": [
       "MacBookPro11,4",
       "MacBookPro11,5"
@@ -732,6 +834,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 13-inch, Early 2015)",
+    "year": 2015,
     "ids": [
       "MacBookPro12,1"
     ]
@@ -739,6 +842,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 15-inch, Mid 2014)",
+    "year": 2014,
     "ids": [
       "MacBookPro11,2",
       "MacBookPro11,3"
@@ -747,6 +851,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 13-inch, Mid 2014)",
+    "year": 2014,
     "ids": [
       "MacBookPro11,1"
     ]
@@ -754,6 +859,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 15-inch, Late 2013)",
+    "year": 2013,
     "ids": [
       "MacBookPro11,2",
       "MacBookPro11,3"
@@ -762,6 +868,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 13-inch, Late 2013)",
+    "year": 2013,
     "ids": [
       "MacBookPro11,1"
     ]
@@ -769,6 +876,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 15-inch, Early 2013)",
+    "year": 2013,
     "ids": [
       "MacBookPro10,1"
     ]
@@ -776,6 +884,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 13-inch, Early 2013)",
+    "year": 2013,
     "ids": [
       "MacBookPro10,2"
     ]
@@ -783,6 +892,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 13-inch, Late 2012)",
+    "year": 2012,
     "ids": [
       "MacBookPro10,2"
     ]
@@ -790,6 +900,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 15-inch, Mid 2012)",
+    "year": 2012,
     "ids": [
       "MacBookPro10,1"
     ]
@@ -797,6 +908,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, Mid 2012)",
+    "year": 2012,
     "ids": [
       "MacBookPro9,1"
     ]
@@ -804,6 +916,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, Mid 2012)",
+    "year": 2012,
     "ids": [
       "MacBookPro9,2"
     ]
@@ -811,6 +924,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (17-inch, Late 2011)",
+    "year": 2011,
     "ids": [
       "MacBookPro8,3"
     ]
@@ -818,6 +932,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, Late 2011)",
+    "year": 2011,
     "ids": [
       "MacBookPro8,2"
     ]
@@ -825,6 +940,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, Late 2011)",
+    "year": 2011,
     "ids": [
       "MacBookPro8,1"
     ]
@@ -832,6 +948,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (17-inch, Early 2011)",
+    "year": 2011,
     "ids": [
       "MacBookPro8,3"
     ]
@@ -839,6 +956,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, Early 2011)",
+    "year": 2011,
     "ids": [
       "MacBookPro8,2"
     ]
@@ -846,6 +964,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, Early 2011)",
+    "year": 2011,
     "ids": [
       "MacBookPro8,1"
     ]
@@ -853,6 +972,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (17-inch, Mid 2010)",
+    "year": 2010,
     "ids": [
       "MacBookPro6,1"
     ]
@@ -860,6 +980,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, Mid 2010)",
+    "year": 2010,
     "ids": [
       "MacBookPro6,2"
     ]
@@ -867,6 +988,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, Mid 2010)",
+    "year": 2010,
     "ids": [
       "MacBookPro7,1"
     ]
@@ -874,6 +996,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (17-inch, Mid 2009)",
+    "year": 2009,
     "ids": [
       "MacBookPro5,2"
     ]
@@ -881,6 +1004,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, Mid 2009)",
+    "year": 2009,
     "ids": [
       "MacBookPro5,3"
     ]
@@ -888,6 +1012,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, 2.53GHz, Mid 2009)",
+    "year": 2009,
     "ids": [
       "MacBookPro5,3"
     ]
@@ -895,6 +1020,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, Mid 2009)",
+    "year": 2009,
     "ids": [
       "MacBookPro5,5"
     ]
@@ -902,6 +1028,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (17-inch, Early 2009)",
+    "year": 2009,
     "ids": [
       "MacBookPro5,2"
     ]
@@ -909,6 +1036,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, Late 2008)",
+    "year": 2008,
     "ids": [
       "MacBookPro5,1"
     ]
@@ -916,6 +1044,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (17-inch, Early 2008)",
+    "year": 2008,
     "ids": [
       "MacBookPro4,1"
     ]
@@ -923,6 +1052,7 @@
   {
     "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, Early 2008)",
+    "year": 2008,
     "ids": [
       "MacBookPro4,1"
     ]
@@ -930,6 +1060,7 @@
   {
     "family": "Mac mini",
     "name": "Mac mini (M6, 2026)",
+    "year": 2026,
     "ids": [
       "Mac18,5"
     ]
@@ -937,6 +1068,7 @@
   {
     "family": "Mac mini",
     "name": "Mac mini (M5 Pro, 2026)",
+    "year": 2026,
     "ids": [
       "Mac17,16"
     ]
@@ -944,6 +1076,7 @@
   {
     "family": "Mac mini",
     "name": "Mac mini (2024)",
+    "year": 2024,
     "ids": [
       "Mac16,10",
       "Mac16,11"
@@ -952,6 +1085,7 @@
   {
     "family": "Mac mini",
     "name": "Mac mini (2023)",
+    "year": 2023,
     "ids": [
       "Mac14,3"
     ]
@@ -959,6 +1093,7 @@
   {
     "family": "Mac mini",
     "name": "Mac mini (2023)",
+    "year": 2023,
     "ids": [
       "Mac14,12"
     ]
@@ -966,6 +1101,7 @@
   {
     "family": "Mac mini",
     "name": "Mac mini (M1, 2020)",
+    "year": 2020,
     "ids": [
       "Macmini9,1"
     ]
@@ -973,6 +1109,7 @@
   {
     "family": "Mac mini",
     "name": "Mac mini (2018)",
+    "year": 2018,
     "ids": [
       "Macmini8,1"
     ]
@@ -980,6 +1117,7 @@
   {
     "family": "Mac mini",
     "name": "Mac mini (Late 2014)",
+    "year": 2014,
     "ids": [
       "Macmini7,1"
     ]
@@ -987,6 +1125,7 @@
   {
     "family": "Mac mini",
     "name": "Mac mini (Late 2012)",
+    "year": 2012,
     "ids": [
       "Macmini6,1",
       "Macmini6,2"
@@ -995,6 +1134,7 @@
   {
     "family": "Mac mini",
     "name": "Mac mini (Mid 2011)",
+    "year": 2011,
     "ids": [
       "Macmini5,1",
       "Macmini5,2"
@@ -1003,6 +1143,7 @@
   {
     "family": "Mac mini",
     "name": "Mac mini (Mid 2010)",
+    "year": 2010,
     "ids": [
       "Macmini4,1"
     ]
@@ -1010,6 +1151,7 @@
   {
     "family": "Mac mini",
     "name": "Mac mini (Late 2009)",
+    "year": 2009,
     "ids": [
       "Macmini3,1"
     ]
@@ -1017,6 +1159,7 @@
   {
     "family": "Mac mini",
     "name": "Mac mini (Early 2009)",
+    "year": 2009,
     "ids": [
       "Macmini3,1"
     ]
@@ -1024,6 +1167,7 @@
   {
     "family": "Mac Pro",
     "name": "Mac Pro (2023)",
+    "year": 2023,
     "ids": [
       "Mac14,8"
     ]
@@ -1031,6 +1175,7 @@
   {
     "family": "Mac Pro",
     "name": "Mac Pro (Rack, 2023)",
+    "year": 2023,
     "ids": [
       "Mac14,8"
     ]
@@ -1038,6 +1183,7 @@
   {
     "family": "Mac Pro",
     "name": "Mac Pro (2019)",
+    "year": 2019,
     "ids": [
       "MacPro7,1"
     ]
@@ -1045,6 +1191,7 @@
   {
     "family": "Mac Pro",
     "name": "Mac Pro (Rack, 2019)",
+    "year": 2019,
     "ids": [
       "MacPro7,1"
     ]
@@ -1052,6 +1199,7 @@
   {
     "family": "Mac Pro",
     "name": "Mac Pro (Late 2013)",
+    "year": 2013,
     "ids": [
       "MacPro6,1"
     ]
@@ -1059,6 +1207,7 @@
   {
     "family": "Mac Pro",
     "name": "Mac Pro (Mid 2012)",
+    "year": 2012,
     "ids": [
       "MacPro5,1"
     ]
@@ -1066,6 +1215,7 @@
   {
     "family": "Mac Pro Server",
     "name": "Mac Pro Server (Mid 2012)",
+    "year": 2012,
     "ids": [
       "MacPro5,1"
     ]
@@ -1073,6 +1223,7 @@
   {
     "family": "Mac Pro",
     "name": "Mac Pro (Mid 2010)",
+    "year": 2010,
     "ids": [
       "MacPro5,1"
     ]
@@ -1080,6 +1231,7 @@
   {
     "family": "Mac Pro Server",
     "name": "Mac Pro Server (Mid 2010)",
+    "year": 2010,
     "ids": [
       "MacPro5,1"
     ]
@@ -1087,6 +1239,7 @@
   {
     "family": "Mac Pro",
     "name": "Mac Pro (Early 2009)",
+    "year": 2009,
     "ids": [
       "MacPro4,1"
     ]

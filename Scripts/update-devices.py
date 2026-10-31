@@ -16,6 +16,8 @@ Fields:
     name      marketing name, from Xcode. Xcode names most watches without their case size, so
               by hand, append it as Xcode does for the older ones, e.g. "Apple Watch Series 9 (GPS) 45mm".
               The report says whether each one is the small or large case.
+    year      the year it was released, e.g. 2025. New devices get the current year, since Xcode lists them
+              around their announcement; correct it by hand if a device ships the next year.
     soc       Apple's SoC code (e.g. "t8150"), from Xcode
     chip      e.g. "A19 Pro"; by hand. The report suggests the chips of devices with the same SoC,
               but one SoC can ship under several names (A19 and A19 Pro are both t8150).
@@ -26,6 +28,7 @@ Fields:
 """
 
 import argparse
+import datetime
 import json
 import re
 import sqlite3
@@ -37,7 +40,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DEVICES_JSON = ROOT / "Sources/DeviceLookup/Resources/devices.json"
 PLATFORMS = ["iPhoneOS", "AppleTVOS", "WatchOS", "XROS"]
 PREFIXES = ("iPhone", "iPad", "iPod", "AppleTV", "Watch", "RealityDevice")
-FIELD_ORDER = ["name", "chip", "diag", "cell", "soc"]
+FIELD_ORDER = ["name", "year", "chip", "diag", "cell", "soc"]
 
 
 def natural_key(identifier):
@@ -118,7 +121,7 @@ def main():
         info = xcode[identifier]
         entry = entries.get(identifier)
         if entry is None:
-            entry = {"name": info["name"], "soc": info["soc"]}
+            entry = {"name": info["name"], "year": datetime.date.today().year, "soc": info["soc"]}
             # A device falls back to its predecessor of the same kind, so a cellular predecessor means cellular.
             if "Cellular" in info["name"] or entries.get(info["fallback"], {}).get("cell"):
                 entry["cell"] = True
@@ -142,6 +145,8 @@ def main():
     for identifier in sorted(entries, key=natural_key):
         entry = entries[identifier]
         missing = []
+        if not entry.get("year"):
+            missing.append("year")
         if not entry.get("chip"):
             same_soc = sorted(soc_chips.get(entry.get("soc"), []))
             missing.append(f"chip (same SoC: {', '.join(same_soc)})" if same_soc else "chip")

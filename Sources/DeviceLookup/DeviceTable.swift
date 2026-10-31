@@ -14,12 +14,14 @@ enum DeviceTable {
     struct Entry: Decodable, Sendable {
         enum CodingKeys: String, CodingKey {
             case name
+            case year
             case chip
             case diagonal = "diag"
             case cellular = "cell"
         }
 
         let name: String
+        let year: Int?
         let chip: String?
         let diagonal: Double?
         let cellular: Bool?
