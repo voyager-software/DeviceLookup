@@ -12,7 +12,7 @@ Device details are data (`Resources/devices.json`, `Resources/all-macs.json`), n
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/voyager-software/DeviceLookup.git", from: "2026.10.4"),
+    .package(url: "https://github.com/voyager-software/DeviceLookup.git", from: "2026.10.9"),
 ]
 ```
 
@@ -36,6 +36,11 @@ Device(modelIdentifier: "iPad16,4").modelName   // "iPad Pro 11-inch (M4)"
 Device(modelIdentifier: "Watch7,18").modelName  // "Apple Watch Series 11 (GPS) 46mm"
 Device(modelIdentifier: "Mac14,7").modelName    // "MacBook Pro (13-inch, M2, 2022)"
 Device(modelIdentifier: "Mac14,7").mac?.kind    // .macBookPro
+
+// The running system's details are static: they describe this device, not a looked-up one.
+Device.operatingSystemName                      // "iOS"
+Device.operatingSystemVersionString             // "26.1 (23B85)"
+Device.physicalMemory                           // 8589934592 (bytes)
 ```
 
 ## Maintenance
