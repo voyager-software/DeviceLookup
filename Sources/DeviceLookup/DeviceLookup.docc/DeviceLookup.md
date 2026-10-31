@@ -26,7 +26,7 @@ The details are bundled data taken from Xcode's own device list and Apple's Mac 
 
 The data ships inside the package, and DeviceLookup never goes online. Lookups are synchronous and give the same answer offline and on first launch, nothing about your users is sent anywhere, and a shipped build behaves the same for as long as it's in use. New devices arrive with a package release. If you need names for hardware newer than an app build, in analytics for example, record ``Device/modelIdentifier`` and map it to a name on your server.
 
-On a simulator, ``Device/current`` describes the simulated device, and under Mac Catalyst it describes the Mac rather than an iPad.
+On a simulator, ``Device/current`` describes the simulated device. Under Mac Catalyst, and in an iPhone or iPad app running on a Mac, it describes the Mac rather than an iPad.
 
 ## Topics
 

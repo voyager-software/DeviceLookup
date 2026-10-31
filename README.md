@@ -18,7 +18,7 @@ The data ships inside the package, and DeviceLookup never goes online. Lookups a
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/voyager-software/DeviceLookup.git", from: "2026.10.12"),
+    .package(url: "https://github.com/voyager-software/DeviceLookup.git", from: "2026.10.13"),
 ]
 ```
 
@@ -30,7 +30,7 @@ Requires Swift 6 (Xcode 16 or later) and iOS 15, tvOS 15, watchOS 9, macOS 12 or
 import DeviceLookup
 
 let device = Device.current
-device.modelIdentifier      // "iPhone18,1" (the simulated device on a simulator, the Mac model under Catalyst)
+device.modelIdentifier      // "iPhone18,1" (the simulated device on a simulator, the Mac model under Catalyst or in an iPad app on a Mac)
 device.modelName            // "iPhone 17 Pro"
 device.deviceDescription    // "iPhone 17 Pro, A19 Pro"  /  "MacBook Pro (14-inch, Nov 2023), Apple M3 Pro"
 device.family               // .phone (raw value "phone")

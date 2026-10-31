@@ -151,6 +151,17 @@ struct DeviceTests {
     }
     #endif
 
+    @Test func `iPad app on a Mac uses the Mac identifier`() {
+        #expect(Device.macModelIdentifier(from: "Mac16,5") == "Mac16,5")
+        // A stand-in iPad, a board name or nothing at all still gives a Mac, just not a known one.
+        for hardwareModel in ["iPad8,6", "J416cAP", nil] {
+            #expect(Device.macModelIdentifier(from: hardwareModel) == "Mac")
+        }
+        let device = Device(modelIdentifier: "Mac")
+        #expect(device.isMac)
+        #expect(!device.isKnown)
+    }
+
     @Test func system() {
         #expect(Device.physicalMemory > 0)
         #expect(Device.processorCount > 0)

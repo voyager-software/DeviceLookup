@@ -12,7 +12,8 @@ import Foundation
 // environment, so they describe the device this code runs on, not a looked-up `Device`.
 
 public extension Device {
-    /// "iOS", "iPadOS", "tvOS", "watchOS", "visionOS" or "macOS" (also under Mac Catalyst).
+    /// "iOS", "iPadOS", "tvOS", "watchOS", "visionOS" or "macOS" (also under Mac Catalyst and in an iPhone or iPad
+    /// app on a Mac).
     static var operatingSystemName: String {
         #if os(macOS) || targetEnvironment(macCatalyst)
         "macOS"
@@ -23,7 +24,11 @@ public extension Device {
         #elseif os(visionOS)
         "visionOS"
         #else
-        Self.current.isPad ? "iPadOS" : "iOS"
+        switch Self.current.family {
+        case .mac: "macOS"
+        case .pad: "iPadOS"
+        default: "iOS"
+        }
         #endif
     }
 

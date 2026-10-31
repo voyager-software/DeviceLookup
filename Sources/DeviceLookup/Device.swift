@@ -54,7 +54,8 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
 
     // MARK: Public
 
-    /// The device this process is running on. On a simulator, this is the simulated device.
+    /// The device this process is running on. On a simulator, this is the simulated device, and in an iPhone
+    /// or iPad app running on a Mac, the Mac.
     public static let current: Device = {
         #if os(macOS) || targetEnvironment(macCatalyst)
         Device(
@@ -69,11 +70,22 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
             chip: nil
         )
         #else
-        Device(modelIdentifier: Self.machineIdentifier, isSimulator: false, chip: nil)
+        #if os(iOS)
+        // An iPhone or iPad app on a Mac sees a stand-in iPad as its machine, so ask for the Mac instead.
+        if ProcessInfo.processInfo.isiOSAppOnMac {
+            return Device(
+                modelIdentifier: Self.macModelIdentifier(from: MacHardware.modelIdentifier),
+                isSimulator: false,
+                chip: nil
+            )
+        }
+        #endif
+        return Device(modelIdentifier: Self.machineIdentifier, isSimulator: false, chip: nil)
         #endif
     }()
 
     /// The raw machine name reported by the kernel, e.g. "iPhone18,1", or "arm64" on a simulator and under Mac Catalyst.
+    /// In an iPhone or iPad app on a Mac, it's a stand-in iPad such as "iPad8,6".
     public static let machineIdentifier: String = {
         var systemInfo = utsname()
         uname(&systemInfo)
@@ -98,7 +110,8 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
     /// when the device is not in the bundled data.
     public let modelName: String
 
-    /// The chip, e.g. "A19 Pro". On a Mac, the CPU brand string of the running Mac, e.g. "Apple M3 Pro".
+    /// The chip, e.g. "A19 Pro". On a Mac, the CPU brand string of the running Mac, e.g. "Apple M3 Pro", except in an
+    /// iPhone or iPad app on a Mac, which can't read it.
     public let chip: String?
 
     /// The screen diagonal in inches, when known. For a foldable such as iPhone Duo, the inner display's.
@@ -153,5 +166,14 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
     public var deviceDescription: String {
         guard let chip else { return self.description }
         return "\(self.description), \(chip)"
+    }
+
+    // MARK: Internal
+
+    /// The model identifier to use for the Mac an iPhone or iPad app runs on: the hardware's when it names a Mac,
+    /// otherwise "Mac", which is still a Mac but not a known one.
+    static func macModelIdentifier(from hardwareModel: String?) -> String {
+        guard let hardwareModel, Family(modelIdentifier: hardwareModel) == .mac else { return "Mac" }
+        return hardwareModel
     }
 }
