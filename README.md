@@ -84,4 +84,4 @@ The [migration guide](Sources/DeviceLookup/DeviceLookup.docc/MigratingFromDevice
 
 ## License
 
-MIT. See [LICENSE](LICENSE), which also carries the license of [DeviceKit](https://github.com/devicekit/DeviceKit), where the chip and screen-size values were first imported from.
+MIT. See [LICENSE](LICENSE). The chip and screen-size values were first imported from [DeviceKit](https://github.com/devicekit/DeviceKit), whose license is in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
