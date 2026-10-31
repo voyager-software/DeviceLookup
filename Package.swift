@@ -24,7 +24,7 @@ let package = Package(
             name: "DeviceLookup",
             resources: [
                 .copy("Resources/devices.json"),
-                .copy("Resources/all-macs.json"),
+                .copy("Resources/macs.json"),
             ]
         ),
         .testTarget(

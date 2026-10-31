@@ -43,20 +43,6 @@
   },
   {
     "kind": "iMac",
-    "name": "iMac (24-inch, M1, 2021)",
-    "ids": [
-      "iMac21,1"
-    ]
-  },
-  {
-    "kind": "iMac",
-    "name": "iMac (24-inch, M1, 2021)",
-    "ids": [
-      "iMac21,2"
-    ]
-  },
-  {
-    "kind": "iMac",
     "name": "iMac (Retina 5K, 27-inch, 2020)",
     "ids": [
       "iMac20,1",
@@ -79,7 +65,7 @@
   },
   {
     "kind": "iMac Pro",
-    "name": "iMac Pro",
+    "name": "iMac Pro (2017)",
     "ids": [
       "iMacPro1,1"
     ]
@@ -1002,14 +988,16 @@
     "kind": "Mac mini",
     "name": "Mac mini (Late 2012)",
     "ids": [
-      "Macmini6,1; Macmini6,2"
+      "Macmini6,1",
+      "Macmini6,2"
     ]
   },
   {
     "kind": "Mac mini",
     "name": "Mac mini (Mid 2011)",
     "ids": [
-      "Macmini5,1; Macmini5,2"
+      "Macmini5,1",
+      "Macmini5,2"
     ]
   },
   {

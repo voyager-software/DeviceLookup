@@ -134,7 +134,7 @@ struct DeviceTests {
         #expect(device.isMac)
         // A virtual machine isn't a Mac model, so it isn't in the data.
         if !device.modelIdentifier.hasPrefix("VirtualMac") {
-            #expect(device.isKnown, "\(device.modelIdentifier) is missing from all-macs.json")
+            #expect(device.isKnown, "\(device.modelIdentifier) is missing from macs.json")
         }
         #expect(device.chip?.hasPrefix("Apple") == true)
         #expect(Device.operatingSystemName == "macOS")
@@ -197,5 +197,13 @@ struct MacTests {
     @Test func `no unknown kinds`() {
         #expect(!Mac.all.isEmpty)
         #expect(Mac.all.allSatisfy { $0.kind != .unknown })
+    }
+
+    /// Each entry is one identifier, e.g. "Macmini6,1", never several run together.
+    @Test func `identifiers are well formed`() {
+        for model in Mac.all.flatMap(\.modelIdentifiers) {
+            #expect(model.wholeMatch(of: /[A-Za-z]+\d+,\d+/) != nil, "\(model)")
+        }
+        #expect(Device(modelIdentifier: "Macmini6,2").modelName == "Mac mini (Late 2012)")
     }
 }

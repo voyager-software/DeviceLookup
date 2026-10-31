@@ -6,7 +6,7 @@
 
 Names, chips, screen sizes and families for iPhone, iPad, iPod touch, Apple TV, Apple Watch and Mac model identifiers, plus the running device's OS, memory and storage details. `Device` is `Sendable` and never touches `UIDevice`, so you can use it from any thread or actor without hopping to the main actor. Replaces DeviceKit and MacLookup.
 
-Device details are data (`Resources/devices.json`, `Resources/all-macs.json`), not code, so adding a device is a JSON edit. A device missing from the data still resolves: its family comes from the identifier prefix and its name falls back to the identifier.
+Device details are data (`Resources/devices.json`, `Resources/macs.json`), not code, so adding a device is a JSON edit. A device missing from the data still resolves: its family comes from the identifier prefix and its name falls back to the identifier.
 
 ## Installation
 
@@ -47,11 +47,11 @@ Device.physicalMemory                           // 8589934592 (bytes)
 
 DeviceLookup is maintained by [Voyager Software](https://github.com/voyager-software) and used in its own shipping apps, including PocketLion, so new devices matter to us as much as to you.
 
-New devices are added once the Xcode release that supports them is out, which is usually around the announcement. A weekly workflow checks the newest Xcode on GitHub's runners, betas included, and opens a pull request when it lists devices that aren't in the data yet. The aim is a release within a week. If a device is missing, [open an issue](https://github.com/voyager-software/DeviceLookup/issues) with its model identifier. Until it's added, the device still gets the right `family`, and its `modelName` is the identifier.
+New devices are added once the Xcode release that supports them is out, which is usually around the announcement. A weekly workflow checks the newest Xcode on GitHub's runners, betas included, and Apple's Mac identification pages, and opens a pull request when either lists devices that aren't in the data yet. The aim is a release within a week. If a device is missing, [open an issue](https://github.com/voyager-software/DeviceLookup/issues) with its model identifier. Until it's added, the device still gets the right `family`, and its `modelName` is the identifier.
 
 ## Updating the data
 
-The [Update devices](.github/workflows/update-devices.yml) workflow runs the update script every Monday and opens a pull request with whatever it adds, plus its report of what to fill in. You can also run it from the Actions tab, or locally when a new Xcode ships:
+The [Update devices](.github/workflows/update-devices.yml) workflow runs both update scripts every Monday and opens a pull request with whatever they add, plus a report of what to fill in. You can also run it from the Actions tab, or locally when a new Xcode ships:
 
 ```sh
 Scripts/update-devices.py            # report what's new or different
@@ -60,7 +60,14 @@ Scripts/update-devices.py --write    # add new identifiers to devices.json
 
 It reads Xcode's `device_traits.db`, adds missing identifiers with their name and SoC code, and lists what still needs filling in by hand: `chip`, `diag` (screen diagonal in inches; the inner display for a foldable), `cell` (cellular) for iPads and watches whose name doesn't say, and the case size for watches. Xcode names most watches without one, so append it to the name, e.g. "Apple Watch Series 11 (GPS) 46mm"; the report says whether it's the small or large case. It never overwrites existing values. `DeviceTests.allDevicesHaveData` fails until each device has a chip and a diagonal.
 
-Mac data comes from the MacModelParser project. After regenerating it there, run `Scripts/import-macs.py`, which keeps only the kind, name and model identifiers (`ids`).
+Mac data comes from Apple's "Identify your Mac model" support pages, one per Mac family:
+
+```sh
+Scripts/update-macs.py               # report what's new or different
+Scripts/update-macs.py --write       # rewrite macs.json from the pages
+```
+
+It keeps each Mac's kind, name and model identifiers (`ids`), newest first as Apple lists them, so an identifier Apple reused across models resolves to the newest one. Nothing needs filling in by hand. If a page yields fewer Macs than `macs.json` has, Apple has probably redesigned it, and the script stops without writing.
 
 ## Coming from DeviceKit
 

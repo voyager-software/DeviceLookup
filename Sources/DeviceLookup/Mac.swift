@@ -42,7 +42,7 @@ public struct Mac: Decodable, Sendable {
 
     /// Every Mac in the bundled data.
     public static let all: [Mac] = {
-        guard let url = Bundle.module.url(forResource: "all-macs", withExtension: "json"),
+        guard let url = Bundle.module.url(forResource: "macs", withExtension: "json"),
               let data = try? Data(contentsOf: url)
         else { return [] }
         return (try? JSONDecoder().decode([Mac].self, from: data)) ?? []
