@@ -46,7 +46,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platform: [macOS, iOS, tvOS, watchOS, Mac Catalyst]
+        platform: [macOS, iOS, tvOS, watchOS, visionOS, Mac Catalyst]
     steps:
       - uses: actions/checkout@v7
       - name: Test
@@ -67,7 +67,8 @@ jobs:
             macOS) swift test ;;
             iOS) xcodebuild test -scheme DeviceLookup -destination "id=$(simulator iOS)" -quiet ;;
             tvOS) xcodebuild test -scheme DeviceLookup -destination "id=$(simulator tvOS)" -quiet ;;
-            # watchOS simulators aren't always installed, so build the tests rather than run them.
+            # watchOS and visionOS simulators aren't always installed, so build the tests rather than run them.
             watchOS) xcodebuild build-for-testing -scheme DeviceLookup -destination "generic/platform=watchOS Simulator" -quiet ;;
+            visionOS) xcodebuild build-for-testing -scheme DeviceLookup -destination "generic/platform=visionOS Simulator" -quiet ;;
             "Mac Catalyst") xcodebuild test -scheme DeviceLookup -destination "platform=macOS,variant=Mac Catalyst" -quiet ;;
           esac

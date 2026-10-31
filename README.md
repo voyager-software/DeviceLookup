@@ -23,7 +23,7 @@ dependencies: [
 ]
 ```
 
-Requires Swift 6 (Xcode 16 or later) and iOS 15, tvOS 15, watchOS 9, macOS 12 or Mac Catalyst 15.
+Requires Swift 6 (Xcode 16 or later) and iOS 15, tvOS 15, watchOS 9, visionOS 1, macOS 12 or Mac Catalyst 15.
 
 ## Usage
 
