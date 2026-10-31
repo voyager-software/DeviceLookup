@@ -44,8 +44,10 @@ public struct Mac: Decodable, Sendable {
     public let name: String
     public let models: [String]
 
-    /// Finds the Mac with the given model identifier, e.g. "Mac14,7".
-    public static func find(model: String) -> Mac? {
+    // MARK: Internal
+
+    /// Finds the Mac with the given model identifier, e.g. "Mac14,7". Public lookups go through `Device.mac`.
+    static func find(model: String) -> Mac? {
         self.byModel[model]
     }
 
