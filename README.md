@@ -18,7 +18,7 @@ The data ships inside the package, and DeviceLookup never goes online. Lookups a
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/voyager-software/DeviceLookup.git", from: "2026.10.13"),
+    .package(url: "https://github.com/voyager-software/DeviceLookup.git", from: "2026.10.14"),
 ]
 ```
 
