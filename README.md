@@ -1,3 +1,5 @@
+<p align="center"><img src="Assets/logo.png" width="128" height="128" alt="DeviceLookup logo"></p>
+
 # DeviceLookup
 
 [![CI](https://github.com/voyager-software/DeviceLookup/actions/workflows/ci.yml/badge.svg)](https://github.com/voyager-software/DeviceLookup/actions/workflows/ci.yml)
