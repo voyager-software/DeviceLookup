@@ -95,7 +95,7 @@ struct DeviceTests {
         #expect(device.isKnown)
         #expect(device.isMac)
         #expect(device.modelName == "MacBook Pro (13-inch, M2, 2022)")
-        #expect(device.mac?.kind == .macBookPro)
+        #expect(device.mac?.family == .macBookPro)
         #expect(Device(modelIdentifier: "iPhone18,1").mac == nil)
     }
 
@@ -178,10 +178,10 @@ struct MacTests {
         #expect(Device(modelIdentifier: model).modelName == name)
     }
 
-    @Test func `unrecognized kind decodes as unknown`() throws {
-        let json = #"[{"kind": "Mac Something", "name": "Mac Something (M9, 2030)", "ids": ["Mac99,1"]}]"#
+    @Test func `unrecognized family decodes as unknown`() throws {
+        let json = #"[{"family": "Mac Something", "name": "Mac Something (M9, 2030)", "ids": ["Mac99,1"]}]"#
         let macs = try JSONDecoder().decode([Mac].self, from: Data(json.utf8))
-        #expect(macs.first?.kind == .unknown)
+        #expect(macs.first?.family == .unknown)
     }
 
     /// `Device` looks a `.mac` identifier up only in the Mac data, and anything else only in the device data.
@@ -194,9 +194,9 @@ struct MacTests {
         }
     }
 
-    @Test func `no unknown kinds`() {
+    @Test func `no unknown families`() {
         #expect(!Mac.all.isEmpty)
-        #expect(Mac.all.allSatisfy { $0.kind != .unknown })
+        #expect(Mac.all.allSatisfy { $0.family != .unknown })
     }
 
     /// Each entry is one identifier, e.g. "Macmini6,1", never several run together.

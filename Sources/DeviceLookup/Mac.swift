@@ -12,7 +12,8 @@ import Foundation
 public struct Mac: Decodable, Sendable {
     // MARK: Public
 
-    public enum Kind: String, Decodable, Sendable {
+    /// The product line, e.g. MacBook Pro. The raw value is Apple's name for it, e.g. "MacBook Pro".
+    public enum Family: String, Decodable, Sendable {
         case
             unknown = "",
             iMac = "iMac",
@@ -27,20 +28,21 @@ public struct Mac: Decodable, Sendable {
 
         // MARK: Lifecycle
 
-        /// Decodes a kind newer than this enum as `.unknown`, so one new kind doesn't fail the whole Mac data.
+        /// Decodes a family newer than this enum as `.unknown`, so one new family doesn't fail the whole Mac data.
         public init(from decoder: Decoder) throws {
             let rawValue = try decoder.singleValueContainer().decode(String.self)
-            self = Kind(rawValue: rawValue) ?? .unknown
+            self = Family(rawValue: rawValue) ?? .unknown
         }
 
         // MARK: Public
 
+        /// Apple's name for the product line, e.g. "MacBook Pro".
         public var name: String {
             self.rawValue
         }
     }
 
-    /// Every Mac in the bundled data.
+    /// Every Mac in the bundled data, newest first within each family.
     public static let all: [Mac] = {
         guard let url = Bundle.module.url(forResource: "macs", withExtension: "json"),
               let data = try? Data(contentsOf: url)
@@ -48,7 +50,10 @@ public struct Mac: Decodable, Sendable {
         return (try? JSONDecoder().decode([Mac].self, from: data)) ?? []
     }()
 
-    public let kind: Kind
+    /// The product line, e.g. `.macBookPro`.
+    public let family: Family
+
+    /// The model name as Apple gives it, e.g. "MacBook Pro (14-inch, M5, 2025)".
     public let name: String
 
     /// The model identifiers this Mac shipped with, e.g. ["Mac14,7"].
@@ -64,7 +69,7 @@ public struct Mac: Decodable, Sendable {
     // MARK: Private
 
     private enum CodingKeys: String, CodingKey {
-        case kind
+        case family
         case name
         case modelIdentifiers = "ids"
     }

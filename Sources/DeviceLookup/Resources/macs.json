@@ -1,48 +1,48 @@
 [
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (24-inch, 2024, Four ports)",
     "ids": [
       "Mac16,3"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (24-inch, 2024, Two ports)",
     "ids": [
       "Mac16,2"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (24-inch, 2023, Four ports)",
     "ids": [
       "Mac15,5"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (24-inch, 2023, Two ports)",
     "ids": [
       "Mac15,4"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (24-inch, M1, 2021)",
     "ids": [
       "iMac21,1"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (24-inch, M1, 2021)",
     "ids": [
       "iMac21,2"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (Retina 5K, 27-inch, 2020)",
     "ids": [
       "iMac20,1",
@@ -50,462 +50,462 @@
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (Retina 5K, 27-inch, 2019)",
     "ids": [
       "iMac19,1"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (Retina 4K, 21.5-inch, 2019)",
     "ids": [
       "iMac19,2"
     ]
   },
   {
-    "kind": "iMac Pro",
+    "family": "iMac Pro",
     "name": "iMac Pro (2017)",
     "ids": [
       "iMacPro1,1"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (Retina 5K, 27-inch, 2017)",
     "ids": [
       "iMac18,3"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (Retina 4K, 21.5-inch, 2017)",
     "ids": [
       "iMac18,2"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (21.5-inch, 2017)",
     "ids": [
       "iMac18,1"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (Retina 5K, 27-inch, Late 2015)",
     "ids": [
       "iMac17,1"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (Retina 4K, 21.5-inch, Late 2015)",
     "ids": [
       "iMac16,2"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (21.5-inch, Late 2015)",
     "ids": [
       "iMac16,1"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (Retina 5K, 27-inch, Mid 2015)",
     "ids": [
       "iMac15,1"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (Retina 5K, 27-inch, Late 2014)",
     "ids": [
       "iMac15,1"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (21.5-inch, Mid 2014)",
     "ids": [
       "iMac14,4"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (27-inch, Late 2013)",
     "ids": [
       "iMac14,2"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (21.5-inch, Late 2013)",
     "ids": [
       "iMac14,1"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (27-inch, Late 2012)",
     "ids": [
       "iMac13,2"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (21.5-inch, Late 2012)",
     "ids": [
       "iMac13,1"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (27-inch, Mid 2011)",
     "ids": [
       "iMac12,2"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (21.5-inch, Mid 2011)",
     "ids": [
       "iMac12,1"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (27-inch, Mid 2010)",
     "ids": [
       "iMac11,3"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (21.5-inch, Mid 2010)",
     "ids": [
       "iMac11,2"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (27-inch, Late 2009)",
     "ids": [
       "iMac10,1"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (21.5-inch, Late 2009)",
     "ids": [
       "iMac10,1"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (24-inch, Early 2009)",
     "ids": [
       "iMac9,1"
     ]
   },
   {
-    "kind": "iMac",
+    "family": "iMac",
     "name": "iMac (20-inch, Early 2009)",
     "ids": [
       "iMac9,1"
     ]
   },
   {
-    "kind": "Mac Studio",
+    "family": "Mac Studio",
     "name": "Mac Studio (M5 Max, 2026)",
     "ids": [
       "Mac17,14"
     ]
   },
   {
-    "kind": "Mac Studio",
+    "family": "Mac Studio",
     "name": "Mac Studio (M5 Ultra, 2026)",
     "ids": [
       "Mac17,15"
     ]
   },
   {
-    "kind": "Mac Studio",
+    "family": "Mac Studio",
     "name": "Mac Studio (2025)",
     "ids": [
       "Mac16,9"
     ]
   },
   {
-    "kind": "Mac Studio",
+    "family": "Mac Studio",
     "name": "Mac Studio (2025)",
     "ids": [
       "Mac15,14"
     ]
   },
   {
-    "kind": "Mac Studio",
+    "family": "Mac Studio",
     "name": "Mac Studio (2023)",
     "ids": [
       "Mac14,13"
     ]
   },
   {
-    "kind": "Mac Studio",
+    "family": "Mac Studio",
     "name": "Mac Studio (2023)",
     "ids": [
       "Mac14,14"
     ]
   },
   {
-    "kind": "Mac Studio",
+    "family": "Mac Studio",
     "name": "Mac Studio (2022)",
     "ids": [
       "Mac13,1"
     ]
   },
   {
-    "kind": "Mac Studio",
+    "family": "Mac Studio",
     "name": "Mac Studio (2022)",
     "ids": [
       "Mac13,2"
     ]
   },
   {
-    "kind": "MacBook",
+    "family": "MacBook",
     "name": "MacBook (Retina, 12-inch, 2017)",
     "ids": [
       "MacBook10,1"
     ]
   },
   {
-    "kind": "MacBook",
+    "family": "MacBook",
     "name": "MacBook (Retina, 12-inch, Early 2016)",
     "ids": [
       "MacBook9,1"
     ]
   },
   {
-    "kind": "MacBook",
+    "family": "MacBook",
     "name": "MacBook (Retina, 12-inch, Early 2015)",
     "ids": [
       "MacBook8,1"
     ]
   },
   {
-    "kind": "MacBook",
+    "family": "MacBook",
     "name": "MacBook (13-inch, Mid 2010)",
     "ids": [
       "MacBook7,1"
     ]
   },
   {
-    "kind": "MacBook",
+    "family": "MacBook",
     "name": "MacBook (13-inch, Late 2009)",
     "ids": [
       "MacBook6,1"
     ]
   },
   {
-    "kind": "MacBook",
+    "family": "MacBook",
     "name": "MacBook (13-inch, Mid 2009)",
     "ids": [
       "MacBook5,2"
     ]
   },
   {
-    "kind": "MacBook",
+    "family": "MacBook",
     "name": "MacBook (13-inch, Early 2009)",
     "ids": [
       "MacBook5,2"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (15-inch, M5, 2026)",
     "ids": [
       "Mac17,4"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (13-inch, M5, 2026)",
     "ids": [
       "Mac17,3"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (15-inch, M4, 2025)",
     "ids": [
       "Mac16,13"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (13-inch, M4, 2025)",
     "ids": [
       "Mac16,12"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (15-inch, M3, 2024)",
     "ids": [
       "Mac15,13"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (13-inch, M3, 2024)",
     "ids": [
       "Mac15,12"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (15-inch, M2, 2023)",
     "ids": [
       "Mac14,15"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (M2, 2022)",
     "ids": [
       "Mac14,2"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (M1, 2020)",
     "ids": [
       "MacBookAir10,1"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (Retina, 13-inch, 2020)",
     "ids": [
       "MacBookAir9,1"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (Retina, 13-inch, 2019)",
     "ids": [
       "MacBookAir8,2"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (Retina, 13-inch, 2018)",
     "ids": [
       "MacBookAir8,1"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (13-inch, 2017)",
     "ids": [
       "MacBookAir7,2"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (13-inch, Early 2015)",
     "ids": [
       "MacBookAir7,2"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (11-inch, Early 2015)",
     "ids": [
       "MacBookAir7,1"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (13-inch, Early 2014)",
     "ids": [
       "MacBookAir6,2"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (11-inch, Early 2014)",
     "ids": [
       "MacBookAir6,1"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (13-inch, Mid 2013)",
     "ids": [
       "MacBookAir6,2"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (11-inch, Mid 2013)",
     "ids": [
       "MacBookAir6,1"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (13-inch, Mid 2012)",
     "ids": [
       "MacBookAir5,2"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (11-inch, Mid 2012)",
     "ids": [
       "MacBookAir5,1"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (13-inch, Mid 2011)",
     "ids": [
       "MacBookAir4,2"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (11-inch, Mid 2011)",
     "ids": [
       "MacBookAir4,1"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (13-inch, Late 2010)",
     "ids": [
       "MacBookAir3,2"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (11-inch, Late 2010)",
     "ids": [
       "MacBookAir3,1"
     ]
   },
   {
-    "kind": "MacBook Air",
+    "family": "MacBook Air",
     "name": "MacBook Air (Mid 2009)",
     "ids": [
       "MacBookAir2,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, M5 Pro or M5 Max, 2026)",
     "ids": [
       "Mac17,7",
@@ -513,7 +513,7 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (16-inch, M5 Pro or M5 Max, 2026)",
     "ids": [
       "Mac17,6",
@@ -521,21 +521,21 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, M5, 2025)",
     "ids": [
       "Mac17,2"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, 2024)",
     "ids": [
       "Mac16,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, 2024)",
     "ids": [
       "Mac16,6",
@@ -543,7 +543,7 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (16-inch, 2024)",
     "ids": [
       "Mac16,5",
@@ -551,14 +551,14 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, Nov 2023)",
     "ids": [
       "Mac15,3"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, Nov 2023)",
     "ids": [
       "Mac15,10",
@@ -567,7 +567,7 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (16-inch, Nov 2023)",
     "ids": [
       "Mac15,11",
@@ -576,7 +576,7 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, 2023)",
     "ids": [
       "Mac14,5",
@@ -584,7 +584,7 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (16-inch, 2023)",
     "ids": [
       "Mac14,10",
@@ -592,14 +592,14 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, M2, 2022)",
     "ids": [
       "Mac14,7"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (14-inch, 2021)",
     "ids": [
       "MacBookPro18,3",
@@ -607,7 +607,7 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (16-inch, 2021)",
     "ids": [
       "MacBookPro18,1",
@@ -615,28 +615,28 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, M1, 2020)",
     "ids": [
       "MacBookPro17,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2020, Two Thunderbolt 3 ports)",
     "ids": [
       "MacBookPro16,3"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2020, Four Thunderbolt 3 ports)",
     "ids": [
       "MacBookPro16,2"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (16-inch, 2019)",
     "ids": [
       "MacBookPro16,1",
@@ -644,14 +644,14 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2019, Two Thunderbolt 3 ports)",
     "ids": [
       "MacBookPro15,4"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, 2019)",
     "ids": [
       "MacBookPro15,1",
@@ -659,70 +659,70 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2019, Four Thunderbolt 3 ports)",
     "ids": [
       "MacBookPro15,2"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, 2018)",
     "ids": [
       "MacBookPro15,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2018, Four Thunderbolt 3 ports)",
     "ids": [
       "MacBookPro15,2"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, 2017)",
     "ids": [
       "MacBookPro14,3"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2017, Four Thunderbolt 3 ports)",
     "ids": [
       "MacBookPro14,2"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)",
     "ids": [
       "MacBookPro14,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, 2016)",
     "ids": [
       "MacBookPro13,3"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2016, Four Thunderbolt 3 ports)",
     "ids": [
       "MacBookPro13,2"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, 2016, Two Thunderbolt 3 ports)",
     "ids": [
       "MacBookPro13,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 15-inch, Mid 2015)",
     "ids": [
       "MacBookPro11,4",
@@ -730,14 +730,14 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 13-inch, Early 2015)",
     "ids": [
       "MacBookPro12,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 15-inch, Mid 2014)",
     "ids": [
       "MacBookPro11,2",
@@ -745,14 +745,14 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 13-inch, Mid 2014)",
     "ids": [
       "MacBookPro11,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 15-inch, Late 2013)",
     "ids": [
       "MacBookPro11,2",
@@ -760,189 +760,189 @@
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 13-inch, Late 2013)",
     "ids": [
       "MacBookPro11,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 15-inch, Early 2013)",
     "ids": [
       "MacBookPro10,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 13-inch, Early 2013)",
     "ids": [
       "MacBookPro10,2"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 13-inch, Late 2012)",
     "ids": [
       "MacBookPro10,2"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (Retina, 15-inch, Mid 2012)",
     "ids": [
       "MacBookPro10,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, Mid 2012)",
     "ids": [
       "MacBookPro9,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, Mid 2012)",
     "ids": [
       "MacBookPro9,2"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (17-inch, Late 2011)",
     "ids": [
       "MacBookPro8,3"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, Late 2011)",
     "ids": [
       "MacBookPro8,2"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, Late 2011)",
     "ids": [
       "MacBookPro8,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (17-inch, Early 2011)",
     "ids": [
       "MacBookPro8,3"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, Early 2011)",
     "ids": [
       "MacBookPro8,2"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, Early 2011)",
     "ids": [
       "MacBookPro8,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (17-inch, Mid 2010)",
     "ids": [
       "MacBookPro6,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, Mid 2010)",
     "ids": [
       "MacBookPro6,2"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, Mid 2010)",
     "ids": [
       "MacBookPro7,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (17-inch, Mid 2009)",
     "ids": [
       "MacBookPro5,2"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, Mid 2009)",
     "ids": [
       "MacBookPro5,3"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, 2.53GHz, Mid 2009)",
     "ids": [
       "MacBookPro5,3"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (13-inch, Mid 2009)",
     "ids": [
       "MacBookPro5,5"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (17-inch, Early 2009)",
     "ids": [
       "MacBookPro5,2"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, Late 2008)",
     "ids": [
       "MacBookPro5,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (17-inch, Early 2008)",
     "ids": [
       "MacBookPro4,1"
     ]
   },
   {
-    "kind": "MacBook Pro",
+    "family": "MacBook Pro",
     "name": "MacBook Pro (15-inch, Early 2008)",
     "ids": [
       "MacBookPro4,1"
     ]
   },
   {
-    "kind": "Mac mini",
+    "family": "Mac mini",
     "name": "Mac mini (M6, 2026)",
     "ids": [
       "Mac18,5"
     ]
   },
   {
-    "kind": "Mac mini",
+    "family": "Mac mini",
     "name": "Mac mini (M5 Pro, 2026)",
     "ids": [
       "Mac17,16"
     ]
   },
   {
-    "kind": "Mac mini",
+    "family": "Mac mini",
     "name": "Mac mini (2024)",
     "ids": [
       "Mac16,10",
@@ -950,42 +950,42 @@
     ]
   },
   {
-    "kind": "Mac mini",
+    "family": "Mac mini",
     "name": "Mac mini (2023)",
     "ids": [
       "Mac14,3"
     ]
   },
   {
-    "kind": "Mac mini",
+    "family": "Mac mini",
     "name": "Mac mini (2023)",
     "ids": [
       "Mac14,12"
     ]
   },
   {
-    "kind": "Mac mini",
+    "family": "Mac mini",
     "name": "Mac mini (M1, 2020)",
     "ids": [
       "Macmini9,1"
     ]
   },
   {
-    "kind": "Mac mini",
+    "family": "Mac mini",
     "name": "Mac mini (2018)",
     "ids": [
       "Macmini8,1"
     ]
   },
   {
-    "kind": "Mac mini",
+    "family": "Mac mini",
     "name": "Mac mini (Late 2014)",
     "ids": [
       "Macmini7,1"
     ]
   },
   {
-    "kind": "Mac mini",
+    "family": "Mac mini",
     "name": "Mac mini (Late 2012)",
     "ids": [
       "Macmini6,1",
@@ -993,7 +993,7 @@
     ]
   },
   {
-    "kind": "Mac mini",
+    "family": "Mac mini",
     "name": "Mac mini (Mid 2011)",
     "ids": [
       "Macmini5,1",
@@ -1001,91 +1001,91 @@
     ]
   },
   {
-    "kind": "Mac mini",
+    "family": "Mac mini",
     "name": "Mac mini (Mid 2010)",
     "ids": [
       "Macmini4,1"
     ]
   },
   {
-    "kind": "Mac mini",
+    "family": "Mac mini",
     "name": "Mac mini (Late 2009)",
     "ids": [
       "Macmini3,1"
     ]
   },
   {
-    "kind": "Mac mini",
+    "family": "Mac mini",
     "name": "Mac mini (Early 2009)",
     "ids": [
       "Macmini3,1"
     ]
   },
   {
-    "kind": "Mac Pro",
+    "family": "Mac Pro",
     "name": "Mac Pro (2023)",
     "ids": [
       "Mac14,8"
     ]
   },
   {
-    "kind": "Mac Pro",
+    "family": "Mac Pro",
     "name": "Mac Pro (Rack, 2023)",
     "ids": [
       "Mac14,8"
     ]
   },
   {
-    "kind": "Mac Pro",
+    "family": "Mac Pro",
     "name": "Mac Pro (2019)",
     "ids": [
       "MacPro7,1"
     ]
   },
   {
-    "kind": "Mac Pro",
+    "family": "Mac Pro",
     "name": "Mac Pro (Rack, 2019)",
     "ids": [
       "MacPro7,1"
     ]
   },
   {
-    "kind": "Mac Pro",
+    "family": "Mac Pro",
     "name": "Mac Pro (Late 2013)",
     "ids": [
       "MacPro6,1"
     ]
   },
   {
-    "kind": "Mac Pro",
+    "family": "Mac Pro",
     "name": "Mac Pro (Mid 2012)",
     "ids": [
       "MacPro5,1"
     ]
   },
   {
-    "kind": "Mac Pro Server",
+    "family": "Mac Pro Server",
     "name": "Mac Pro Server (Mid 2012)",
     "ids": [
       "MacPro5,1"
     ]
   },
   {
-    "kind": "Mac Pro",
+    "family": "Mac Pro",
     "name": "Mac Pro (Mid 2010)",
     "ids": [
       "MacPro5,1"
     ]
   },
   {
-    "kind": "Mac Pro Server",
+    "family": "Mac Pro Server",
     "name": "Mac Pro Server (Mid 2010)",
     "ids": [
       "MacPro5,1"
     ]
   },
   {
-    "kind": "Mac Pro",
+    "family": "Mac Pro",
     "name": "Mac Pro (Early 2009)",
     "ids": [
       "MacPro4,1"

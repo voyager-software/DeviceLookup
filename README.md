@@ -12,7 +12,7 @@ Device details are data (`Resources/devices.json`, `Resources/macs.json`), not c
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/voyager-software/DeviceLookup.git", from: "2026.10.9"),
+    .package(url: "https://github.com/voyager-software/DeviceLookup.git", from: "2026.10.12"),
 ]
 ```
 
@@ -26,7 +26,7 @@ import DeviceLookup
 let device = Device.current
 device.modelIdentifier      // "iPhone18,1" (the simulated device on a simulator, the Mac model under Catalyst)
 device.modelName            // "iPhone 17 Pro"
-device.deviceDescription    // "iPhone 17 Pro, A19 Pro"  /  "MacBook Pro (14-inch, M3 Pro, 2023), Apple M3 Pro"
+device.deviceDescription    // "iPhone 17 Pro, A19 Pro"  /  "MacBook Pro (14-inch, Nov 2023), Apple M3 Pro"
 device.family               // .phone (raw value "phone")
 device.diagonal             // 6.3
 device.hasCellular          // true
@@ -35,7 +35,7 @@ device.isSimulator          // false
 Device(modelIdentifier: "iPad16,4").modelName   // "iPad Pro 11-inch (M4)"
 Device(modelIdentifier: "Watch7,18").modelName  // "Apple Watch Series 11 (GPS) 46mm"
 Device(modelIdentifier: "Mac14,7").modelName    // "MacBook Pro (13-inch, M2, 2022)"
-Device(modelIdentifier: "Mac14,7").mac?.kind    // .macBookPro
+Device(modelIdentifier: "Mac14,7").mac?.family  // .macBookPro
 
 // The running system's details are static: they describe this device, not a looked-up one.
 Device.operatingSystemName                      // "iOS"
@@ -58,7 +58,7 @@ Scripts/update-devices.py            # report what's new or different
 Scripts/update-devices.py --write    # add new identifiers to devices.json
 ```
 
-It reads Xcode's `device_traits.db`, adds missing identifiers with their name and SoC code, and lists what still needs filling in by hand: `chip`, `diag` (screen diagonal in inches; the inner display for a foldable), `cell` (cellular) for iPads and watches whose name doesn't say, and the case size for watches. Xcode names most watches without one, so append it to the name, e.g. "Apple Watch Series 11 (GPS) 46mm"; the report says whether it's the small or large case. It never overwrites existing values. `DeviceTests.allDevicesHaveData` fails until each device has a chip and a diagonal.
+It reads Xcode's `device_traits.db`, adds missing identifiers with their name and SoC code, and lists what still needs filling in by hand: `chip`, `diag` (screen diagonal in inches; the inner display for a foldable), `cell` (cellular) for iPads and watches whose name doesn't say, and the case size for watches. Xcode names most watches without one, so append it to the name, e.g. "Apple Watch Series 11 (GPS) 46mm"; the report says whether it's the small or large case. It never overwrites existing values. The tests fail until each device has a chip and a diagonal, and each watch name its case size.
 
 Mac data comes from Apple's "Identify your Mac model" support pages, one per Mac family:
 
@@ -67,7 +67,7 @@ Scripts/update-macs.py               # report what's new or different
 Scripts/update-macs.py --write       # rewrite macs.json from the pages
 ```
 
-It keeps each Mac's kind, name and model identifiers (`ids`), newest first as Apple lists them, so an identifier Apple reused across models resolves to the newest one. Nothing needs filling in by hand. If a page yields fewer Macs than `macs.json` has, Apple has probably redesigned it, and the script stops without writing.
+It keeps each Mac's family, name and model identifiers (`ids`), newest first as Apple lists them, so an identifier Apple reused across models resolves to the newest one. Nothing needs filling in by hand. If a page yields fewer Macs than `macs.json` has, Apple has probably redesigned it, and the script stops without writing.
 
 ## Coming from DeviceKit
 

@@ -10,7 +10,7 @@ identifier Apple reused across models resolves to the newest one.
     Scripts/update-macs.py --pages DIR         # read saved pages (imac.html, ...) instead of fetching
 
 Fields:
-    kind      the family, e.g. "MacBook Pro", from the start of the name
+    family    the product line, e.g. "MacBook Pro", from the start of the name
     name      e.g. "MacBook Pro (14-inch, M5, 2025)". Newer pages give the year on its own line, so
               it's added to the name as the older entries have it.
     ids       the model identifiers, e.g. ["Mac17,2"]
@@ -42,7 +42,7 @@ PAGES = {
     "macpro": "102887",
 }
 # Longest first, so "MacBook Pro" wins over "MacBook" and "Mac Pro Server" over "Mac Pro".
-KINDS = sorted(
+FAMILIES = sorted(
     ["iMac", "iMac Pro", "MacBook", "MacBook Air", "MacBook Pro", "Mac mini", "Mac Pro", "Mac Pro Server", "Mac Studio"],
     key=len,
     reverse=True,
@@ -87,8 +87,8 @@ def clean(text):
     return re.sub(r"\s+", " ", html.unescape(text)).strip()
 
 
-def kind_of(name):
-    return next((kind for kind in KINDS if name.startswith(kind + " ") or name == kind), None)
+def family_of(name):
+    return next((family for family in FAMILIES if name.startswith(family + " ") or name == family), None)
 
 
 def with_year(name, year):
@@ -103,20 +103,20 @@ def parse(page_html):
     blocks.feed(page_html)
     macs, name, year = [], None, None
     for is_name, text in blocks.blocks:
-        if is_name and kind_of(text):
+        if is_name and family_of(text):
             name, year = text, None
         elif text.startswith("Year introduced:"):
             year = text.split(":", 1)[1].strip()
         elif text.startswith("Model Identifier") and name:
             ids = IDENTIFIER.findall(text)
             if ids:
-                macs.append({"kind": kind_of(name), "name": with_year(name, year), "ids": sorted(set(ids))})
+                macs.append({"family": family_of(name), "name": with_year(name, year), "ids": sorted(set(ids))})
     return macs
 
 
-def distinct_kinds(macs):
-    """Distinct models per kind, so an entry listed twice doesn't count twice."""
-    return Counter(kind for kind, _, _ in {(mac["kind"], mac["name"], tuple(mac["ids"])) for mac in macs})
+def distinct_families(macs):
+    """Distinct models per family, so an entry listed twice doesn't count twice."""
+    return Counter(family for family, _, _ in {(mac["family"], mac["name"], tuple(mac["ids"])) for mac in macs})
 
 
 def fetch(article):
@@ -132,18 +132,18 @@ def main():
     args = parser.parse_args()
 
     current = json.loads(MACS_JSON.read_text())
-    current_kinds = distinct_kinds(current)
+    current_families = distinct_families(current)
 
     macs = []
     for page, article in PAGES.items():
         page_html = (Path(args.pages) / f"{page}.html").read_text() if args.pages else fetch(article)
         macs += parse(page_html)
 
-    found_kinds = distinct_kinds(macs)
+    found_families = distinct_families(macs)
     short = [
-        f"{kind}: {found_kinds[kind]} on Apple's pages, {count} in macs.json"
-        for kind, count in current_kinds.items()
-        if found_kinds[kind] < count
+        f"{family}: {found_families[family]} on Apple's pages, {count} in macs.json"
+        for family, count in current_families.items()
+        if found_families[family] < count
     ]
 
     old = {(mac["name"], tuple(mac["ids"])) for mac in current}

@@ -34,7 +34,7 @@ let modelsWithoutLiquidGlass: Set<String> = [
 modelsWithoutLiquidGlass.contains(Device.current.modelIdentifier)
 ```
 
-New devices never change the set's meaning, so no code needs updating when they ship. Compare identifiers rather than ``Device`` values: two devices are equal only when every property matches, so ``Device/current`` on a simulator never equals a device you looked up. To check for a kind of device rather than particular models, use ``Device/family``.
+New devices never change the set's meaning, so no code needs updating when they ship. Compare identifiers rather than ``Device`` values: two devices are equal only when every property matches, so ``Device/current`` on a simulator never equals a device you looked up. To check for a family of devices rather than particular models, use ``Device/family``.
 
 ### Features without an equivalent
 
@@ -45,4 +45,4 @@ DeviceLookup leaves out per-model hardware facts that an Apple framework reports
 - Cameras and LiDAR: `AVCaptureDevice.DiscoverySession`.
 - Screen ratio and pixel density: `UIScreen`.
 
-It also leaves out state that `UIDevice`, `UIScreen` and `ProcessInfo` already provide, such as battery level, screen brightness, Low Power Mode, orientation and thermal state. Those need the main actor, and ``Device`` stays `Sendable` by not reading them.
+It also leaves out state that `UIDevice`, `UIScreen` and `ProcessInfo` already provide, such as battery level, screen brightness, Low Power Mode, orientation and thermal state. Those change while the app runs, and the `UIDevice` and `UIScreen` ones need the main actor, so ``Device`` leaves them to those APIs and stays `Sendable`.
