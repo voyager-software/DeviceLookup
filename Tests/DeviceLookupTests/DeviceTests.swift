@@ -64,6 +64,14 @@ struct DeviceTests {
         #expect(Device(modelIdentifier: "Watch7,15").modelName == "Apple Watch SE 3 (GPS + Cellular) 40mm")
     }
 
+    /// Xcode names most watches without a case size, so it's added by hand; see the README.
+    /// Apple Watch Ultra comes in one size, so its name has none.
+    @Test func `watch names have a case size`() {
+        for device in Device.all where device.isWatch && !device.modelName.contains("Ultra") {
+            #expect(device.modelName.hasSuffix("mm"), "\(device.modelIdentifier): \(device.modelName)")
+        }
+    }
+
     @Test(arguments: [
         ("iPhone1,1", Device.Family.phone),
         ("iPad17,3", .pad),
@@ -104,6 +112,13 @@ struct DeviceTests {
                 #expect(device.diagonal != nil, "\(device.modelIdentifier) has no diagonal")
             }
         }
+    }
+
+    @Test func `all is in identifier order`() throws {
+        let identifiers = Device.all.map(\.modelIdentifier)
+        let iPhone9 = try #require(identifiers.firstIndex(of: "iPhone9,1"))
+        let iPhone10 = try #require(identifiers.firstIndex(of: "iPhone10,1"))
+        #expect(iPhone9 < iPhone10)
     }
 
     @Test func `awaiting data is still missing`() {
