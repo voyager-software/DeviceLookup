@@ -168,6 +168,16 @@ struct MacTests {
         #expect(Mac.find(model: "iMac21,2")?.name == "iMac (24-inch, M1, 2021)")
     }
 
+    /// Apple reused some identifiers across models. The data lists the newest model first, and it wins.
+    @Test(arguments: [
+        ("MacBookPro15,1", "MacBook Pro (15-inch, 2019)"),
+        ("MacBookAir7,2", "MacBook Air (13-inch, 2017)"),
+        ("Mac14,8", "Mac Pro (2023)"),
+    ])
+    func `shared identifier names the newest model`(model: String, name: String) {
+        #expect(Device(modelIdentifier: model).modelName == name)
+    }
+
     @Test func `unrecognized kind decodes as unknown`() throws {
         let json = #"[{"kind": "Mac Something", "name": "Mac Something (M9, 2030)", "ids": ["Mac99,1"]}]"#
         let macs = try JSONDecoder().decode([Mac].self, from: Data(json.utf8))

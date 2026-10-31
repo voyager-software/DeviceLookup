@@ -136,7 +136,8 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
         self.family == .mac
     }
 
-    /// The Mac details, when this device is a known Mac.
+    /// The Mac details, when this device is a known Mac. An identifier Apple reused across models, such as
+    /// "MacBookPro15,1" for the 2018 and 2019 15-inch MacBook Pro, gives the newest of them.
     public var mac: Mac? {
         // Checking the family first keeps other platforms from decoding the Mac data.
         self.isMac ? Mac.find(model: self.modelIdentifier) : nil
