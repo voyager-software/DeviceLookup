@@ -138,7 +138,8 @@ public struct Device: Hashable, Sendable, CustomStringConvertible {
 
     /// The Mac details, when this device is a known Mac.
     public var mac: Mac? {
-        Mac.find(model: self.modelIdentifier)
+        // Checking the family first keeps other platforms from decoding the Mac data.
+        self.isMac ? Mac.find(model: self.modelIdentifier) : nil
     }
 
     /// The marketing name, e.g. "iPhone 17 Pro", or "Simulator (iPhone 17 Pro)" on a simulator.

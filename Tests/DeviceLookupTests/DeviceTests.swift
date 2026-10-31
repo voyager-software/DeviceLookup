@@ -7,6 +7,7 @@
 //
 
 @testable import DeviceLookup
+import Foundation
 import Testing
 
 struct DeviceTests {
@@ -87,6 +88,7 @@ struct DeviceTests {
         #expect(device.isMac)
         #expect(device.modelName == "MacBook Pro (13-inch, M2, 2022)")
         #expect(device.mac?.kind == .macBookPro)
+        #expect(Device(modelIdentifier: "iPhone18,1").mac == nil)
     }
 
     @Test func `all devices have data`() {
@@ -120,7 +122,7 @@ struct DeviceTests {
             #expect(device.isKnown, "\(device.modelIdentifier) is missing from all-macs.json")
         }
         #expect(device.chip?.hasPrefix("Apple") == true)
-        #expect(device.operatingSystemName == "macOS")
+        #expect(Device.operatingSystemName == "macOS")
     }
     #endif
 
@@ -135,11 +137,10 @@ struct DeviceTests {
     #endif
 
     @Test func system() {
-        let device = Device.current
-        #expect(device.physicalMemory > 0)
-        #expect(device.processorCount > 0)
-        #expect((device.volumeTotalCapacity ?? 0) > 0)
-        #expect(!device.operatingSystemVersionString.contains("Version"))
+        #expect(Device.physicalMemory > 0)
+        #expect(Device.processorCount > 0)
+        #expect((Device.volumeTotalCapacity ?? 0) > 0)
+        #expect(!Device.operatingSystemVersionString.contains("Version"))
     }
 }
 
@@ -152,9 +153,15 @@ struct MacTests {
         #expect(Mac.find(model: "iMac21,2")?.name == "iMac (24-inch, M1, 2021)")
     }
 
+    @Test func `unrecognized kind decodes as unknown`() throws {
+        let json = #"[{"kind": "Mac Something", "name": "Mac Something (M9, 2030)", "ids": ["Mac99,1"]}]"#
+        let macs = try JSONDecoder().decode([Mac].self, from: Data(json.utf8))
+        #expect(macs.first?.kind == .unknown)
+    }
+
     /// `Device` looks a `.mac` identifier up only in the Mac data, and anything else only in the device data.
     @Test func `families match the data they are looked up in`() {
-        for model in Mac.all.flatMap(\.models) {
+        for model in Mac.all.flatMap(\.modelIdentifiers) {
             #expect(Device.Family(modelIdentifier: model) == .mac, "\(model)")
         }
         for identifier in DeviceTable.entries.keys {

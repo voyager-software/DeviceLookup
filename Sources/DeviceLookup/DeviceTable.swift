@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// The bundled iPhone, iPad, iPod touch and Apple TV data, keyed by model identifier.
+/// The bundled iPhone, iPad, iPod touch, Apple TV and Apple Watch data, keyed by model identifier.
 /// Maintained with `Scripts/update-devices.py`.
 enum DeviceTable {
     struct Entry: Decodable, Sendable {
