@@ -73,6 +73,8 @@ Mac data comes from the MacModelParser project. After regenerating it there, run
 | `device.isOneOf([.appleTVHD, ...])` | compare `device.modelIdentifier` |
 | `device.name`, `.systemName`, `.model` (`UIDevice`) | not provided; use `UIDevice` on the main actor |
 
+The [migration guide](Sources/DeviceLookup/DeviceLookup.docc/MigratingFromDeviceKit.md) covers the rest: checking for specific models without enum cases, and the runtime APIs to use for features DeviceLookup leaves out, such as Face ID and the Dynamic Island.
+
 ## License
 
 MIT. See [LICENSE](LICENSE), which also carries the license of [DeviceKit](https://github.com/devicekit/DeviceKit), where the chip and screen-size values were first imported from.
