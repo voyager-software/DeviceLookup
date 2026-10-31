@@ -12,6 +12,8 @@ Names, chips, screen sizes and families for iPhone, iPad, iPod touch, Apple TV, 
 
 Device details are data (`Resources/devices.json`, `Resources/macs.json`), not code, so adding a device is a JSON edit. A device missing from the data still resolves: its family comes from the identifier prefix and its name falls back to the identifier.
 
+The data ships inside the package, and DeviceLookup never goes online. Lookups are synchronous and give the same answer offline and on first launch, nothing about your users is sent anywhere, and a shipped build behaves the same for as long as it's in use, with no remote file that can change or disappear under it. New devices arrive with a package release. If you need names for hardware newer than an app build, in analytics for example, record the `modelIdentifier` and map it to a name on your server.
+
 ## Installation
 
 ```swift
