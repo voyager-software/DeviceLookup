@@ -16,7 +16,8 @@ device.family             // .phone
 device.diagonal           // 6.3
 
 Device(modelIdentifier: "Watch7,18").modelName  // "Apple Watch Series 11 (GPS) 46mm"
-Mac.find(model: "Mac14,7")?.name                // "MacBook Pro (13-inch, M2, 2022)"
+Device(modelIdentifier: "Mac14,7").modelName    // "MacBook Pro (13-inch, M2, 2022)"
+Device(modelIdentifier: "Mac14,7").mac?.kind    // .macBookPro
 ```
 
 The details are bundled data taken from Xcode's own device list, not code, so supporting a new device is a data update rather than new enum cases. A device that's newer than the data still resolves: its ``Device/family`` comes from the identifier prefix and its ``Device/modelName`` falls back to the identifier, so ``Device/isKnown`` tells you which you have.

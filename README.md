@@ -34,7 +34,8 @@ device.isSimulator          // false
 
 Device(modelIdentifier: "iPad16,4").modelName   // "iPad Pro 11-inch (M4)"
 Device(modelIdentifier: "Watch7,18").modelName  // "Apple Watch Series 11 (GPS) 46mm"
-Mac.find(model: "Mac14,7")?.name                // "MacBook Pro (13-inch, M2, 2022)"
+Device(modelIdentifier: "Mac14,7").modelName    // "MacBook Pro (13-inch, M2, 2022)"
+Device(modelIdentifier: "Mac14,7").mac?.kind    // .macBookPro
 ```
 
 ## Maintenance
